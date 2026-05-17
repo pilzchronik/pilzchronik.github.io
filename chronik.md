@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Chronik lesen
+permalink: /chronik/
 sitemap: false
 ---
 
