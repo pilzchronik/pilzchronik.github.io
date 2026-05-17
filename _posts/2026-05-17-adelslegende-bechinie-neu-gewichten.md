@@ -16,7 +16,7 @@ betrifft: Band2
 
 <div class="status-box" style="background-color: #f9f9f9; border-left: 4px solid #999; padding: 15px; margin-bottom: 30px; color: #444; font-size: 0.95em;">
   <span style="display: block; font-weight: bold; text-transform: uppercase; font-size: 0.8em; color: #666; margin-bottom: 6px; letter-spacing: 0.5px;">Status: Vorläufig</span>
-  Diese Korrektur betrifft Band&nbsp;2 der Pilz-Chronik. Seitenzahl bitte vor dem Push eintragen.
+  Diese Korrektur betrifft Band&nbsp;1, S.&nbsp;107 und Band&nbsp;2, S.&nbsp;70&nbsp;ff. der Pilz-Chronik.
   Smitkas Einschätzung ist fachlich fundiert, aber ausdrücklich vorsichtig formuliert —
   die Adelslegende ist nicht definitiv widerlegt, sondern zunehmend unwahrscheinlich.
 </div>
@@ -27,7 +27,7 @@ betrifft: Band2
 
 Die gedruckte Pilz-Chronik erwähnt im Zusammenhang mit Philipp Bechinie die Überlieferung,
 er stamme aus verarmtem Adel. Die Hauptquelle dieser These waren zwei Briefe eines böhmischen
-Pfarrers aus dem Jahr 1936, der noch Nachfahren der Familie kannte.
+Pfarrers aus dem Jahr 1939, der noch Nachfahren der Familie kannte.
 
 ## Was die neue Aktenlage zeigt
 
@@ -39,7 +39,7 @@ böhmischen Adel persönlich für unwahrscheinlich.
 
 Smitkas Wortlaut ist dabei bewusst vorsichtig: „*Ich glaube nicht, dass er zum Adelsstand
 gehörte*" — eine fachliche Einschätzung, keine abschließende Feststellung. Die zwei
-Pfarrerbriefe von 1936 sind damit nicht widerlegt, aber durch Smitkas Aktenzugang
+Pfarrerbriefe von 1939 sind damit nicht widerlegt, aber durch Smitkas Aktenzugang
 deutlich relativiert.
 
 ## Einordnung
@@ -57,5 +57,5 @@ Aktenlage eher auf den Freisassen-Stand bezieht.
 ## Quellen
 
 - Jiří Smitka, Auskunft SOA Praha, 14.&nbsp;Mai 2026 (Mailkorrespondenz)
-- Zwei Briefe eines böhmischen Pfarrers, 1936 (Trägermedium der Adelslegende, Originalverbleib offen)
+- Zwei Briefe eines böhmischen Pfarrers, 1939 (Trägermedium der Adelslegende, Originalverbleib offen)
 - Weiterführend: [Philipp Bechinie — Auskunft SOA Praha, Mai 2026]({{ '/bechinie-philipp-smitka-auskunft/' | relative_url }})
