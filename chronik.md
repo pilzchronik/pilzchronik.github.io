@@ -36,7 +36,7 @@ sitemap: false
 <script>
 function checkPw() {
   var input = document.getElementById('pw-field').value;
-  if (input === 'pilz2025') {
+  if (input === 'pilz') {
     document.getElementById('pw-gate').style.display = 'none';
     document.getElementById('chronik-content').style.display = 'block';
   } else {
