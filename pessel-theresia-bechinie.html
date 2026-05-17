@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pessel, die spätere Theresia – Pilz-Familienchronik</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+/* ─── VARIABLEN ───────────────────────────────────────────── */
+:root {
+  --accent:     #7a4e2d;   /* warmes Braun – Hauptakzent */
+  --accent2:    #4a6741;   /* Olivgrün – Anmerkungen */
+  --bg:         #f8f5f0;
+  --paper:      #ffffff;
+  --ink:        #2c2416;
+  --ink-mid:    #4a3e2e;
+  --ink-light:  #6b5d4a;
+  --border:     #ddd5c4;
+  --hi:         #f0e9da;   /* Hover-Highlight */
+  --tag-bg:     #efe9de;
+  --note-bg:    #f4f0e8;
+  --header-bg:  #3b2e1e;
+  --serif:      Georgia, 'Times New Roman', serif;
+  --sans:       -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ─── RESET ───────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-height: 1.65; }
+
+/* ─── HEADER ──────────────────────────────────────────────── */
+.site-header {
+  background: var(--header-bg);
+  color: #f0e6d0;
+  padding: 2rem 1.5rem 1.6rem;
+  text-align: center;
+}
+.site-header .eyebrow {
+  font-size: .72rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #a08868;
+  margin-bottom: .5rem;
+}
+.site-header h1 {
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  font-weight: normal;
+  letter-spacing: .03em;
+  margin-bottom: .35rem;
+}
+.site-header .subtitle {
+  font-size: .9rem;
+  color: #c9b99a;
+  font-style: italic;
+  margin-bottom: .4rem;
+}
+.site-header .meta {
+  font-size: .75rem;
+  color: #836b52;
+}
+
+/* ─── NAVIGATION ──────────────────────────────────────────── */
+.site-nav {
+  background: var(--paper);
+  border-bottom: 2px solid var(--border);
+  padding: .7rem 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-shadow: 0 2px 6px rgba(0,0,0,.07);
+}
+.site-nav-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  justify-content: center;
+}
+.site-nav a {
+  padding: .28rem .8rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: var(--bg);
+  transition: background .15s, color .15s, border-color .15s;
+  white-space: nowrap;
+}
+.site-nav a:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* ─── CONTAINER ───────────────────────────────────────────── */
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.8rem 1.4rem 3rem;
+}
+
+/* ─── EINFÜHRUNGSBOX ──────────────────────────────────────── */
+.intro-box {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 3px;
+  padding: 1.1rem 1.4rem;
+  margin-bottom: 1.8rem;
+  scroll-margin-top: 60px;
+}
+.intro-box .box-label {
+  font-size: .69rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.intro-box p {
+  font-family: var(--serif);
+  font-size: .91rem;
+  line-height: 1.8;
+  color: var(--ink-mid);
+}
+
+/* ─── KARTE ───────────────────────────────────────────────── */
+.map-wrap {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+  scroll-margin-top: 60px;
+}
+.map-wrap .box-label {
+  font-size: .69rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 700;
+  padding: .8rem 1.2rem .4rem;
+  border-bottom: 1px solid var(--border);
+}
+#map { height: 420px; width: 100%; }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  padding: .65rem 1.2rem;
+  border-top: 1px solid var(--border);
+  background: var(--note-bg);
+}
+.leg-item { display: flex; align-items: center; gap: .4rem; font-size: .73rem; color: var(--ink-light); }
+.leg-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+
+/* ─── CHRONOLOGIE ─────────────────────────────────────────── */
+.tl-wrap {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.8rem;
+  scroll-margin-top: 60px;
+}
+.tl-wrap .box-label {
+  font-size: .69rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.tl-item { display: flex; gap: .8rem; align-items: flex-start; margin-bottom: .3rem; }
+.tl-date {
+  min-width: 5.5rem;
+  font-size: .77rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: right;
+  padding-top: .14rem;
+  font-variant-numeric: tabular-nums;
+}
+.tl-gutter { display: flex; flex-direction: column; align-items: center; }
+.tl-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: .17rem; }
+.tl-line { width: 2px; flex: 1; background: var(--border); min-height: 1.1rem; }
+.tl-text { font-size: .84rem; line-height: 1.55; color: var(--ink); padding-bottom: .5rem; }
+.tl-src { font-size: .69rem; color: var(--ink-light); font-style: italic; }
+
+/* ─── KAPITEL ─────────────────────────────────────────────── */
+.chapter {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  margin-bottom: 1.1rem;
+  overflow: hidden;
+  scroll-margin-top: 60px;
+}
+.ch-head {
+  display: flex;
+  align-items: flex-start;
+  gap: .85rem;
+  padding: .9rem 1.1rem;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid transparent;
+  transition: background .15s;
+}
+.ch-head:hover, .chapter.open .ch-head { background: var(--hi); }
+.chapter.open .ch-head { border-bottom-color: var(--border); }
+.ch-num {
+  min-width: 1.8rem; height: 1.8rem;
+  background: var(--accent); color: #f5ead8;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .74rem; font-weight: 700; flex-shrink: 0;
+  margin-top: .1rem;
+}
+.ch-ta { flex: 1; }
+.ch-title { font-size: .98rem; font-weight: 600; color: var(--accent); margin-bottom: .2rem; }
+.ch-src { font-size: .72rem; color: var(--ink-light); font-style: italic; line-height: 1.4; }
+.ch-toggle { color: var(--accent); font-size: .9rem; flex-shrink: 0; margin-top: .25rem; transition: transform .25s; }
+.chapter.open .ch-toggle { transform: rotate(180deg); }
+.ch-body { display: none; padding: 1.3rem 1.4rem; }
+.chapter.open .ch-body { display: block; }
+
+/* Prosatext in Kapiteln */
+.ch-body p {
+  font-family: var(--serif);
+  font-size: .93rem;
+  line-height: 1.85;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+.ch-body p:last-child { margin-bottom: 0; }
+
+/* Zitat-Block */
+.zitat {
+  border-left: 3px solid var(--border);
+  padding: .6rem 1rem;
+  margin: .8rem 0;
+  background: var(--tag-bg);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .88rem;
+  color: var(--ink-light);
+}
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .9rem; }
+.tag {
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  color: var(--ink-light);
+  font-size: .69rem;
+  padding: .1rem .5rem;
+  border-radius: 12px;
+}
+.tag.b { border-color: var(--accent2); color: var(--accent2); }
+.tag.h { border-color: #a06030; color: #a06030; }
+
+/* Anmerkungsbox */
+.anm {
+  background: var(--note-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent2);
+  padding: .75rem 1rem;
+  margin-top: .8rem;
+  border-radius: 2px;
+}
+.anm-label {
+  font-size: .67rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent2);
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+.anm p {
+  font-family: var(--sans) !important;
+  font-size: .81rem !important;
+  line-height: 1.6 !important;
+  color: var(--ink-light) !important;
+  font-style: italic !important;
+  margin-bottom: 0 !important;
+}
+
+/* ─── OFFENE PUNKTE ───────────────────────────────────────── */
+.offen {
+  background: var(--paper);
+  border: 1px dashed var(--border);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.8rem;
+  scroll-margin-top: 60px;
+}
+.offen .box-label {
+  font-size: .69rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+.offen ul { list-style: none; padding: 0; }
+.offen li {
+  font-size: .86rem;
+  padding: .3rem 0 .3rem 1.4rem;
+  position: relative;
+  color: var(--ink-light);
+  border-bottom: 1px dotted var(--border);
+}
+.offen li:last-child { border-bottom: none; }
+.offen li::before { content: '?'; position: absolute; left: .2rem; color: #a06030; font-weight: 700; font-size: .77rem; }
+
+/* ─── QUELLENBEREICH ──────────────────────────────────────── */
+.q-section {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  margin-bottom: 1.4rem;
+  overflow: hidden;
+  scroll-margin-top: 60px;
+}
+.q-head {
+  background: var(--header-bg);
+  color: #f0e6d0;
+  padding: .75rem 1.15rem;
+  font-size: .86rem;
+  letter-spacing: .04em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.q-toggle { transition: transform .25s; }
+.q-section.open .q-toggle { transform: rotate(180deg); }
+.q-body { display: none; padding: 1.1rem 1.4rem; }
+.q-section.open .q-body { display: block; }
+.q-grp { margin-bottom: 1.1rem; }
+.q-grp h4 {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: .25rem;
+}
+.q-grp ul { list-style: none; padding: 0; }
+.q-grp li {
+  font-size: .83rem;
+  line-height: 1.6;
+  color: var(--ink-light);
+  padding: .18rem 0 .18rem 1.1rem;
+  position: relative;
+}
+.q-grp li::before { content: '·'; position: absolute; left: .25rem; color: var(--accent); }
+
+/* ─── FOOTER ──────────────────────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 1.3rem;
+  font-size: .75rem;
+  color: var(--ink-light);
+  border-top: 1px solid var(--border);
+  margin-top: .5rem;
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 1.45rem; }
+  .container { padding: 1.2rem .9rem 2rem; }
+  .tl-date { min-width: 4rem; font-size: .72rem; }
+  #map { height: 300px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="eyebrow">Pilz-Familienchronik · Genealogische Rekonstruktion</div>
+  <h1>Pessel, die spätere Theresia</h1>
+  <div class="subtitle">Eine erzählerische Annäherung auf dem Boden der Quellen und Kauls Hypothesen</div>
+  <div class="meta">Fassung III · Wolfgang Pilz · Stand: 16. Mai 2026</div>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="site-nav" aria-label="Seitennavigation">
+  <div class="site-nav-inner">
+    <a href="#intro">Einführung</a>
+    <a href="#karte">Karte</a>
+    <a href="#timeline">Chronologie</a>
+    <a href="#ch1">I · Herkunft</a>
+    <a href="#ch2">II · Amschelberg</a>
+    <a href="#ch3">III · Kniowitz</a>
+    <a href="#ch4">IV · Get · Taufe · Heirat</a>
+    <a href="#ch5">V · Philipp Bechinie</a>
+    <a href="#ch6">VI · Chlum 1769</a>
+    <a href="#ch7">VII · Dienstorte</a>
+    <a href="#ch8">VIII · Familiengedächtnis</a>
+    <a href="#ch9">IX · Bilanz</a>
+    <a href="#quellen">Quellen</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- EINFÜHRUNG -->
+<div id="intro" class="intro-box">
+  <div class="box-label">Einführung · Erzählerische Annäherung</div>
+  <p>Was hier folgt, ist eine erzählerische Annäherung an das Leben unserer Vorfahrin Pessel, der späteren Theresia Bechinie, geboren 1749, gestorben vor 1819. Der erzählerische Faden folgt der Lesart von Christina Kaul, wie sie sich aus dem Mailverkehr Mai 2026 ergibt, kombiniert mit den urkundlich gesicherten Befunden: Konsistorialakt 1768/69, Trauungseintrag Chlum 22. Oktober 1769, Auskunft des SOA Praha vom 14. Mai 2026 zu Philipp Bechinie. Die Erzählung füllt Lücken aus, wo die Quellen schweigen — mit Zurückhaltung. Am Ende jedes Kapitels steht eine Anmerkung: was Beleg ist, was Hypothese Kauls, was eigene Ausmalung. Bei Ortsnamen steht die deutsche Form voran; bei der ersten Nennung folgt der tschechische Name in Klammern.</p>
+</div>
+
+<!-- KARTE -->
+<div id="karte" class="map-wrap">
+  <div class="box-label">Schauplätze · Alle im Text erwähnten Orte</div>
+  <div id="map"></div>
+  <div class="map-legend">
+    <div class="leg-item"><div class="leg-dot" style="background:#7a4e2d"></div>Herkunft / Familie</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#c0392b"></div>Schlüsselereignis</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#4a6741"></div>Dienstort / Försterrevier</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#2471a3"></div>Philipp Bechinie</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#7d6608"></div>Spätere Generation</div>
+  </div>
+</div>
+
+<!-- CHRONOLOGIE -->
+<div id="timeline" class="tl-wrap">
+  <div class="box-label">Chronologie · Gesicherte Daten</div>
+
+  <div class="tl-item">
+    <div class="tl-date">1735</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Philipp Bechinie geboren (2. Mai)<br><span class="tl-src">Belegt: Pfarrmatrik</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1749</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Pessel geboren (ca.)<br><span class="tl-src">Aus Konsistorialakt rückgerechnet</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1758</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Bruder Markus Rudolph: Familiantenstelle Wesselitschko Nr. 52<br><span class="tl-src">Belegt: Heiratskonsens</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1764</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Heirat mit Abraham Jablotzky, Hausierer in Amschelberg<br><span class="tl-src">Belegt: Konsistorialakt</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">14.10.1768</div>
+    <div class="tl-gutter"><div class="tl-dot" style="background:#c0392b"></div><div class="tl-line"></div></div>
+    <div class="tl-text"><strong>Get-Übergabe</strong> (jüdische Scheidung)<br><span class="tl-src">Belegt: Konsistorialakt</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">30.10.1768</div>
+    <div class="tl-gutter"><div class="tl-dot" style="background:#c0392b"></div><div class="tl-line"></div></div>
+    <div class="tl-text"><strong>Taufe</strong> in Amschelberg → „Apollonia Jablotzky" / Theresia Kosso-Horska<br><span class="tl-src">Belegt: Taufeintrag</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">22.10.1769</div>
+    <div class="tl-gutter"><div class="tl-dot" style="background:#c0392b"></div><div class="tl-line"></div></div>
+    <div class="tl-text"><strong>Trauung</strong> mit Philipp Bechinie in Chlum<br><span class="tl-src">Belegt: Trauungseintrag (lat.)</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1771</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Bruder Samuel Rudolph: Familiantenstelle Mühlhausen Nr. 27<br><span class="tl-src">Belegt: Heiratskonsens</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">31.8.1770</div>
+    <div class="tl-gutter"><div class="tl-dot" style="background:#4a6741"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Sohn Franz Adam geboren, Krchleby bei Neveklov</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1773–1776</div>
+    <div class="tl-gutter"><div class="tl-dot" style="background:#4a6741"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Tochter Anna (*1773, †1775 Neustupov) · Sohn Josef (*4.3.1776 Ratměřice)</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">vor 1819</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Tod der Theresia (Datum unbekannt)<br><span class="tl-src">Aus Philipps Sterbeeintrag erschlossen</span></div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">9.1.1819</div>
+    <div class="tl-gutter"><div class="tl-dot"></div></div>
+    <div class="tl-text">Tod Philipp Bechinie in Pechau bei Magdeburg</div>
+  </div>
+</div><!-- /timeline -->
+
+
+<!-- ─── KAPITEL ─────────────────────────────────────────────── -->
+
+<div id="ch1" class="chapter open">
+  <div class="ch-head">
+    <div class="ch-num">I</div>
+    <div class="ch-ta">
+      <div class="ch-title">Im Dreieck Wopařan – Wesselitschko – Mühlhausen</div>
+      <div class="ch-src">Familiantenstelle Markus 1758, Samuel 1771 · Altersangabe Konsistorialakt 1768 · Kauls paläogr. Lesart Wopořaná 9.5.2026</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Geburtsjahr 1749</span>
+      <span class="tag b">Belegt: Familiantenstellen</span>
+      <span class="tag h">Hypothese: Vater Mosche/Joseph</span>
+      <span class="tag h">Hypothese: Geburtsort offen</span>
+    </div>
+    <p>Pessel kam 1749 als Tochter einer jüdischen Familie zur Welt, die in der südböhmischen Tabor-Region beheimatet war. Das Geburtsjahr sichern indirekte Quellen: Im Konsistorialakt zur Konversion 1768 wird sie als neunzehnjährig geführt — daraus rechnet sich 1749 zurück. Wo genau sie zur Welt kam, ist offen; in Frage kommen Miskowitz (tsch. Myslkovice) und Mühlhausen (tsch. Milevsko). Müllers ältere Auskunft „Pessel aus Miskowitz" lässt sich nicht zwingend halten — möglicherweise hat sich hier eine Verwechslung mit Mühlhausen eingeschlichen, dem Ort, an dem ihr mutmaßlicher Bruder Samuel später die Familiantenstelle übernehmen sollte.</p>
+    <p>Der Vater, im jüdischen Umgang Mosche gerufen, in den späteren Akten als Joseph Rudolph geführt, war Familiant. Eine Familiantenstelle — die im Familiantengesetz Karls VI. von 1726 festgesetzte Erlaubnis für einen jüdischen Mann, eine eigene Familie zu gründen — war ein knappes Gut: Pro Region war die Zahl der Stellen festgesetzt, und nur ein einziger Sohn durfte sie erben, alle anderen mussten ledig bleiben oder die Erbländer verlassen. Die Mutter hieß Anna und trug einen Beinamen, der nicht auf einen Familiennamen verwies, sondern auf einen Ort: Wopořaná, die aus Wopařan (tsch. Opařany) Stammende.</p>
+    <p>Im Haus wurde Jiddisch gesprochen, in der Synagoge das Hebräisch der Gebete, mit dem tschechischen Dienstmädchen Böhmisch, vor dem Herrschaftsbeamten Deutsch. Pessel wuchs in dieses Vier-Sprachen-Gewebe hinein.</p>
+    <p>Markus, deutlich älter, bekam 1758 den Heiratskonsens für die Familiantenstelle Wesselitschko (tsch. Veselíčko) Nr. 52. Samuel folgte 1771 mit Mühlhausen Nr. 27 — da war Pessel selbst schon eine andere geworden.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt sind die Familiantenstellen Markus Rudolph Wesselitschko Nr. 52 (1758) und Samuel Rudolph Mühlhausen Nr. 27 (1771). Belegt ist Anna mit toponymischem Beinamen (Kaul, 9.5.2026, Lesart Wopořaná → Wopařan/Opařany). Belegt ist das Geburtsjahr 1749 über den Konsistorialakt. Mosche/Joseph als Vater ist Hypothese auf Kombination der Indizien. Geburtsort offen — der Müller-Wortlaut „aus Miskowitz" steht im Raum, Kauls Vermutung einer Verwechslung mit Mühlhausen ist plausibel, aber nicht entschieden. Die Vier-Sprachen-Beobachtung ist eigene Ausmalung.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch2" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">II</div>
+    <div class="ch-ta">
+      <div class="ch-title">Amschelberg — die Jahre mit Abraham</div>
+      <div class="ch-src">Abraham Jablotzky, Hausierer · Erste Ehe 1764 · „läuft von ihrem Mann weg"</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Erste Ehe 1764</span>
+      <span class="tag b">Belegt: Abraham als Hausierer</span>
+      <span class="tag h">Hypothese: Kinderlosigkeit</span>
+    </div>
+    <p>Im Jahr 1764 wurde Pessel mit Abraham Jablotzky verheiratet, einem Hausierer in Amschelberg (tsch. Kosova Hora). Das Ehejahr ergibt sich aus dem Vermerk bei der späteren Taufe: Pessel hat nach vier Jahren Ehe ihren jüdischen Mann verlassen — gerechnet vom Konversionsdatum 1768 also 1764.</p>
+    <p>Abraham war Hausierer — ein Mann, der die Tage auf den Wegen verbrachte, mit dem Bündel auf dem Rücken, durch Dörfer ging, an Türen klopfte, mit Bauern verhandelte. Pessel kam in ein Haus, das mehr leer als bewohnt war. Kinder kamen nicht. Ein Kirchenbucheintrag hielt den Sachverhalt schlicht fest: Sie war ihrem Mann weggelaufen.</p>
+    <p>Eine jüdische Scheidung wäre rechtlich möglich gewesen, aber sie hing an Abrahams Zustimmung. Ohne diese Zustimmung kein Get — so heißt der Scheidebrief, den der Mann der Frau überreichen muss —, ohne Get keine zweite Heirat. Solange Pessel in Amschelberg blieb, unter derselben Herrschaft, unter denselben Beamten des jüdischen Gerichts, hatte Abraham die besseren Karten.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt ist die erste Ehe mit Abraham Jablotzky (Konsistorialakt Pilz057–063), Abraham als Hausierer in Amschelberg, die Wendung „läuft von ihrem Mann weg" im Kirchenbuch, das Ehejahr 1764 über den Vermerk „nach vier Jahren Ehe". Kinderlosigkeit folgt aus dem Schweigen der Quellen.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch3" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">III</div>
+    <div class="ch-ta">
+      <div class="ch-title">Die Trennung — Theresia Lipowsky von Kniowitz</div>
+      <div class="ch-src">Trauzeuge Krazarek „Officialis Kinovicij" · Brautjungfer Kotinlowa „Camararia apud Dominium Kinovicense" · Kauls Patronage-These</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Kniowitzer Trauzeugen (1769)</span>
+      <span class="tag h">Hypothese: Pessels Aufenthalt in Kniowitz</span>
+      <span class="tag h">Hypothese: Lipowskys Patronage</span>
+    </div>
+    <p>Was Pessel zwischen ihrer Flucht aus dem ehelichen Haus und der Taufe im Oktober 1768 getan hat, lässt sich den Akten direkt nicht entnehmen. Der Hochzeitseintrag von 1769 enthält aber einen Hinweis, der mehr als ein Indiz ist: Trauzeuge ist Antonius Krazarek, Beamter der Herrschaft Kniowitz (tsch. Kinovice), und Brautjungfer ist Elisabetha Kotinlowa, Kammerfrau ebendieser Herrschaft. Die Spitze der Hochzeitsgesellschaft auf Pessels Seite kommt aus Kniowitz — das ist nicht das Personal einer beliebig zusammengewürfelten Trauung, sondern das einer Patronage.</p>
+    <p>Daraus lässt sich rückschließen, dass Theresia Lipowsky, die Grundherrin von Kniowitz, in den Vorgang eingebunden war — und dass Pessel in Kniowitz oder im Einflussbereich von Kniowitz Schutz gefunden hat. Wie sie dorthin gekommen ist, ob durch persönliche Bittstellung, durch Vermittlung von dritter Seite oder durch einen Hinweis im Hause Amschelberg, bleibt offen. Die Akten halten das Ergebnis fest, nicht den Weg.</p>
+    <p>Warum die Wahl auf Kniowitz fiel, ist im strengen Sinn nicht beantwortet. Zwei Erklärungen liegen nahe: die geographische Nähe zwischen den Herrschaften und die persönliche Reputation der Lipowsky als einer ansprechbaren Patronin. Die Lipowsky-Familie war ursprünglich protestantisch geprägt — keineswegs ein Hort gegenreformatorischer Strenge. Konversionsdruck als Glaubensfrage ist damit weniger plausibel, Konversion als juristisch-sozialer Weg umso mehr.</p>
+    <p>Sicher ist nur: Was in Amschelberg, unter der dortigen Jurisdiktion und der dortigen jüdischen Gemeinde, schwer machbar gewesen wäre, geriet im Wirkungsfeld der Lipowsky in Bewegung.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt ist die Beteiligung des Kniowitzer Personals an der Trauung 1769 (Trauzeuge Antonius Krazarek „Officialis Kinovicij", Brautjungfer Elisabetha Kotinlowa „Camararia apud Dominium Kinovicense"). Pessels Aufenthalt in Kniowitz ist nicht direkt aktenkundig, ergibt sich aber als naheliegender Schluss aus der Trauungsbesetzung. Lipowskys protestantischer Hintergrund ist Kauls Hinweis.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch4" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">IV</div>
+    <div class="ch-ta">
+      <div class="ch-title">Get, Taufe, Heirat — die gestaltete Sequenz</div>
+      <div class="ch-src">Get 14.10.1768 · Taufe 30.10.1768 · Heirat 22.10.1769 · Kauls „Paket"-These</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Get 14.10.1768</span>
+      <span class="tag b">Belegt: Taufe 30.10.1768</span>
+      <span class="tag b">Belegt: „Apollonia Jablotzky" / Theresia Kosso-Horska</span>
+      <span class="tag h">Hypothese: „Paket" als Lipowskys Regie (Kaul)</span>
+    </div>
+    <p>Was zwischen Herbst 1768 und Herbst 1769 abgelaufen ist, lässt sich als gestaltete Sequenz lesen — und genau das ist Kauls zentrale These. Drei Schritte, in einer Reihenfolge, die nicht zufällig wirkt: Get, Taufe, Heirat. Pessel hat diesen Weg gewollt; dass er aber innerhalb eines Jahres zum Ziel kam, lag an Theresia Lipowsky, die die Hebel kannte und sie in Bewegung setzte.</p>
+    <p>Zuerst die Scheidung. Abraham musste der Get-Übergabe zustimmen, und er tat es — vermutlich nicht aus Einsicht, sondern weil ihm eine Kompensation angeboten wurde oder weil die Herrschaft Amschelberg, von Kniowitz angesprochen, ihm den Schluss nahelegte. Die Mitgift musste verhandelt werden; was an Pessel zurückging, was bei Abraham blieb, was die Herrschaften an Vermittlungsgebühr nahmen — all das lief durch eine Korrespondenz, von der heute kein einziges Blatt nachweislich erhalten ist. Am <strong>14. Oktober 1768</strong> wurde der Get übergeben.</p>
+    <p>Dann die Konversion. Sie war nicht religiös motiviert in dem Sinn, dass Pessel von einer Glaubenswahrheit zur anderen übergewechselt wäre. Sie war praktisch motiviert, und die katholische Form war die einzige, die im Habsburgerreich dieser Zeit den Boden für ein neues Leben legen konnte. Die <strong>Taufe</strong> fand am <strong>30. Oktober 1768</strong> in Amschelberg statt. Im Taufeintrag wird Pessel als „Apollonia Jablotzky" geführt — nicht der Taufname, den sie annahm, sondern eine Notlösung des Pfarrers, der den jüdischen Vornamen offenbar nicht ins Kirchenbuch schreiben wollte. Den eigentlichen Taufnamen, unter dem sie von da an in den Akten erscheint, lautet Theresia Kosso-Horska — Theresia nach ihrer Patronin Lipowsky, Kosso-Horska als Beiname nach dem Taufort Kosova Hora (Amschelberg).</p>
+    <p>Die katholische Konversion verlangte formal, dass kein wirtschaftlicher Druck und kein zukünftiger Ehemann im Spiel war. Diese Frist zwischen Taufe und Verlobung wurde eingehalten — und in dieser Frist lief bereits die nächste Verhandlung: Theresia Lipowsky suchte einen Mann.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt sind Get-Übergabe (14.10.1768), Taufe (30.10.1768), Eintrag „Apollonia Jablotzky" und Taufname „Theresia Kosso-Horska". Lipowskys aktive Rolle als Organisatorin ist Kauls zentrale interpretatorische Setzung; der Konsistorialakt Pilz057–063 stützt die zeitliche Dichte, die genaue Choreographie ergibt sich erst durch Kauls Lesart.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch5" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">V</div>
+    <div class="ch-ta">
+      <div class="ch-title">Philipp Bechinie</div>
+      <div class="ch-src">Svobodník/Freisasse lt. Smitka SOA Praha 14.5.2026 · Adelslegende: zwei Pfarrerbriefe 1936, heute unwahrscheinlich</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: *2.5.1735, †9.1.1819</span>
+      <span class="tag b">Belegt: Smitka SOA Praha 14.5.2026</span>
+      <span class="tag h">Unsicher: Adelslegende (schwindet)</span>
+    </div>
+    <p>Philipp Bechinie wurde am <strong>2. Mai 1735</strong> geboren. Wo, ist nicht gesichert. Bei der Trauung 1769 wird er „aus der Königlichen Stadt Rakonitz" (tsch. Rakovník) geführt — das war seine damalige Zuständigkeit, nicht notwendig sein Geburtsort. Jiří Smitka vom Staatlichen Gebietsarchiv Prag (SOA Praha, 14. Mai 2026) hat festgestellt: Philipp war ein <em>svobodný člověk</em>, ein Freisasse — also ein freier Mann, der nicht der herrschaftlichen Jurisdiktion unterstand. Nach Smitkas Einschätzung gehörte er nicht in den böhmischen Adel. Der Freisassen-Stamm der Bechinie könnte seine Wurzeln im Kuttenberger Raum haben, in der Umgebung von Kácov — der Name taucht dort in den Pfarrmatriken häufig auf, Philipp selbst ließ sich jedoch nicht nachweisen.</p>
+    <p>Diese Auskunft rückt eine in der Familie lange tradierte Lesart ins Wanken. In zwei Briefen eines böhmischen Pfarrers aus dem Jahr 1936, der noch Nachfahren der Familie kannte, war Philipp als verarmter Adliger beschrieben worden — über Jahrzehnte die Hauptquelle der Adelsthese. Sie ist nicht widerlegt im engsten Sinn; Smitkas Auskunft formuliert ihre Einschätzung vorsichtig. Aber die Adelstheorie schwindet mit wachsender Aktenlage deutlich in Richtung Freisassenstand.</p>
+    <p>In den späteren Akten erscheint Philipp als Jäger oder Förster — 1819, dem Jahr seines Todes, als Jäger in Bielschitz (tsch. Bělčice). Die Familie hatte sich also auf forstlichen Dienst eingerichtet, und Philipp dürfte schon zur Zeit der Heirat in diesem Fach gestanden haben.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt: *2.5.1735, †9.1.1819 Pechau, Jäger/Förster, Komorní Hrádek. Smitkas Auskunft 14.5.2026 ist aktuelle Forschungsmeinung, vorsichtig formuliert. Die ältere Adelslegende, gestützt auf Pfarrerbriefe 1936, ist damit nicht endgültig erledigt, aber unwahrscheinlich geworden.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch6" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">VI</div>
+    <div class="ch-ta">
+      <div class="ch-title">Chlum, 22. Oktober 1769</div>
+      <div class="ch-src">„baptisata Judaea Rudolphiana" — der Trauungseintrag benennt die Herkunft offen · Chlum im Einflussbereich der Herrschaft Kniowitz</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Heiratsdatum, Ort, Pfarrer, Wortlaut</span>
+      <span class="tag b">Belegt: Trauzeugen aus Kniowitz</span>
+    </div>
+    <p>Die Heirat fand am 22. Oktober 1769 in Chlum statt. Dass die Wahl auf Chlum fiel, ist kein Zufall: der Ort lag im Einflussbereich der Herrschaft Kniowitz — also genau im Wirkungsraum der Lipowsky, die den Vorgang von Beginn an begleitete. Trauzeuge und Brautjungfer kamen entsprechend aus Kniowitzer Dienst.</p>
+    <p>Der Trauungseintrag — lateinisch, knapp, formelhaft — macht die ganze Konstellation in einem Satz sichtbar:</p>
+    <div class="zitat">„Anno 1769: die 22 Octobris contraxit Matrimonium per verba de praesenti honestus sponsus D. Philippus Bechinie ex Regia Civitate Rakaunik, cum sua sponsa baptisata Judaea Rudolphiana ex Oppido Kosowa Hora, liberi ambo …"</div>
+    <p>Pfarrer: Johann Durzpek. Trauzeuge: Antonius Krazarek, Beamter der Herrschaft Kniowitz. Brautjungfer: Elisabetha Kotinlowa, Kammerfrau ebendieser Herrschaft. Bemerkenswert ist die Bezeichnung der Braut: <em>baptisata Judaea Rudolphiana</em> — die getaufte Jüdin aus dem Geschlecht Rudolph. Der Eintrag legt offen, was sie gewesen war und woher sie kam; er verschleiert es nicht.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt: Heiratsdatum, Ort Chlum, Pfarrer Joannes Durzpek, Trauzeugen aus Kniowitz, Wortlaut des Eintrags. Chlums geographische Lage im Einflussbereich Kniowitz ist aus Kartenlagen erschlossen; eine archivalische Belehrung über die Grundherrschaft steht noch aus.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch7" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">VII</div>
+    <div class="ch-ta">
+      <div class="ch-title">Die Dienstorte</div>
+      <div class="ch-src">Krchleby 1770 · Neustupov 1773–75 · Ratměřice 1776 — drei Geburten, drei Reviere; typisch für forstlichen Dienst</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Kinder und ihre Daten (FamilySearch, Pfarrmatriken)</span>
+      <span class="tag h">Theresias Tod: zwischen 1776 und 1819</span>
+    </div>
+    <p>Die nächsten Jahre lassen sich nicht über Pfarrmatriken einer einzigen Pfarre verfolgen, denn die Familie zog mit Philipps Dienst weiter — Forststelle, Forsthaus, Wechsel, wie es die herrschaftliche Verwaltung verlangte. Was die Geburtsorte der Kinder festhalten, ist genau dieses Bewegungsmuster: Franz Adam *31.8.1770 Krchleby bei Neveklov (Philipps erste Försterstelle). Anna *1773, †21.8.1775 Neustupov. Josef, unser direkter Vorfahre, *4.3.1776 Ratměřice.</p>
+    <p>Drei Geburten, drei verschiedene Dienstorte — das war kein Zufall, sondern der Alltag forstlichen Dienstes im böhmischen Süden. Jäger und Förster wurden von der herrschaftlichen Verwaltung nach Bedarf ins nächste Revier versetzt; das Forsthaus stand im Wald, nicht im Dorf, und mit dem Mann zog die Familie. Häufige Ortswechsel sind für diesen Beruf typisch, nicht ungewöhnlich.</p>
+    <p>Theresias eigenes Sterbedatum ist nicht überliefert. Dass sie vor Philipp gestorben ist, ergibt sich aus seinem Sterbeeintrag 1819, in dem sie nicht mehr erwähnt wird. Irgendwann zwischen 1776 und 1819 muss sie gestorben sein.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt: Kinder und ihre Daten (FamilySearch, Pfarrmatriken). Franz Adams Geburtsjahr 1770 (Klärung Wolfgang Pilz 16.5.2026). Theresias Tod zwischen 1776 und 1819, Datum nicht ermittelt.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch8" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">VIII</div>
+    <div class="ch-ta">
+      <div class="ch-title">Was die nächsten Generationen wussten — und was nicht</div>
+      <div class="ch-src">Name „Kopidlansky" im Eintrag 1803 — ungenauer Niederschlag mündlicher Überlieferung (Kaul)</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <div class="tags">
+      <span class="tag b">Belegt: Hochzeitseintrag Josef 1803, „Kopidlansky"</span>
+      <span class="tag b">Belegt: Franz Adam als Holzförster in Pechau</span>
+      <span class="tag h">Deutung: Kaul</span>
+    </div>
+    <p>1819 starb Philipp in Pechau bei Magdeburg, wo sein Sohn Franz Adam als Holzförster Anstellung gefunden hatte und — zu einem nicht mehr genau bekannten Zeitpunkt — zur evangelischen Kirche übergetreten war. Theresia war zu diesem Zeitpunkt schon nicht mehr am Leben.</p>
+    <p>Der Sohn Josef hatte 1803 in Bernau (tsch. Zákoutí) Marianna Handl geheiratet. Der Trauungseintrag dieser Hochzeit nennt den Mädchennamen der Mutter des Bräutigams: nicht Rudolph, nicht Jablotzky, nicht Kosso-Horska, sondern <em>Kopidlansky</em>. Pessel hatte nie so geheißen. Der Eintrag ist falsch — aber nicht zufällig. Er ist der Niederschlag einer internen Familienerinnerung, die nicht mehr genau wusste, wo der Anker lag, aber wusste, dass irgendwo im Hintergrund ein anderer Name stand. Die mündliche Überlieferung hielt Kopidlansky fest, ohne ihn der richtigen Person zuzuordnen.</p>
+    <p>In dieselbe Richtung weist die Adelslegende um Philipp. Aus dem Freisassenstand der Bechinie hat die Familienerinnerung das Modell des „verarmten Edelmanns" gemacht — näher am bekannten Bild als an der weniger geläufigen Figur des Freisassen. Auch hier hat das Familiengedächtnis eine Spur behalten, ohne den Sachverhalt zu kennen.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Belegt: Franz Adam Bechinie als Holzförster in Pechau; sein Übertritt zur evangelischen Kirche ist belegt, das genaue Datum ist nicht überliefert. Belegt: Hochzeitseintrag Josef Bechinie 2.2.1803, Mädchenname „Kopidlansky" der Mutter. Kauls Lesart ist die plausibelste Erklärung für den falschen Namen.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ch9" class="chapter">
+  <div class="ch-head">
+    <div class="ch-num">IX</div>
+    <div class="ch-ta">
+      <div class="ch-title">Eine vorläufige Bilanz</div>
+      <div class="ch-src">Offene Bestände: Herrschaftsarchive Amschelberg, Kniowitz, Miskowitz, Krchleby · Nationalarchiv Prag</div>
+    </div>
+    <div class="ch-toggle">▼</div>
+  </div>
+  <div class="ch-body">
+    <p>Pessels Geschichte ist, nimmt man Kaul ernst, keine Bekehrungsgeschichte. Sie ist eine Geschichte über zwei Frauen — eine jüngere, die ging, und eine ältere, die die Wege ebnete. Sie ist eine Geschichte über das, was möglich wird, wenn eine Patronin entschlossen ist, und über ein Familiengedächtnis, das eine Spur behält, ohne den Sachverhalt zu kennen.</p>
+    <p>Die Quellen, die das Bild noch festigen könnten, liegen in den Herrschaftsarchiven Amschelberg, Kniowitz, Miskowitz und Krchleby — Korrespondenz zwischen Theresia Lipowsky und der Herrschaft Amschelberg, der Get-Akt selbst, der Ehevertrag. Für Philipp Bechinie führt Smitkas Hinweis weiter ans Nationalarchiv Prag und an die Bestände der Freisassen-Gerichte. Bis diese Bestände durchgesehen sind, bleibt die Erzählung eine plausible Rekonstruktion, die mehr auf juristischer und sozialer Logik ruht als auf Worten Pessels selbst.</p>
+    <p>Pessel hat keine Worte hinterlassen. Was sich erschließen lässt, ist die Form ihres Lebens — und in dieser Form steht eine Frau, die das Recht ihrer Zeit nicht hingenommen, sondern verschoben hat.</p>
+    <div class="anm">
+      <div class="anm-label">Anmerkung · Quellenbasis</div>
+      <p>Zusammenfassende Setzung auf der Grundlage von Kauls Mailkorrespondenz Mai 2026, urkundlichen Befunden und Smitka-Auskunft 14.5.2026. Genannte Archivbestände sind noch nicht systematisch ausgewertet — der Stand ist der eines offenen Forschungsstrangs.</p>
+    </div>
+  </div>
+</div>
+
+<!-- OFFENE PUNKTE -->
+<div class="offen">
+  <div class="box-label">Offene Forschungsfragen</div>
+  <ul>
+    <li>Pessels Geburtsort (Miskowitz oder Mühlhausen?)</li>
+    <li>Theresias Sterbedatum und -ort (zwischen 1776 und 1819)</li>
+    <li>Bechinie-Wurzeln im Raum Kácov / Kuttenberg</li>
+    <li>Herrschaftsarchive Amschelberg, Kniowitz, Miskowitz, Krchleby (nicht durchgesehen)</li>
+    <li>Nationalarchiv Prag: Freisassen-Bestände (Bechinie)</li>
+  </ul>
+</div>
+
+<!-- QUELLEN -->
+<div id="quellen" class="q-section open">
+  <div class="q-head">Quellen und Hypothesen — Überblick <span class="q-toggle">▼</span></div>
+  <div class="q-body">
+    <div class="q-grp">
+      <h4>Urkundliche Belege</h4>
+      <ul>
+        <li>Konsistorialakt Pilz057–063 (Get 14.10.1768, Konversion, Wiederheirat; Altersangabe „neunzehnjährig")</li>
+        <li>Taufeintrag Amschelberg 30.10.1768 (Apollonia Jablotzky / Theresia Kosso-Horska)</li>
+        <li>Trauungseintrag Chlum 22.10.1769 (lateinischer Originalwortlaut)</li>
+        <li>Geburtseinträge: Franz Adam *31.8.1770 Krchleby, Anna *1773 †1775 Neustupov, Josef *4.3.1776 Ratměřice</li>
+        <li>Sterbeeintrag Philipp Bechinie †9.1.1819 Pechau</li>
+        <li>Hochzeitseintrag Josef Bechinie 2.2.1803 (Mädchenname „Kopidlansky" der Mutter)</li>
+        <li>Familianten-Heiratskonsense: Markus Rudolph Wesselitschko Nr. 52 (1758), Samuel Rudolph Mühlhausen Nr. 27 (1771)</li>
+        <li>Kaul, paläographische Lesart Wopořaná → Opařany (9.5.2026)</li>
+        <li>Smitka, Auskunft SOA Praha 14.5.2026 (Bechinie als svobodník/Freisasse)</li>
+      </ul>
+    </div>
+    <div class="q-grp">
+      <h4>Sekundärquellen</h4>
+      <ul>
+        <li>Gottfried Sommer, Topographie 1820</li>
+        <li>Tom Weiss, USHMM Digital Archive</li>
+        <li>Zwei Pfarrerbriefe 1936 (Trägermedium der Adelslegende)</li>
+      </ul>
+    </div>
+    <div class="q-grp">
+      <h4>Kauls Hypothesen (Mai 2026)</h4>
+      <ul>
+        <li>Pessels Herkunftsort offen (Miskowitz oder Mühlhausen; mögl. Verwechslung in Müller-Quelle)</li>
+        <li>Markus und Samuel Rudolph sind Pessels Brüder</li>
+        <li>Konversion und Heirat 1768/69 als von Theresia Lipowsky organisiertes „Paket"</li>
+        <li>Kopidlansky-Name (1803) = ungenauer Niederschlag mündlicher Familienerinnerung</li>
+        <li>Auflösung in Herrschaftsarchiven Amschelberg, Kniowitz, Miskowitz, Krchleby; Nationalarchiv Prag</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<footer class="site-footer">
+  Pilz-Familienchronik · Fassung III · 16. Mai 2026 · Wolfgang Pilz<br>
+  Erzählerische Annäherung — keine Biographie, sondern Quellendeutung
+</footer>
+
+<!-- ─── JAVASCRIPT ─────────────────────────────────────────── -->
+<script>
+// Akkordeon: Kapitel
+document.querySelectorAll('.chapter .ch-head').forEach(h => {
+  h.addEventListener('click', () => h.closest('.chapter').classList.toggle('open'));
+});
+// Akkordeon: Quellen
+document.querySelectorAll('.q-head').forEach(h => {
+  h.addEventListener('click', () => h.closest('.q-section').classList.toggle('open'));
+});
+
+// ─── KARTE ────────────────────────────────────────────────
+const map = L.map('map', { scrollWheelZoom: false }).setView([49.6, 14.6], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '© OpenStreetMap', maxZoom: 14
+}).addTo(map);
+
+// MarkerCluster aus CDN laden
+['https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css',
+ 'https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css'
+].forEach(href => {
+  const l = document.createElement('link'); l.rel='stylesheet'; l.href=href;
+  document.head.appendChild(l);
+});
+const clusterScript = document.createElement('script');
+clusterScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js';
+document.head.appendChild(clusterScript);
+
+function mkIcon(color, uncertain) {
+  const style = uncertain
+    ? `width:13px;height:13px;border-radius:50%;background:${color};border:2px dashed #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);opacity:.65`
+    : `width:13px;height:13px;border-radius:50%;background:${color};border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4)`;
+  return L.divIcon({ html: `<div style="${style}"></div>`, className: '', iconAnchor:[6,6], popupAnchor:[0,-10] });
+}
+
+const orte = [
+  { lat:49.3982, lng:14.4795, name:'Opařany (Wopařan)', info:'Herkunftsort der Mutter Anna (Beiname Wopořaná)', color:'#7a4e2d' },
+  { lat:49.2991, lng:14.7456, name:'Myslkovice (Miskowitz)', info:'Möglicher Geburtsort Pessels — offen', color:'#7a4e2d', uncertain:true },
+  { lat:49.4509, lng:14.3600, name:'Milevsko (Mühlhausen)', info:'Möglicher Geburtsort; Familiantenstelle Samuel Rudolph Nr. 27 (1771)', color:'#7a4e2d', uncertain:true },
+  { lat:49.3889, lng:14.3552, name:'Veselíčko (Wesselitschko)', info:'Familiantenstelle Markus Rudolph Nr. 52 (1758)', color:'#7a4e2d' },
+  { lat:49.6541, lng:14.4717, name:'Kosova Hora (Amschelberg)', info:'Ehe mit Abraham Jablotzky 1764–1768 · Get-Übergabe 14.10.1768 · Taufe 30.10.1768', color:'#c0392b' },
+  { lat:49.7017, lng:14.3783, name:'Chlum (Trauungsort 1769)', info:'Trauung Philipp Bechinie × Theresia 22.10.1769 · Im Einflussbereich der Herrschaft Kniowitz', color:'#c0392b' },
+  { lat:49.688333, lng:14.400278, name:'Kinovice (Kniowitz)', info:'Herrschaft Theresia Lipowskys · Pessels mutmaßlicher Schutzort 1768 · Trauzeugen aus Kniowitz', color:'#c0392b' },
+  { lat:49.7340, lng:14.4649, name:'Krchleby (bei Neveklov)', info:'Erste Försterstelle Philipps · Franz Adam *31.8.1770', color:'#4a6741' },
+  { lat:49.6150, lng:14.6986, name:'Neustupov', info:'Anna *1773, †21.8.1775', color:'#4a6741' },
+  { lat:49.6433, lng:14.7562, name:'Ratměřice', info:'Josef Bechinie *4.3.1776 (direkter Vorfahre)', color:'#4a6741' },
+  { lat:49.5024, lng:13.8758, name:'Bělčice (Bielschitz)', info:'Philipp als Jäger erwähnt (Sterbejahr 1819)', color:'#4a6741' },
+  { lat:50.1061, lng:13.7397, name:'Rakovník (Rakonitz)', info:'Zuständigkeit Philipps bei der Trauung 1769', color:'#2471a3' },
+  { lat:52.0914, lng:11.7304, name:'Pechau (bei Magdeburg)', info:'Tod Philipp Bechinie †9.1.1819 · Franz Adam als Holzförster', color:'#7d6608' },
+];
+
+clusterScript.onload = () => {
+  const cluster = L.markerClusterGroup({
+    maxClusterRadius: 40,
+    iconCreateFunction: c => L.divIcon({
+      html: `<div style="width:26px;height:26px;border-radius:50%;background:#7a4e2d;color:#fff;
+             display:flex;align-items:center;justify-content:center;font-size:.76rem;font-weight:700;
+             border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.35)">${c.getChildCount()}</div>`,
+      className:'', iconSize:[26,26]
+    })
+  });
+  orte.forEach(o => {
+    const m = L.marker([o.lat, o.lng], { icon: mkIcon(o.color, o.uncertain) });
+    const badge = o.uncertain ? ' <span style="color:#c0392b;font-size:.73rem">⚠ vorläufig</span>' : '';
+    m.bindPopup(`<strong>${o.name}</strong>${badge}<br><span style="font-size:.81rem;color:#444;white-space:pre-line">${o.info}</span>`, {maxWidth:260});
+    cluster.addLayer(m);
+  });
+  map.addLayer(cluster);
+
+  const weg = [
+    [49.3982,14.4795],[49.2991,14.7456],[49.6541,14.4717],
+    [49.688333,14.400278],[49.7017,14.3783],
+    [49.7340,14.4649],[49.6150,14.6986],[49.6433,14.7562],
+  ];
+  L.polyline(weg, {color:'#c0392b', weight:1.5, opacity:.35, dashArray:'6,5'}).addTo(map);
+};
+setTimeout(() => {
+  if (typeof L.markerClusterGroup !== 'undefined' && !map._clustered) {
+    map._clustered = true; clusterScript.onload && clusterScript.onload();
+  }
+}, 1500);
+</script>
+</body>
+</html>
