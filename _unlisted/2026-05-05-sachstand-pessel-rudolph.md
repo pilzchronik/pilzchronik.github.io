@@ -5,7 +5,7 @@ date: 2026-05-05
 permalink: /sachstand-pessel-rudolph-2026-05/
 eyebrow: "Arbeitsnotiz · nicht öffentlich gelistet"
 status: vorläufig
-stand_vom: 2026-05-12
+stand_vom: 2026-05-18
 betrifft: Band1, DNA, Ahnenforschung
 unlisted: true
 sitemap: false
@@ -14,7 +14,7 @@ description: "Zentralisierte Übersicht zur Forschung über Pessel bat Mosche / 
 
 > **Hinweis zum Status dieser Seite.** Diese Arbeitsnotiz ist nicht in der Werkstatt gelistet, nicht im Suchindex und nicht in Suchmaschinen auffindbar. Sie erreichen sie nur über den direkten Link, den Sie vom Autor erhalten haben. Inhalte sind *vorläufig* und werden laufend fortgeschrieben.
 
-**Stand:** 11. Mai 2026
+**Stand:** 18. Mai 2026
 **Anlass:** Diese Forschung steht nicht für sich allein. Der eigentliche Auslöser ist ein autosomaler DNA-Match zwischen Wolfgang Pilz und **Walter Steven Zeisl** (Wien): 36,57 cM auf zwei Chr-9-Segmenten, davon ein langes zusammenhängendes Stück von 29,1 cM in TG9_0 (~76–96 Mb), ein zweites kleines Segment von 7,5 cM (~2,75–5,32 Mb). Außerhalb von Chromosom 9 teilen Wolfgang und Walter Zeisl nichts; Chr-9-Total und Match-Total sind in diesem Fall identisch (Beleg: GEDmatch One-to-One vom 19.4.2026). Pessel bat Mosche / Apollonia Jablotzkin / Theresia Bechinie (Kekulé-Nr. 69) ist die einzige jüdische Vorfahrin in Wolfgangs bisher belegter Ahnenreihe und damit der naheliegendste Kandidat für eine gemeinsame Wurzel mit Walter Zeisl, dessen Linien ebenfalls in den böhmischen Raum führen. Der Match ist daher der Anlass, weshalb Christina Kaul (Familia Austria) und Patrick Bernhart (JewishGen) die Spur Pessel/Rudolph parallel mitverfolgen.
 **Zweck:** Zentralisierte Übersicht über den Stand der Forschung zur Herkunft Pessels. Dual gedacht — als Arbeitsspeicher für Wolfgang Pilz und als Lese-Vorlage für Mitforschende (insbesondere Christina Kaul).
 
@@ -185,7 +185,7 @@ Aus der DNA-Korrespondenz mit den USA ergibt sich ein zweiter Brückenstrang neb
 - Wolfgang ↔ **Herbert E. Fisher** (†, Kit-Verwalterin posthum: Tochter Susan F. Boyer): 11,09 cM (FTDNA-Direktquelle 12.5.2026, Chr 14, Segment 92,66–97,59 Mb) bzw. 10,3 cM im GEDmatch One-to-One vom 6.4.2026 (dort Chr 13, Position 92.913.176–97.586.348, 1.691 SNPs, 1 Segment) — Plattform-Konflikt offen, FTDNA gilt als primär. Kit T725386 (GEDmatch).
 - Herbert ↔ **Walter Steven Zeisl**: 83 cM (FTDNA, 56 cM auf 6 Segmenten im GEDmatch One-to-One vom 13.4.2026) — Größenordnung Cousinen 2./3. Grades.
 - Zweiter FTDNA-Kit **Lester Fisher** (†, Onkel Susans, Halbbruder/Doppelcousin Herberts — gemeinsamer Vater Louis Fisher, Mütter Minnie und Elsie Vodička waren Schwestern, daher doppelte Vodička-Genetik in beiden Kits). Match-Status zu mir noch ungeprüft.
-- Wolfgang ↔ Walter Zeisl: 29,1 cM auf Chr-9 (GEDmatch, 19.4.2026).
+- Wolfgang ↔ Walter Zeisl: 36,57 cM auf Chr-9, davon Großsegment 29,1 cM in TG9_0 + zweites Segment 7,5 cM (GEDmatch, 19.4.2026; korrigiert 15.5.2026).
 
 **Familientradition Vodička.** Herberts väterliche Linie geht über seine Mutter Minnie Vodička nach Familientradition auf **Samuel Vodička, um 1710, in Veselíčko** zurück. Im 19. Jh. lebt die Familie in **Petrovice u Sedlčan**; Herberts Großmutter (Susans Urgroßmutter) wurde 1942 von dort nach Theresienstadt deportiert und ist dort umgekommen. Quelle der frühen Generationen: **Jiří Fiedler** (†2018), vermittelt durch Kit-Verwalterin Susan F. Boyer; bestätigt über Tom Weiss und Nancy Sinderbrand Deutsch (Familienzweige).
 
@@ -342,7 +342,9 @@ Diese Tabelle wird mit jeder neuen Korrespondenz, jeder Antwort und jedem Befund
 | 11.05.2026 | ← | Christina Kaul | Bauchhypothese A′ Mühlhausen | Paläographisch-strukturelle Erwägung: Moses/Joseph in Mühlhausen †1771, Samuel erbte; Markus älterer Bruder, Pessel jüngere Schwester. Phonetische Brücke Milevsko/Myslkovice. Status: plausibel aber unbelegt — Verifikation an C7. |
 | 11.05.2026 | (intern) | — | VÚA-Anfrage C4 zurückgezogen | Zwei Gründe: VÚA-Matriken setzen erst ~1820 ein (Bechinie *1735, †1819); Pechau-bei-Magdeburg-Hypothese „Militär-Kontext" durch Personenbericht widerlegt. Falls Militärrecherche reaktiviert wird, Kriegsarchiv Wien. §4.1 Zeile 24 mit Rückzugsvermerk versehen. |
 | 11.05.2026 | (intern) | — | Sachstandsbericht dritte Erweiterung | §3.1 als „vier Hypothesen" umstrukturiert, A′ Mühlhausen ergänzt; neuer §3.9 Veselíčko-Konvergenz (Susan Boyer + Vodička, zwei-Veselíčkos-Klärung, Tom Weiss/Schoenberg); §4.3 drei neue Zeilen (Susan, Tom Weiss, Schoenberg) + Müller-Lesart; §5.2 Punkt 6 A′-Verifizierungs-Anker; §6 zwei neue Bullets (A′-Verlauf, Veselíčko-Konvergenz); Werkstatt-Post `/veselicko-zwei-familien-ein-dorf/` als Anlage verlinkt. |
-| | | | | |
+| 15.05.2026 | (intern) | — | Zeisl-DNA-Post korrigiert | cM-Wert im Post `/dna-pilz-zeisl-autosomaler-match/` auf **36,57 cM in zwei Segmenten** präzisiert (29,1 cM Großsegment + 7,5 cM zweites Segment); MRCA-Formulierung angepasst (im aschkenasisch-endogamen Kontext grob 18. Jahrhundert, keine konkrete Generationenzahl mehr). Stand des Posts: 2026-05-15. In dieser Datei: §3.9-Zeile korrigiert. |
+| 15.05.2026 | (intern) | — | Bechinie-Post Jan 2026 auf „überholt" gesetzt | Post `/forschungsstand-bechinie/` (ursprünglich 30.1.2026): Status von „vorläufig" auf **„überholt"** geändert (stand_vom 2026-05-15); Hinweisbox verweist jetzt auf [/theresia-bechinie-forschungsgeschichte/](/theresia-bechinie-forschungsgeschichte/) als aktuellen Forschungsstand. Keine inhaltliche Änderung dieser Datei. |
+| 18.05.2026 | (intern) | — | Sachstandsbericht auf Stand 18.5.2026 gebracht | stand_vom, Stand-Zeile und Fußzeile aktualisiert; §3.9-cM-Wert mit Korrekturvermerk versehen; zwei §7-Zeilen für 15.5.2026 ergänzt. |
 
 ---
 
@@ -361,4 +363,4 @@ Weiterführende Detaildokumente (Konsistorialakt-Transkription, Vergleichsanalys
 
 ---
 
-*Dieser Bericht ist als laufendes Dokument angelegt. Letzte inhaltliche Aktualisierung: 11. Mai 2026. Änderungen werden im Front-Matter-Feld `stand_vom` mitgeführt.*
+*Dieser Bericht ist als laufendes Dokument angelegt. Letzte inhaltliche Aktualisierung: 18. Mai 2026. Änderungen werden im Front-Matter-Feld `stand_vom` mitgeführt.*
