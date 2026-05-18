@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Pessel/Rudolph-Befunde Mai 2026 — Skizze</title>
+<style>
+  :root {
+    --ink: #2a2624;
+    --paper: #faf7f1;
+    --rule: #c9c0ad;
+    --accent: #8b3a3a;
+    --accent-soft: #f0e4d8;
+    --muted: #6b6258;
+    --jew: #c97a3a;
+    --pilz: #4a6b3a;
+    --mahren: #6b3a8b;
+    --berauner: #3a6b8b;
+    --prachiner: #8b6b3a;
+    --tabor: #a04848;
+  }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    max-width: 920px;
+    margin: 2.5rem auto;
+    padding: 0 1.8rem 4rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 0.2rem;
+    letter-spacing: 0.01em;
+  }
+  .subtitle {
+    font-size: 1.05rem;
+    color: var(--muted);
+    font-style: italic;
+    margin: 0 0 1.5rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    color: var(--accent);
+    margin: 2.5rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.3rem;
+    letter-spacing: 0.02em;
+  }
+  h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    margin: 1rem 0 0.5rem;
+  }
+  p { margin: 0.6rem 0; }
+  .disclosure {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 0.9rem 1.1rem;
+    font-size: 0.92rem;
+    margin: 1rem 0 1.8rem;
+    font-style: italic;
+  }
+  .diagram {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1.2rem 1rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .diagram svg { max-width: 100%; height: auto; }
+  .caption {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-top: 0.6rem;
+    font-style: italic;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 0.93rem;
+  }
+  th, td {
+    border: 1px solid var(--rule);
+    padding: 0.55rem 0.7rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--accent-soft);
+    font-weight: 600;
+  }
+  td.lbl { font-weight: 600; white-space: nowrap; }
+  .twocol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin: 1rem 0;
+  }
+  .col {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 1rem 1.2rem;
+  }
+  .col h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--accent);
+  }
+  .col p { font-size: 0.93rem; }
+  .factbox {
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--jew);
+    border-radius: 3px;
+    padding: 0.9rem 1.1rem;
+    margin: 1rem 0;
+    font-size: 0.94rem;
+  }
+  .factbox p { margin: 0.4rem 0; }
+  .factbox .label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.3rem;
+  }
+  blockquote {
+    margin: 1rem 0;
+    padding: 0.7rem 1rem;
+    background: #f3eee5;
+    border-left: 3px solid var(--muted);
+    font-style: italic;
+    font-size: 0.94rem;
+    color: var(--ink);
+  }
+  .back {
+    display: inline-block;
+    margin: 0.2rem 0 1rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--accent);
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  @media (max-width: 640px) {
+    .twocol { grid-template-columns: 1fr; }
+    main { margin: 1.5rem auto; padding: 0 1rem 2rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Pessel/Rudolph-Befunde Mai 2026 — Skizze</h1>
+<p class="subtitle">Visuelle Begleitung zur Forschungsgeschichte „Theresia Bechinie geb. Pessel". Stand: 10. Mai 2026.</p>
+
+<a class="back" href="/bonusseite/theresia-bechinie-forschungsgeschichte/">← zurück zum Forschungsgeschichte-Post</a>
+
+<div class="disclosure">
+Diese Anlage bündelt die Befunde aus dem edierten Hauptverzeichnis Tábor 1799, den Census-Listen Berounsko/Prachensko/Caslavsko 1783–1793, der Allodialherrschafts-Beschreibung Sommer 1842 und der Live-Recherche im SOA-Třeboň-DigiArchiv vom 10. 5. 2026. Sie ergänzt den Sachstand-Bericht <em>„Pessel/Rudolph-Forschung"</em> um eine optische Übersicht; alle Schlussfolgerungen sind dort textuell dokumentiert.
+</div>
+
+<!-- ============== Section 1: Opařany ============== -->
+<h2>1. Opařany — sprachlich und historisch verifiziert</h2>
+
+<p>Im Konsistorialakt 1768 ist Pessels Mutter mit dem Beinamen <em>Wopařaná</em> geführt — die korrekte Frauenform der zeitgenössischen Herrschafts‑/Ortsbezeichnung <strong>Wopořan</strong>, in böhmisch‑lateinischer Verwaltung des 18. Jahrhunderts gebräuchlich.</p>
+
+<table>
+  <tr><td class="lbl">Deutscher Name</td><td><strong>Wopořan</strong> (auch <em>Wopařan</em>) — bis 1923 amtliche deutsche Form</td></tr>
+  <tr><td class="lbl">Allodialherrschaft</td><td>Ab 1727 vereinigt zur Allodialherrschaft <em>Wopořan und Bernarditz</em>; bis 1773 unter dem Prager Jesuiten‑Collegium St. Clemens, dann k.k. Staatsgüter, ab 1825 Fürst Paar</td></tr>
+  <tr><td class="lbl">Jüdische Gemeinde</td><td>1840 neun Israelitenfamilien in der Allodialherrschaft, davon zwei im Dorf Wopořan selbst (Quelle: Sommer, <em>Königreich Böhmen, Bd. 10 Taborer Kreis</em>, Prag 1842, S. 41–46)</td></tr>
+  <tr><td class="lbl">Heutige Lage</td><td>15 km westlich von Tábor, im Tábor‑Kreis; ab 1850 Bezirkshauptmannschaft Milevsko</td></tr>
+  <tr><td class="lbl">Bedeutung</td><td>Annas Geburtsort ist damit erstmals primärquellig verortet — ein konkretes, in der zeitgenössischen Verwaltung dokumentiertes Dorf, nicht eine bloße Lese‑Hypothese.</td></tr>
+</table>
+
+<!-- ============== Section 2: Drei Funde Hauptverzeichnis ============== -->
+<h2>2. Drei Funde im Hauptverzeichnis Tábor 1799</h2>
+
+<p>Das edierte Hauptverzeichnis der jüdischen Familianten des Taborer Kreises (Karls‑Universität Prag, <code>pvh.ff.cuni.cz/zidi/Taborsko_1799.pdf</code>) bringt drei zusammengehörige Befunde:</p>
+
+<table>
+  <tr><th style="width:25%">Person</th><th style="width:25%">Stelle</th><th style="width:25%">Vor‑Wohnort</th><th>Bedeutung</th></tr>
+  <tr>
+    <td><strong>Markus Rudorf</strong> (Nr. 52)</td>
+    <td>Klein Zbieschitzky / Veselíčko Gut, ab <strong>1758</strong></td>
+    <td>„Liebiegitz und Czechtitz Gut Prachiner Kreises"</td>
+    <td>Migration aus dem Prachiner Kreis</td>
+  </tr>
+  <tr>
+    <td><strong>Samuel Rudolph</strong> (Mühlhausen Landes‑Nr. 9 / Dominial‑Nr. 27)</td>
+    <td>Mühlhausen Herrschaft, ab <strong>1771</strong></td>
+    <td>„Czimnasakowetz Lehnhof Berauner Kreises"</td>
+    <td>Migration aus dem Berauner Kreis</td>
+  </tr>
+  <tr>
+    <td><em>Miskowitz Gut</em> (Nr. 26)</td>
+    <td>= Myslkovice (Editoren‑Anmerkung)</td>
+    <td>—</td>
+    <td><strong>Kein Rudolph</strong> 1735–1799 in der gesamten Familianten‑Liste</td>
+  </tr>
+</table>
+
+<p style="font-size:0.9rem;color:var(--muted);">Beide Numerierungen bezeichnen dieselbe Stelle — Bernhart 5.5. zitierte die Landes‑, Vademecum/Kaul 10.5. die Dominial‑Nummer.</p>
+
+<p>Ergänzend: <em>Salomon Adler</em>, 1775 nach Wopořan zugezogen — ebenfalls aus dem Berauner Kreis (Wottitz Herrschaft). Drei Migrationen in den Tábor‑Kreis innerhalb von zwei Jahrzehnten, alle aus den westlich/nordwestlich angrenzenden Kreisen.</p>
+
+<!-- ============== Section 3: Migrationsvektoren ============== -->
+<h2>3. Migrationsvektoren in den Tábor‑Kreis 1750–1780</h2>
+
+<div class="diagram">
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Migrationskarte Berauner/Prachiner/Mähren in den Tábor-Kreis">
+  <!-- Background frame -->
+  <rect x="0" y="0" width="760" height="420" fill="#fff"/>
+
+  <!-- Light Bohemia/Mähren outline (stylized) -->
+  <path d="M 80 110 Q 140 70, 280 80 Q 420 60, 520 90 Q 600 110, 660 150 Q 700 220, 680 300 Q 640 360, 530 380 Q 380 400, 240 380 Q 130 360, 90 300 Q 60 220, 80 110 Z"
+        fill="#f3eee5" stroke="#c9c0ad" stroke-width="1" opacity="0.6"/>
+
+  <!-- Mähren divider (rough) -->
+  <line x1="540" y1="80" x2="560" y2="380" stroke="#c9c0ad" stroke-width="1" stroke-dasharray="4 4" opacity="0.7"/>
+  <text x="600" y="100" font-size="11" fill="#6b6258" font-style="italic">Mähren</text>
+  <text x="200" y="100" font-size="11" fill="#6b6258" font-style="italic">Böhmen</text>
+
+  <!-- Prag (reference) -->
+  <circle cx="320" cy="160" r="5" fill="#2a2624"/>
+  <text x="328" y="156" font-size="11" font-weight="700" fill="#2a2624">Prag</text>
+
+  <!-- Berauner Kreis cluster (incl. Čím) -->
+  <circle cx="270" cy="220" r="32" fill="#3a6b8b" opacity="0.18" stroke="#3a6b8b" stroke-width="1"/>
+  <text x="270" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#3a6b8b">Berauner</text>
+  <text x="270" y="232" text-anchor="middle" font-size="10" fill="#3a6b8b">Kreis</text>
+  <circle cx="288" cy="240" r="3" fill="#3a6b8b"/>
+  <text x="294" y="246" font-size="10" fill="#3a6b8b">Čím</text>
+  <circle cx="245" cy="250" r="3" fill="#3a6b8b"/>
+  <text x="220" y="262" font-size="10" fill="#3a6b8b">Wottitz</text>
+
+  <!-- Prachiner Kreis cluster (Liebiegitz/Čechtice/Přečín) -->
+  <circle cx="200" cy="320" r="36" fill="#8b6b3a" opacity="0.18" stroke="#8b6b3a" stroke-width="1"/>
+  <text x="200" y="316" text-anchor="middle" font-size="11" font-weight="700" fill="#8b6b3a">Prachiner</text>
+  <text x="200" y="332" text-anchor="middle" font-size="10" fill="#8b6b3a">Kreis</text>
+  <circle cx="180" cy="340" r="3" fill="#8b6b3a"/>
+  <text x="125" y="346" font-size="10" fill="#8b6b3a">Liebiegitz/Čechtice</text>
+  <circle cx="220" cy="350" r="3" fill="#8b6b3a"/>
+  <text x="226" y="358" font-size="10" fill="#8b6b3a">Přečín</text>
+
+  <!-- Tábor Kreis cluster -->
+  <circle cx="420" cy="290" r="55" fill="#a04848" opacity="0.15" stroke="#a04848" stroke-width="1.5"/>
+  <text x="420" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#a04848">Tábor‑Kreis</text>
+  <circle cx="395" cy="298" r="3" fill="#a04848"/>
+  <text x="358" y="304" font-size="10" fill="#a04848">Veselíčko</text>
+  <circle cx="420" cy="312" r="3" fill="#a04848"/>
+  <text x="426" y="318" font-size="10" fill="#a04848">Mühlhausen</text>
+  <circle cx="445" cy="298" r="3" fill="#a04848"/>
+  <text x="452" y="304" font-size="10" fill="#a04848">Wopořan</text>
+  <circle cx="450" cy="318" r="3" fill="#a04848"/>
+  <text x="456" y="334" font-size="10" fill="#a04848">Tábor</text>
+
+  <!-- Mähren cluster: Třebíč -->
+  <circle cx="620" cy="240" r="28" fill="#6b3a8b" opacity="0.18" stroke="#6b3a8b" stroke-width="1"/>
+  <text x="620" y="236" text-anchor="middle" font-size="11" font-weight="700" fill="#6b3a8b">Mähren</text>
+  <circle cx="620" cy="252" r="3" fill="#6b3a8b"/>
+  <text x="626" y="258" font-size="10" fill="#6b3a8b">Třebíč</text>
+
+  <!-- Migration arrows -->
+  <!-- Markus Sr. 1758: Prachiner → Tábor (Klein Zbieschitzky) -->
+  <defs>
+    <marker id="arrow-prachiner" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b6b3a"/>
+    </marker>
+    <marker id="arrow-berauner" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3a6b8b"/>
+    </marker>
+    <marker id="arrow-mahren" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b3a8b"/>
+    </marker>
+  </defs>
+
+  <!-- Markus Sr. arrow Prachiner → Tábor -->
+  <path d="M 230 320 Q 320 305, 380 295" stroke="#8b6b3a" stroke-width="2.2" fill="none" marker-end="url(#arrow-prachiner)"/>
+  <text x="280" y="295" font-size="10" font-weight="700" fill="#8b6b3a">Markus Rudorf 1758</text>
+
+  <!-- Samuel arrow Berauner → Tábor (Mühlhausen) -->
+  <path d="M 295 230 Q 360 270, 405 305" stroke="#3a6b8b" stroke-width="2.2" fill="none" marker-end="url(#arrow-berauner)"/>
+  <text x="335" y="248" font-size="10" font-weight="700" fill="#3a6b8b">Samuel Rudolph 1771</text>
+
+  <!-- Salomon Adler arrow Berauner → Tábor (Wopořan) -->
+  <path d="M 280 245 Q 360 280, 440 295" stroke="#3a6b8b" stroke-width="1.4" fill="none" stroke-dasharray="3 3" marker-end="url(#arrow-berauner)"/>
+  <text x="335" y="278" font-size="9.5" font-style="italic" fill="#3a6b8b">Salomon Adler 1775</text>
+
+  <!-- Lazar Rudolfer arrow Mähren → Caslavsko (we put him north of Tábor for clarity) -->
+  <circle cx="430" cy="180" r="3" fill="#6b3a8b"/>
+  <text x="380" y="178" font-size="10" fill="#6b3a8b" font-style="italic">Ledetsch (Caslavsko)</text>
+  <path d="M 600 240 Q 540 210, 450 188" stroke="#6b3a8b" stroke-width="2.2" fill="none" marker-end="url(#arrow-mahren)"/>
+  <text x="490" y="225" font-size="10" font-weight="700" fill="#6b3a8b">Lazar Rudolfer (Třebíč) 1793</text>
+
+  <!-- Title -->
+  <text x="380" y="35" text-anchor="middle" font-size="14" font-weight="700" fill="#2a2624">Rudolph‑Migrationen, 1750–1793</text>
+  <text x="380" y="52" text-anchor="middle" font-size="11" fill="#6b6258" font-style="italic">stilisierte Karte; Dorflagen schematisch</text>
+</svg>
+<div class="caption">Drei voneinander unabhängige Bewegungen in den Tábor‑Kreis hinein zwischen 1758 und 1775 (Markus Rudorf, Samuel Rudolph, Salomon Adler), plus ein Mähren‑Anker durch Lazar Rudolfer (Třebíč → Ledetsch) 1793. Frau Kauls Chmelnyzkyj‑Mährenroute‑These ist damit aus typologischer Plausibilität in einen primärquellig sichtbaren Migrationsstrom übergegangen.</div>
+</div>
+
+<div class="factbox" style="border-left-color:var(--muted);">
+<p class="label">Methodische Anmerkung — Census 1783 / 1793 / 1799</p>
+<p>Die Listen folgen unterschiedlichen Bezugsgrößen: 1783 und 1793 stellen auf den <strong>Wohnort</strong> ab (1793 zusätzlich mit Schutzherrschaft), 1799 dagegen auf die <strong>Familiantenstelle</strong>. Direkter Jahrgang-zu-Jahrgang-Vergleich ist deshalb nicht zulässig — und so erklärt sich, dass Samuel Rudolph 1793 weder in Čím noch in Mühlhausen erscheint, obwohl er an beiden Orten zu verschiedenen Zeiten greifbar ist.</p>
+</div>
+
+<!-- ============== Section 4: Census 1783/1793 ============== -->
+<h2>4. Census 1783 / 1793 — Berufsschicht und Familienstand</h2>
+
+<div class="twocol">
+  <div class="col">
+    <h3>Samuel Rudolph 1783, Gut Czim</h3>
+    <p style="font-size:0.92rem;font-style:italic;color:#6b6258;">Berounsko 1783, Nr. 13</p>
+    <p>„Samuel Rudolff — verheiratet, hat 4 Kinder — <strong>mit Branntwein und Flußsieden</strong> — <strong>17 fl.</strong>"</p>
+    <p>Branntweinpächter und Flußsiederei in Čím — die berufsschicht‑Bestätigung für eine Familie, deren Tochter eine 200 fl.‑Mitgift in eine Heirat einbringen konnte. Sozial obere jüdische Mittelschicht.</p>
+    <p style="font-size:0.9rem;color:var(--muted);">Spurenende 1828: Samuel verliert die Mühlhausener Stelle (Gubernial N. 43354/1829, Verlust‑Erklärung 21.1.1828; nachträgliche Anerkennung N. 23044/1845, „nicht erledigt"). Vier Söhne ebenfalls aus den Listen verschwunden — Kauls Vermutung Auswanderung nach Ungarn ist plausibel, aber nicht urkundlich belegt.</p>
+  </div>
+  <div class="col">
+    <h3>Markus Rudolph 1793, Gut Stalletz</h3>
+    <p style="font-size:0.92rem;font-style:italic;color:#6b6258;">Prachensko 1793, S. 55</p>
+    <p>„Markus Rudolph (7), verheiratet — Gut Stalletz im Taborer Kreis — <em>lebt von Almosen</em>. Weib Barbara. Sohn Philipp (4. Sohn), Tochter Anna in Dienst in Bechin."</p>
+    <p>Bestätigt Frau Kauls Wohnort‑Angabe Stahletz; die Linie ist 1793 verarmt — was zur Sterbenotiz <strong>Markus †19.7.1801</strong> passt. Sein Sohn <strong>Wolf Rudolph</strong> erhält 1801 (nach dem Tod des Vaters) Heiratskonsens und eine Familiantenstelle am <strong>Weinbergamt</strong> mit Hinweis auf Liebigitz/Prachiner Kreis — entweder als Stellenverlegung Veselíčko → Weinbergamt oder als Neuvergabe nach Stellenverlust. Beide Vademecum‑Einträge sind belegt.</p>
+  </div>
+</div>
+
+<p>Zusätzlich, Prachensko 1783, Gut Přečín: <em>Marcus Rudolff jun., neugeborner Sohn Simon</em> — vermutlich Sohn (so Kauls Lesart 10.5.2026), taucht später nicht mehr auf.</p>
+
+<!-- ============== Section 5: 14 Kreise systematisch ============== -->
+<h2>5. Joseph/Mosche Rudolph — gesamt­böhmische Suche</h2>
+
+<p>Das verfügbare Hauptverzeichnis‑Material 1733/1783/1793/1799 für <strong>14 Kreise</strong> (Berounsko, Boleslavsko, Bydzovsko, Caslavsko, Chrudimsko, Hradecko, Klatovsko, Kourimsko, Litomericko, Plzensko, Prachensko, Rakovnicko, Tábor, Žatecko) ist systematisch durchgesehen. <strong>Pessels Vater ist in keiner dieser Listen genannt.</strong></p>
+
+<p>Drei Lesarten bleiben:</p>
+
+<div class="factbox">
+  <p class="label">a — Tod vor 1783</p>
+  <p>Biologisch plausibel; bei Pessels Geburt (~1749) etwa 30 Jahre alt, also 1783 ca. 64. Ein Sterbedatum vor 1783 erklärt die Abwesenheit aus allen Listen.</p>
+</div>
+
+<div class="factbox">
+  <p class="label">b — Verbleib in Mähren</p>
+  <p>Wenn die Familie ihren Schwerpunkt jenseits der böhmisch‑mährischen Grenze hatte, wäre Joseph/Mosche nie in den böhmischen Hauptverzeichnissen aufgetaucht. Pessel wäre dann als junges Mädchen mit dem Vater oder einem Verwandten nach Böhmen gekommen. <em>Diese Lesart ist durch den Lazar‑Rudolfer‑Beleg primärquellig gestützt</em> (siehe nächster Abschnitt).</p>
+</div>
+
+<div class="factbox">
+  <p class="label">c — Nicht‑konsensierter Sohn</p>
+  <p>Möglich, aber dann passt die 200 fl.‑Mitgift Pessels schlecht zum Status. Diese Lesart ist die unwahrscheinlichste.</p>
+</div>
+
+<!-- ============== Section 6: Mährenroute-Anker ============== -->
+<h2>6. Mährenroute‑Anker — Lazar Rudolfer aus Třebíč</h2>
+
+<div class="diagram" style="text-align:left;padding:1.5rem 1.8rem;">
+  <p style="margin-top:0;"><strong>Caslavsko 1793:</strong> „Lazar Rudolfer (14), <strong>Trebetsh in Mähren</strong>, ist wohnhaft in dem obrigkeitlich[en] Judenhaus in der Stadt Ledetsch, sub Nr. C. V — Schulsinger und zugleich Schächter, wovon er sich ernährt."</p>
+  <p>Damit ist die Bewegung Mähren → Böhmen für eine Rudolph‑Person <em>im Quellenmaterial selbst belegt</em>. Třebíč ist eine der bedeutenden mährischen jüdischen Gemeinden mit alten Wurzeln; die typologische Migrations‑Hypothese (nach 1648 von Pale → Mähren → Böhmen) bekommt damit einen konkreten primärquelligen Reflex. Lesart <em>(b)</em> rückt damit in den Vordergrund.</p>
+</div>
+
+<!-- ============== Section 7: Indizienkette ============== -->
+<h2>7. Wo die Indizienkette steht</h2>
+
+<p>Drei voneinander unabhängige Quellenstränge konvergieren:</p>
+
+<table>
+  <tr>
+    <td class="lbl" style="width:30%">Sprachlich‑historisch</td>
+    <td>„Wopařaná" = Wopořan = Allodial­herrschaft seit 1727 (Sommer 1842). Annas Geburtsort primärquellig verortet.</td>
+  </tr>
+  <tr>
+    <td class="lbl">Migrations‑Vektoren</td>
+    <td>Markus Rudorf 1758 (Prachiner → Tábor), Samuel Rudolph 1771 (Berauner → Tábor), Salomon Adler 1775 (Berauner → Wopořan). Drei unabhängige Bewegungen in dieselbe Richtung in zwei Jahrzehnten — kein Zufallsmuster.</td>
+  </tr>
+  <tr>
+    <td class="lbl">Mähren‑Anker</td>
+    <td>Lazar Rudolfer 1793 (Třebíč → Ledetsch). Die Bewegung Mähren → Böhmen für eine Rudolph‑Person ist primärquellig dokumentiert.</td>
+  </tr>
+</table>
+
+<p>Daraus ein konsistentes Bild: Die Rudolph‑Sippe stammt vermutlich aus Mähren, kam wahrscheinlich nach 1648 in den Berauner und Prachiner Kreis, und einzelne Söhne griffen in den Tábor‑Kreis aus. Pessels Mutter Anna kommt aus der Bernarditz‑Wopořan‑Herrschaft. Ihr Vater Joseph/Mosche bleibt — möglicherweise weil er in Mähren blieb oder vor 1783 verstarb.</p>
+
+<!-- ============== Section 8: Was als nächstes ============== -->
+<h2>8. Was als nächstes ansteht</h2>
+
+<table>
+  <tr><th>Aktenpunkt</th><th>Archiv</th><th>Erwartung</th></tr>
+  <tr>
+    <td>Heiratskonsens Markus Rudorf 1758</td>
+    <td>Velkostatek Veselíčko, SOA Třeboň</td>
+    <td>Vater des Bräutigams — Treffer auf Joseph/Mosche?</td>
+  </tr>
+  <tr>
+    <td>Heiratskonsens Samuel Rudolph 1771</td>
+    <td>SOkA Písek, fond OS Milevsko (nicht SOA Třeboň — Velkostatek Milevsko existiert dort nicht; geprüft 10.5.2026)</td>
+    <td>Vater des Bräutigams — derselbe Joseph/Mosche?</td>
+  </tr>
+  <tr>
+    <td>Heiratskonsens Pessel × Abraham 1764</td>
+    <td>Velkostatek Amschelberg, SOA Praha (Sovák)</td>
+    <td>Vater der Braut — direkter Beleg Joseph/Mosche</td>
+  </tr>
+  <tr>
+    <td>Vorgänger Abraham Jablonsky in Amschelberg</td>
+    <td>Velkostatek Amschelberg, SOA Praha</td>
+    <td>Stelle wechselte 1764 — wer war der Vorgänger?</td>
+  </tr>
+  <tr>
+    <td>Mährische Konskriptionen Třebíč / Nikolsburg / Kanitz</td>
+    <td>MZA Brno</td>
+    <td>Familien‑Wurzeln vor der Mährenroute</td>
+  </tr>
+  <tr>
+    <td>Rückfrage an Julius Müller (Toledot)</td>
+    <td>—</td>
+    <td>Quelle der Auskunft „Pessel aus Miskowitz" — Myslkovice oder Mühlhausen?</td>
+  </tr>
+  <tr>
+    <td>Gubernial‑Akten Samuel Rudolph (N. 43354/1829, N. 23044/1845)</td>
+    <td>České gubernium, NA Praha (Anfrage C8 an Dubská 10.5.2026)</td>
+    <td>Hintergrund Verlust der Mühlhausener Stelle</td>
+  </tr>
+</table>
+
+<a class="back" href="/bonusseite/theresia-bechinie-forschungsgeschichte/">← zurück zum Forschungsgeschichte-Post</a>
+
+<footer>
+Quellenbasis: Konsistorialakt 1768 (NA Praha, APA I Karton 1449, Pilz057–063); edierte Hauptverzeichnisse Karls‑Universität Prag (pvh.ff.cuni.cz/zidi/) für 14 böhmische Kreise 1733–1799; Sommer, <em>Königreich Böhmen Bd. 10 Taborer Kreis</em>, Prag 1842; Census Berounsko 1783; Census Prachensko 1783 + 1793; Census Caslavsko 1793; SOA-Třeboň-DigiArchiv (digi.ceskearchivy.cz, Velkostatek Veselíčko NAD 182); Vademecum NAcr (Familiantenbuch Tábor, Eintrag Markus Rudorf und Samuel Rudolph); Kaul‑Korrespondenz 9./10.5.2026.<br>
+Stand der Forschung: 10. Mai 2026. Diese Skizze ist Anlage zur <a href="/bonusseite/theresia-bechinie-forschungsgeschichte/">Forschungsgeschichte „Theresia Bechinie geb. Pessel"</a>.
+</footer>
+
+</main>
+</body>
+</html>
