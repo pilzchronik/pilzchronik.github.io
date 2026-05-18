@@ -373,6 +373,60 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
   margin-top: .5rem;
 }
 
+/* ─── STAMMBAUM ───────────────────────────────────────────── */
+.stammbaum-wrap {
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  margin-bottom: 1.8rem;
+  overflow: hidden;
+  scroll-margin-top: 60px;
+}
+.stammbaum-wrap .box-label {
+  font-size: .69rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent);
+  font-weight: 700;
+  padding: .8rem 1.2rem .4rem;
+  border-bottom: 1px solid var(--border);
+}
+.stammbaum-wrap .stb-canvas {
+  overflow-x: auto;
+  padding: .6rem .8rem .2rem;
+}
+.stammbaum-wrap .stb-canvas svg {
+  display: block;
+  width: 100%;
+  min-width: 960px;
+}
+.stammbaum-wrap .stb-legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: .55rem 1.2rem;
+  border-top: 1px solid var(--border);
+  background: var(--note-bg);
+}
+.stammbaum-wrap .stb-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: .72rem;
+  color: var(--ink-light);
+}
+.stammbaum-wrap .stb-sw {
+  width: 14px; height: 14px;
+  border-radius: 3px;
+  border: 1.5px solid;
+  flex-shrink: 0;
+}
+.stammbaum-wrap .stb-sl {
+  width: 22px; height: 2px;
+  flex-shrink: 0;
+}
+
 /* ─── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 600px) {
   .site-header h1 { font-size: 1.45rem; }
@@ -398,6 +452,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
     <a href="#intro">Einführung</a>
     <a href="#karte">Karte</a>
     <a href="#timeline">Chronologie</a>
+    <a href="#stammbaum">Herkunftsdiagramm</a>
     <a href="#ch1">I · Herkunft</a>
     <a href="#ch2">II · Amschelberg</a>
     <a href="#ch3">III · Kniowitz</a>
@@ -472,14 +527,14 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
     <div class="tl-text"><strong>Trauung</strong> mit Philipp Bechinie in Chlum<br><span class="tl-src">Belegt: Trauungseintrag (lat.)</span></div>
   </div>
   <div class="tl-item">
-    <div class="tl-date">1771</div>
-    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
-    <div class="tl-text">Bruder Samuel Rudolph: Familiantenstelle Mühlhausen Nr. 27<br><span class="tl-src">Belegt: Heiratskonsens</span></div>
-  </div>
-  <div class="tl-item">
     <div class="tl-date">31.8.1770</div>
     <div class="tl-gutter"><div class="tl-dot" style="background:#4a6741"></div><div class="tl-line"></div></div>
     <div class="tl-text">Sohn Franz Adam geboren, Krchleby bei Neveklov</div>
+  </div>
+  <div class="tl-item">
+    <div class="tl-date">1771</div>
+    <div class="tl-gutter"><div class="tl-dot"></div><div class="tl-line"></div></div>
+    <div class="tl-text">Bruder Samuel Rudolph: Familiantenstelle Mühlhausen Nr. 27<br><span class="tl-src">Belegt: Heiratskonsens</span></div>
   </div>
   <div class="tl-item">
     <div class="tl-date">1773–1776</div>
@@ -498,6 +553,204 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
   </div>
 </div><!-- /timeline -->
 
+<!-- HERKUNFTSDIAGRAMM -->
+<div id="stammbaum" class="stammbaum-wrap">
+  <div class="box-label">Herkunftsdiagramm · Zeisel – Rudolph – Pessel · Linien &amp; DNA-Brücke</div>
+  <div class="stb-canvas">
+<svg viewBox="0 0 980 590" xmlns="http://www.w3.org/2000/svg">
+<defs><style>
+  .person rect { stroke-width: 1.5; rx: 6; ry: 6; }
+  .person text { font-size: 11px; font-weight: 600; text-anchor: middle; }
+  .person .sub { font-size: 9px; font-weight: 400; fill: #555; }
+  .zeisel rect  { fill: #dbeafe; stroke: #3b82f6; }
+  .zeisel text  { fill: #1d4ed8; }
+  .rudolph rect { fill: #dcfce7; stroke: #16a34a; }
+  .rudolph text { fill: #15803d; }
+  .pessel rect  { fill: #fef9c3; stroke: #ca8a04; }
+  .pessel text  { fill: #92400e; }
+  .pilz rect    { fill: #fce7f3; stroke: #db2777; }
+  .pilz text    { fill: #9d174d; }
+  .unknown rect { fill: #f3f4f6; stroke: #9ca3af; stroke-dasharray: 4 2; }
+  .unknown text { fill: #6b7280; }
+  .bridge rect  { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+  .bridge text  { fill: #92400e; }
+  .lf { stroke: #94a3b8; stroke-width: 1.5; fill: none; }
+  .ld { stroke: #f59e0b; stroke-width: 2; fill: none; stroke-dasharray: 6 3; }
+  .lm { stroke: #6b7280; stroke-width: 1; fill: none; stroke-dasharray: 3 2; }
+</style></defs>
+
+<!-- TITEL -->
+<text x="490" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#1a1a1a">Zeisel &#183; Rudolph &#183; Pessel &#8212; Linien &amp; DNA-Br&#252;cke</text>
+<text x="490" y="32" text-anchor="middle" font-size="9" fill="#888">Stand 18. 5. 2026 &#183; urkundlich belegt (fett) &#183; Hypothese (gestrichelt)</text>
+<line x1="20" y1="44" x2="960" y2="44" stroke="#e5e7eb" stroke-width="1"/>
+
+<!-- EBENE 1: STAMMVÄTER (y=55) -->
+<g class="person zeisel" transform="translate(55,55)">
+  <rect width="138" height="40"/>
+  <text x="69" y="15">Samuel Zeisl</text>
+  <text x="69" y="27" class="sub">~1689&#8211;1749 &#183; Sov&#237;nky</text>
+  <text x="69" y="37" class="sub">+ Veronika</text>
+</g>
+<g class="person unknown" transform="translate(390,55)">
+  <rect width="150" height="40"/>
+  <text x="75" y="15">Rudolph-Stammvater</text>
+  <text x="75" y="27" class="sub">~1680&#8211;1720 &#183; B&#246;hmen</text>
+  <text x="75" y="37" class="sub">unbekannt &#183; Hypothese</text>
+</g>
+
+<!-- EBENE 2: VEIT + PESSELS VATER (y=145) -->
+<line class="lf" x1="124" y1="95" x2="124" y2="145"/>
+<polyline class="lf" points="124,95 124,118 265,118 265,145"/>
+<line class="lf" x1="465" y1="95" x2="465" y2="145"/>
+<polyline class="lf" points="465,95 465,118 680,118 680,145"/>
+
+<g class="person zeisel" transform="translate(50,145)">
+  <rect width="148" height="52"/>
+  <text x="74" y="15">Veit Friedman Zeisel</text>
+  <text x="74" y="27" class="sub">*~1754 Sov&#237;nky</text>
+  <text x="74" y="37" class="sub">&#8224;3.12.1834 &#183; Y-DNA J1</text>
+  <text x="74" y="49" class="sub">HBF Boleslavsko belegt</text>
+</g>
+<g class="person zeisel" transform="translate(215,145)">
+  <rect width="120" height="40"/>
+  <text x="60" y="15">Mojses Zeisler</text>
+  <text x="60" y="27" class="sub">*~1752 Sov&#237;nky</text>
+  <text x="60" y="37" class="sub">Bruder Veits</text>
+</g>
+<g class="person unknown" transform="translate(385,145)">
+  <rect width="160" height="40"/>
+  <text x="80" y="15">Pessels Vater</text>
+  <text x="80" y="27" class="sub">Rudolf &#183; ~1715&#8211;1755</text>
+  <text x="80" y="37" class="sub">Herkunft offen</text>
+</g>
+<g class="person rudolph" transform="translate(620,145)">
+  <rect width="148" height="40"/>
+  <text x="74" y="15">Rudolf (Vater Rosalias)</text>
+  <text x="74" y="27" class="sub">T&#225;borer Kreis &#183; Čertin?</text>
+  <text x="74" y="37" class="sub">~1730&#8211;1780</text>
+</g>
+
+<!-- EBENE 2b: EHEFRAUEN VEITS (y=235) -->
+<line class="lm" x1="100" y1="197" x2="80" y2="235"/>
+<line class="lm" x1="148" y1="197" x2="490" y2="235"/>
+<line class="lf" x1="694" y1="185" x2="570" y2="235"/>
+
+<g class="person unknown" transform="translate(20,235)">
+  <rect width="138" height="42"/>
+  <text x="69" y="14">Ludmilla Elisabeth</text>
+  <text x="69" y="26" class="sub">j&#252;d. Rivka = &#8222;Rebeka&#8220;</text>
+  <text x="69" y="36" class="sub">&#8224;vor 1799 &#183; Ehe ~1779</text>
+</g>
+<g class="person bridge" transform="translate(415,235)">
+  <rect width="165" height="42"/>
+  <text x="82" y="14">Rachel Rosalia Rudolf</text>
+  <text x="82" y="26" class="sub">aus Čertin / Herr. Kolodeje</text>
+  <text x="82" y="36" class="sub">T&#225;borer Kreis &#183; Ehe II ~1797</text>
+</g>
+<text x="596" y="252" font-size="9" fill="#b45309" font-weight="700">&#8592; DNA-Br&#252;cke:</text>
+<text x="596" y="262" font-size="9" fill="#b45309">Rudolph-Blut</text>
+<text x="596" y="272" font-size="9" fill="#b45309">in Zeisel-Linie</text>
+<text x="5" y="248" font-size="9" fill="#6b7280">Ehe I (~1779)</text>
+<text x="362" y="240" font-size="9" fill="#b45309" font-weight="600">Ehe II (~1797)</text>
+
+<!-- EBENE 3: KINDER VEITS (y=330) -->
+<polyline class="lf" points="89,277 89,305 55,305 55,330"/>
+<polyline class="lf" points="89,277 89,305 165,305 165,330"/>
+<polyline class="lf" points="89,277 89,305 278,305 278,330"/>
+
+<g class="person zeisel" transform="translate(20,330)">
+  <rect width="100" height="38"/>
+  <text x="50" y="14">Samuel Zeisl</text>
+  <text x="50" y="25" class="sub">*1783</text>
+  <text x="50" y="35" class="sub">Kind v. Ludmilla</text>
+</g>
+<g class="person zeisel" transform="translate(130,330)">
+  <rect width="120" height="38"/>
+  <text x="60" y="14">Sara Rosalia</text>
+  <text x="60" y="25" class="sub">&#8594; &#8734; Fischer</text>
+  <text x="60" y="35" class="sub">DNA Cluster B &#9889;</text>
+</g>
+<g class="person zeisel" transform="translate(260,330)">
+  <rect width="108" height="38"/>
+  <text x="54" y="14">Maria Fischer</text>
+  <text x="54" y="25" class="sub">&#8594; &#8734; Fischer</text>
+  <text x="54" y="35" class="sub">DNA Cluster B &#9889;</text>
+</g>
+
+<line class="lf" x1="497" y1="277" x2="497" y2="330"/>
+<g class="person zeisel" transform="translate(415,330)">
+  <rect width="165" height="52"/>
+  <text x="82" y="15">Moses J. Zeisel</text>
+  <text x="82" y="27" class="sub">*1799 Podkov&#225;&#328;</text>
+  <text x="82" y="37" class="sub">&#8224;20.9.1857 Podkov&#225;&#328;</text>
+  <text x="82" y="49" class="sub">&#8734; Barbara Pick (Tochter Elias Pick)</text>
+</g>
+
+<!-- PESSEL / THERESIA (y=285) -->
+<polyline class="lf" points="465,185 465,220 800,220 800,285"/>
+<g class="person pessel" transform="translate(715,285)">
+  <rect width="175" height="64"/>
+  <text x="87" y="15">Pessel = Theresia</text>
+  <text x="87" y="27" class="sub">*~1749 (Myslkovice?)</text>
+  <text x="87" y="37" class="sub">Konversion 1768</text>
+  <text x="87" y="48" class="sub">&#8734;1 Abraham Jablotzky</text>
+  <text x="87" y="60" class="sub">&#8734;2 Philipp Bechinie</text>
+</g>
+
+<!-- EBENE 4: KARL + NACHFAHREN (y=435) -->
+<line class="lf" x1="497" y1="382" x2="497" y2="435"/>
+<g class="person zeisel" transform="translate(415,435)">
+  <rect width="165" height="40"/>
+  <text x="82" y="14">Karl Zeisel</text>
+  <text x="82" y="26" class="sub">*4. Okt. 1842</text>
+  <text x="82" y="37" class="sub">Matrik Jungbunzlau &#10003;</text>
+</g>
+<line class="lf" x1="802" y1="349" x2="802" y2="435"/>
+<g class="person pilz" transform="translate(715,435)">
+  <rect width="175" height="40"/>
+  <text x="87" y="14">Wolfgang Pilz</text>
+  <text x="87" y="26" class="sub">Y-DNA J2b2-L283</text>
+  <text x="87" y="37" class="sub">Nachfahre &#252;ber Bechinie-Linie</text>
+</g>
+
+<!-- EBENE 5: WALTER ZEISL / DNA-MATCH (y=525) -->
+<line class="lf" x1="497" y1="475" x2="497" y2="525"/>
+<g class="person zeisel" transform="translate(415,525)">
+  <rect width="165" height="40"/>
+  <text x="82" y="14">Walter Zeisl u. a.</text>
+  <text x="82" y="26" class="sub">DNA-Matches</text>
+  <text x="82" y="37" class="sub">36,57 cM Chr. 9 (GEDmatch)</text>
+</g>
+<path class="ld" d="M 580,545 C 650,545 650,455 715,455"/>
+<text x="648" y="512" text-anchor="middle" font-size="9" fill="#d97706" font-weight="600">&#9889; DNA-Verbindung</text>
+<text x="648" y="522" text-anchor="middle" font-size="9" fill="#d97706">gemeinsamer Rudolph-Vorfahre</text>
+
+<!-- HBF RUDOLPH-ÄSTE (rechts oben) -->
+<rect x="836" y="60" width="136" height="84" rx="4" fill="none" stroke="#16a34a" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="904" y="74" text-anchor="middle" font-size="9" fill="#15803d" font-weight="600">HBF-Rudolphs (belegt):</text>
+<text x="904" y="86" text-anchor="middle" font-size="9" fill="#15803d">Samuel &#183; Berouner Kreis</text>
+<text x="904" y="97" text-anchor="middle" font-size="9" fill="#15803d">Samuel &#183; M&#252;hlhausen (T&#225;bor)</text>
+<text x="904" y="108" text-anchor="middle" font-size="9" fill="#15803d">Isaac &#183; Chyky (T&#225;bor) &#9733;</text>
+<text x="904" y="119" text-anchor="middle" font-size="9" fill="#15803d">Markus &#183; Veselíčko</text>
+<text x="904" y="132" text-anchor="middle" font-size="8" fill="#888">&#9733; geogr. nah zu Čertin</text>
+
+<!-- Halbgeschwister-Label -->
+<text x="8" y="320" font-size="9" fill="#6b7280" font-style="italic">Halbgeschwister</text>
+<text x="8" y="330" font-size="9" fill="#6b7280" font-style="italic">(Ehe I / Ludmilla)</text>
+</svg>
+  </div>
+  <div class="stb-legend">
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#dbeafe;border-color:#3b82f6"></span>Zeisel-Linie</span>
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#dcfce7;border-color:#16a34a"></span>Rudolph-Familie</span>
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#fef9c3;border-color:#ca8a04"></span>Pessel / Theresia</span>
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#fce7f3;border-color:#db2777"></span>Wolfgang / Pilz</span>
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#fef3c7;border-color:#d97706;border-width:2px"></span>DNA-Brückenfrau</span>
+    <span class="stb-legend-item"><span class="stb-sw" style="background:#f3f4f6;border-color:#9ca3af;border-style:dashed"></span>unbekannt / Hypothese</span>
+    <span class="stb-legend-item"><span class="stb-sl" style="background:#f59e0b"></span>DNA-Verbindung</span>
+    <span class="stb-legend-item"><span class="stb-sl" style="background:#94a3b8"></span>Abstammung belegt</span>
+    <span class="stb-legend-item"><span class="stb-sl" style="background:#6b7280"></span>Ehe (gestrichelt)</span>
+  </div>
+</div>
 
 <!-- ─── KAPITEL ─────────────────────────────────────────────── -->
 
@@ -611,7 +864,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
     <div class="ch-num">V</div>
     <div class="ch-ta">
       <div class="ch-title">Philipp Bechinie</div>
-      <div class="ch-src">Svobodník/Freisasse lt. Smitka SOA Praha 14.5.2026 · Adelslegende: zwei Pfarrerbriefe 1939, heute unwahrscheinlich</div>
+      <div class="ch-src">Svobodník/Freisasse lt. Smitka SOA Praha 14.5.2026 · Adelslegende: zwei Pfarrerbriefe 1936, heute unwahrscheinlich</div>
     </div>
     <div class="ch-toggle">▼</div>
   </div>
@@ -622,11 +875,11 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
       <span class="tag h">Unsicher: Adelslegende (schwindet)</span>
     </div>
     <p>Philipp Bechinie wurde am <strong>2. Mai 1735</strong> geboren. Wo, ist nicht gesichert. Bei der Trauung 1769 wird er „aus der Königlichen Stadt Rakonitz" (tsch. Rakovník) geführt — das war seine damalige Zuständigkeit, nicht notwendig sein Geburtsort. Jiří Smitka vom Staatlichen Gebietsarchiv Prag (SOA Praha, 14. Mai 2026) hat festgestellt: Philipp war ein <em>svobodný člověk</em>, ein Freisasse — also ein freier Mann, der nicht der herrschaftlichen Jurisdiktion unterstand. Nach Smitkas Einschätzung gehörte er nicht in den böhmischen Adel. Der Freisassen-Stamm der Bechinie könnte seine Wurzeln im Kuttenberger Raum haben, in der Umgebung von Kácov — der Name taucht dort in den Pfarrmatriken häufig auf, Philipp selbst ließ sich jedoch nicht nachweisen.</p>
-    <p>Diese Auskunft rückt eine in der Familie lange tradierte Lesart ins Wanken. In zwei Briefen eines böhmischen Pfarrers aus dem Jahr 1939, der noch Nachfahren der Familie kannte, war Philipp als verarmter Adliger beschrieben worden — über Jahrzehnte die Hauptquelle der Adelsthese. Sie ist nicht widerlegt im engsten Sinn; Smitkas Auskunft formuliert ihre Einschätzung vorsichtig. Aber die Adelstheorie schwindet mit wachsender Aktenlage deutlich in Richtung Freisassenstand.</p>
-    <p>In den späteren Akten erscheint Philipp als Jäger oder Förster — 1819, dem Jahr seines Todes, als Jäger in Bielschitz (tsch. Bělčice). Die Familie hatte sich also auf forstlichen Dienst eingerichtet, und Philipp dürfte schon zur Zeit der Heirat in diesem Fach gestanden haben.</p>
+    <p>Diese Auskunft rückt eine in der Familie lange tradierte Lesart ins Wanken. In zwei Briefen eines böhmischen Pfarrers aus dem Jahr 1936, der noch Nachfahren der Familie kannte, war Philipp als verarmter Adliger beschrieben worden — über Jahrzehnte die Hauptquelle der Adelsthese. Sie ist nicht widerlegt im engsten Sinn; Smitkas Auskunft formuliert ihre Einschätzung vorsichtig. Aber die Adelstheorie schwindet mit wachsender Aktenlage deutlich in Richtung Freisassenstand.</p>
+    <p>In den späteren Akten erscheint Philipp als Jäger oder Förster — im Sterbeeintrag vom 9. Januar 1819 wird er als Jäger in Bielschitz (tsch. Bělčice) geführt. Er starb jedoch nicht dort, sondern auf Besuch bei seinem Sohn Franz Adam in Pechau bei Magdeburg, wo dieser als Holzförster Anstellung gefunden hatte. Die Familie hatte sich also auf forstlichen Dienst eingerichtet, und Philipp dürfte schon zur Zeit der Heirat in diesem Fach gestanden haben.</p>
     <div class="anm">
       <div class="anm-label">Anmerkung · Quellenbasis</div>
-      <p>Belegt: *2.5.1735, †9.1.1819 Pechau, Jäger/Förster, Komorní Hrádek. Smitkas Auskunft 14.5.2026 ist aktuelle Forschungsmeinung, vorsichtig formuliert. Die ältere Adelslegende, gestützt auf Pfarrerbriefe 1939, ist damit nicht endgültig erledigt, aber unwahrscheinlich geworden.</p>
+      <p>Belegt: *2.5.1735, †9.1.1819 in Pechau bei Magdeburg (auf Besuch bei Sohn Franz Adam); laut Sterbeeintrag zuletzt als Jäger in Bielschitz/Bělčice tätig. Smitkas Auskunft 14.5.2026 ist aktuelle Forschungsmeinung, vorsichtig formuliert. Die ältere Adelslegende, gestützt auf Pfarrerbriefe 1936, ist damit nicht endgültig erledigt, aber unwahrscheinlich geworden.</p>
     </div>
   </div>
 </div>
@@ -760,7 +1013,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
       <ul>
         <li>Gottfried Sommer, Topographie 1820</li>
         <li>Tom Weiss, USHMM Digital Archive</li>
-        <li>Zwei Pfarrerbriefe 1939 (Trägermedium der Adelslegende)</li>
+        <li>Zwei Pfarrerbriefe 1936 (Trägermedium der Adelslegende)</li>
       </ul>
     </div>
     <div class="q-grp">
@@ -829,9 +1082,9 @@ const orte = [
   { lat:49.7340, lng:14.4649, name:'Krchleby (bei Neveklov)', info:'Erste Försterstelle Philipps · Franz Adam *31.8.1770', color:'#4a6741' },
   { lat:49.6150, lng:14.6986, name:'Neustupov', info:'Anna *1773, †21.8.1775', color:'#4a6741' },
   { lat:49.6433, lng:14.7562, name:'Ratměřice', info:'Josef Bechinie *4.3.1776 (direkter Vorfahre)', color:'#4a6741' },
-  { lat:49.8433, lng:14.8083, name:'Bělčice (Bielschitz)', info:'Philipp als Jäger erwähnt (Sterbejahr 1819)', color:'#4a6741' },
+  { lat:49.8433, lng:14.8083, name:'Bělčice (Bielschitz)', info:'Philipps letzter Dienstort · im Sterbeeintrag 9.1.1819 als Jäger hier geführt\n(gestorben auf Besuch bei Sohn Franz Adam in Pechau)', color:'#4a6741' },
   { lat:50.1061, lng:13.7397, name:'Rakovník (Rakonitz)', info:'Zuständigkeit Philipps bei der Trauung 1769', color:'#2471a3' },
-  { lat:52.0914, lng:11.7304, name:'Pechau (bei Magdeburg)', info:'Tod Philipp Bechinie †9.1.1819 · Franz Adam als Holzförster', color:'#7d6608' },
+  { lat:52.0914, lng:11.7304, name:'Pechau (bei Magdeburg)', info:'Tod Philipp Bechinie †9.1.1819 · gestorben auf Besuch bei Sohn Franz Adam (Holzförster) · laut Sterbeeintrag zuletzt Jäger in Bělčice', color:'#7d6608' },
 ];
 
 clusterScript.onload = () => {
