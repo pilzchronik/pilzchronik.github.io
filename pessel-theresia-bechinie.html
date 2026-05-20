@@ -435,6 +435,17 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
   .tl-date { min-width: 4rem; font-size: .72rem; }
   #map { height: 300px; }
 }
+
+/* ─── DRUCK ───────────────────────────────────────────────── */
+@media print {
+  .stammbaum-wrap .stb-canvas {
+    overflow: visible;
+  }
+  .stammbaum-wrap .stb-canvas svg {
+    min-width: unset;
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
@@ -1014,7 +1025,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); line-
       <ul>
         <li>Gottfried Sommer, Topographie 1820</li>
         <li>Tom Weiss, USHMM Digital Archive</li>
-        <li>Zwei Pfarrerbriefe 1936 (Trägermedium der Adelslegende)</li>
+        <li>Zwei Pfarrerbriefe 1939 (Trägermedium der Adelslegende)</li>
       </ul>
     </div>
     <div class="q-grp">
