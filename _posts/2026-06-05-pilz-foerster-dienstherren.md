@@ -38,7 +38,7 @@ Dienst. Die folgende Übersicht zeigt, wer wann in wessen Wäldern stand.
 
 | Person                               | Zeitraum (ca.)   | Dienstherr / Herrschaft                  | Dienstorte                                  |
 | ------------------------------------ | ---------------- | ---------------------------------------- | ------------------------------------------- |
-| **Josef Bechinie** (1776–1865)       | ab ca.&nbsp;1836 | Fürsten zu Khevenhüller-Metsch           | Ladendorf, Kammerburg                       |
+| **Josef Bechinie** (1776–1865)       | ab ca.&nbsp;1803 | Grafen von Waldstein (bis ca.&nbsp;1809), danach Fürsten zu Khevenhüller-Metsch | Ladendorf, Kammerburg                       |
 | **Vinzenz Franz Pilz** (1788–1863)   | 19.&nbsp;Jh.     | Grafen von Buquoy                        | Platten, Rothenhaus, Eidlitz                |
 | **Vinzenz Wenzel Pilz** (1811–1879)  | ab 1830          | Khevenhüller-Metsch & Buquoy             | Ondrejow, Neudörfl, Stolzenhain, Köstelwald |
 | **Vinzenz Pilz** (1830–1883)         | ab 1851          | Grafen von Buquoy (Rothenhaus/Preßnitz)  | Weipert, Stolzenhain, Preßnitz              |
@@ -54,8 +54,10 @@ Theresia Obersthofmeister und führte über Jahrzehnte das Zeremonialtagebuch de
 Hofes, eine der wichtigsten Quellen zur Hofgeschichte des 18.&nbsp;Jahrhunderts.
 
 In den Diensten der Khevenhüller standen Josef Bechinie und Vinzenz Wenzel Pilz, vor allem
-auf der böhmischen Herrschaft Kammerburg (Komorní Hrádek). Im Sterbeeintrag wird Josef
-Bechinie als pensionierter Revierförster des Fürsten Khevenhüller bezeichnet — ein Hinweis
+auf der böhmischen Herrschaft Kammerburg (Komorní Hrádek). Nach vorläufigem Stand diente
+Josef Bechinie dort zunächst (ca.&nbsp;1803–1809) den **Grafen von Waldstein**; mit dem
+Herrschaftswechsel kam er in die Dienste der Khevenhüller-Metsch. Im Sterbeeintrag wird er
+als pensionierter Revierförster des Fürsten Khevenhüller bezeichnet — ein Hinweis
 auf jahrzehntelangen Dienst.
 
 ## Die Grafen von Buquoy
@@ -134,6 +136,8 @@ Vertrauensverhältnis.
 
 - Verifizierung einzelner Dienstzeiten durch Herrschaftsakten (SOA Litoměřice für die
   Buquoy-Bestände; Khevenhüller-Familienarchiv für Kammerburg)
+- Der Übergang Waldstein → Khevenhüller auf Kammerburg (um 1809) und die Dienstdaten
+  Josef Bechinies — vorläufig nach interner Herrschaften-Notiz, durch Akten zu verifizieren
 - Der genaue Dienstherr der Khevenhüller für die Zeit ab ca.&nbsp;1830
 - Dienstvertrag bzw. Pensionsbescheid Alois Johann Pilz (Revertera) — liegt vor, noch
   einzuordnen
@@ -147,4 +151,5 @@ Vertrauensverhältnis.
 - Brief Alois Vjekoslav Pilz zur slawonischen Dienstzeit
 - Todesanzeige Magdalena Lechner, Daruvar 1880
 - de.wikipedia.org: Peter Revertera-Salandra, Revertera-Salandra
-- Herrschaften-Notiz und Excel-Übersicht (intern), Stand Januar 2026
+- Systematische Übersicht der Herrschaften und Archive (mit Excel-Tabelle):
+  [Herrschaften als Schlüssel zur Familiengeschichte]({{ '/herrschaften-und-archive/' | relative_url }})

@@ -47,9 +47,14 @@ geführt — entstammte dem Geschlecht der **Malovec von Malovice** (deutsch: Ma
 einem der ältesten Adelsgeschlechter Böhmens, erstmals 1313 urkundlich belegt. Die
 weibliche Namensform „Malovizova" bezeichnet die Herkunft aus dieser Familie; durch Heirat
 war sie Lipparsky von Lipparov geworden und Herrin auf dem Gut Kniowitz (Kňovice). Sie ist
-in den Quellen die beständigste der adeligen Bezugspersonen — sie tritt 1768 persönlich als
-Patin auf, und ihre Familie erscheint auch in den Jahren danach im Umfeld der
-Bechinie-Linie.
+in den Quellen die beständigste der adeligen Bezugspersonen — und ihre Patronage endete
+nicht mit der Taufe: Bei der Hochzeit Philipps und Theresias 1769 in Chlum traten ein
+Beamter und eine Kammerfrau ihres Gutes Kňovice als Zeugen auf, und bei der Taufe des
+Sohnes Franz Adam in Krchleby 1770/71 stand ihr Sohn Anton (im Eintrag „v. Lipovský") als
+Zeuge — Pate war dort Graf Franz Adam v. Duhalski-Bozek, der damalige Dienstherr Philipp
+Bechinies. Diese über drei Jahre und mehrere Orte wiederkehrende Begleitung ist
+bemerkenswert und macht das Umfeld des Gutes Kňovice zum vielversprechendsten Ansatz für
+weitere Archivrecherchen.
 
 ## Die Zeugen
 

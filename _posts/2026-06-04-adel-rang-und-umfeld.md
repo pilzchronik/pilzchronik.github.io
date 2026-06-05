@@ -116,8 +116,11 @@ auffindbar sein kann.
 Damit ist der Rahmen gesteckt. In den folgenden Beiträgen geht es um die konkreten
 Personen: um die Grafen und Fürsten, in deren Dienst die Förster der Familie Pilz standen,
 und um den außergewöhnlich gut belegten Taufakt von 1768, bei dem der Vater des späteren
-Feldmarschalls Radetzky als Pate einer jüdischen Konvertitin auftrat. Der Adel war für
-unsere Vorfahren nie eine Frage der Abstammung — aber er war ihr ständiger Begleiter.
+Feldmarschalls Radetzky als Pate einer jüdischen Konvertitin auftrat. Eine systematische
+Übersicht der Herrschaften und der Archive, in denen ihre Akten liegen, gibt der Beitrag
+[Herrschaften als Schlüssel zur Familiengeschichte]({{ '/herrschaften-und-archive/' | relative_url }}).
+Der Adel war für unsere Vorfahren nie eine Frage der Abstammung — aber er war ihr
+ständiger Begleiter.
 
 ## Quellen
 
