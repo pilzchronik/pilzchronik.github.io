@@ -139,7 +139,7 @@ Nicht alle Herrschaftszuordnungen konnten eindeutig ermittelt werden:
 |-----|---------|------------------|
 | Blumenau | Zuordnung zu Pfaffroda/Dörnthal oder Amt Lauterstein unklar | Archivrecherche Amt Lauterstein |
 | Radmierschitz | Besitzer 1776: Graf Chotek oder Kořenský v. Terešov? | Urbare / Kirchenbücher prüfen |
-| Rakonitz | Als Herkunft Philipp Bechinie genannt, kein Taufeintrag | Matrikensuche erweitern |
+| Rakonitz | Als Herkunft Philipp Bechinie genannt, kein Taufeintrag. Rakonitz war seit 1588 königliche Stadt — unterstand also keiner patrimonialen Herrschaft | Matrikensuche erweitern; statt Herrschaftsakten kommen städtische Bestände in Frage |
 | Herkunft Theresia („Pessel") | Myslkovice nach Prüfung geschwächt; drei Lesarten offen | Siehe [Forschungsgeschichte]({{ '/theresia-bechinie-forschungsgeschichte/' | relative_url }}) |
 
 ## Warum Herrschaftsunterlagen?
