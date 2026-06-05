@@ -87,9 +87,15 @@ und Revierförster arbeiteten.
 | Ort | Zeitraum | Vorfahren | Herrschaft / Besitzer im Zeitraum |
 |-----|----------|-----------|-----------------------------------|
 | Kallich (Kalek) | 1772–1820 | Carl Gottlob Pilz, Friedrich August Pilz | Rothenhaus / Rottenhan → Buquoy |
-| Stolzenhain (Háj) | ab 1840 | Vinzenz Pilz (Revierförster) | Rothenhaus / Buquoy |
-| Kupferberg (Měděnec) | 1864–1879 | Vinzenz Pilz (Revierförster) | Hauenstein-Pressnitz / Buquoy |
+| Stolzenhain (Háj) | ab ca. 1840 | Vinzenz (Wenzel) Pilz (1811–1879) und Vinzenz Pilz (1830–1883), Revierförster | Rothenhaus / Buquoy |
+| Köstelwald (Kotlina) und Haßberger Revier, bei Kupferberg (Měděnec) | 1864–1879 | Vinzenz (Wenzel) Pilz (1811–1879), Revierförster | Hauenstein-Pressnitz / Buquoy |
 | Schmiedeberg (Kovářská) | 17.–20. Jh. | Familien Hofmann, Theumer | Pressnitz / Buquoy |
+
+Zur Vorsicht bei den Namen: Drei aufeinanderfolgende Förster-Generationen hießen
+Vinzenz — Vinzenz Franz Pilz (1788–1863), Vinzenz (Wenzel) Pilz (1811–1879) und
+Vinzenz Pilz (1830–1883). Die Lebensdaten in den Tabellen halten sie auseinander;
+die vollständigen Dienststationen stehen im
+[Förster-Beitrag]({{ '/pilz-foerster-dienstherren/' | relative_url }}).
 
 **Archivhinweis:** Die Buquoy-Bestände (Forstwirtschaft, Personalakten, Dienstverträge)
 lagern im **Státní oblastní archiv v Litoměřicích** (Leitmeritz) und im **Nationalarchiv

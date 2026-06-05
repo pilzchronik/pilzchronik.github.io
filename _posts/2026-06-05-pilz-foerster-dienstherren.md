@@ -40,8 +40,8 @@ Dienst. Die folgende Übersicht zeigt, wer wann in wessen Wäldern stand.
 | ------------------------------------ | ---------------- | ---------------------------------------- | ------------------------------------------- |
 | **Josef Bechinie** (1776–1865)       | ab ca.&nbsp;1803 | Grafen von Waldstein (bis ca.&nbsp;1809), danach Fürsten zu Khevenhüller-Metsch | Ladendorf, Kammerburg                       |
 | **Vinzenz Franz Pilz** (1788–1863)   | 19.&nbsp;Jh.     | Grafen von Buquoy                        | Platten, Rothenhaus, Eidlitz                |
-| **Vinzenz Wenzel Pilz** (1811–1879)  | ab 1830          | Khevenhüller-Metsch & Buquoy             | Ondrejow, Neudörfl, Stolzenhain, Köstelwald |
-| **Vinzenz Pilz** (1830–1883)         | ab 1851          | Grafen von Buquoy (Rothenhaus/Preßnitz)  | Weipert, Stolzenhain, Preßnitz              |
+| **Vinzenz (Wenzel) Pilz** (1811–1879) | ab 1830          | Khevenhüller-Metsch & Buquoy             | Hlaváčov (bei Ondřejov), Neudörfl, Haßberg, Stolzenhain, Köstelwald |
+| **Vinzenz Pilz** (1830–1883)         | ab 1851          | Grafen von Buquoy (Rothenhaus/Preßnitz)  | Weipert, Böhmisch Hammer, Stolzenhain, Preßnitz |
 | **Alois Vjekoslav Pilz** (1834–1894) | ab 1858          | Lechner / Tüköry von Algyest (Slawonien) | Badljevina, Ivanovo Polje, Negoslavci       |
 | **Alois Johann Pilz** (1876–1950)    | 1901–1936        | Grafen Revertera-Salandra                | Waldhäuser, Helfenberg, Schloss Aigen       |
 | **Erhard Pilz** (1912–2002)          | 20.&nbsp;Jh.     | Staatsforste (ehem. adelige Reviere)     | Kainisch                                    |
