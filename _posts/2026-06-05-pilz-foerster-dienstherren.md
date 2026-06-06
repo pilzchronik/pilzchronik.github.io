@@ -123,7 +123,9 @@ Gestapohaft. Gemeinsam mit seiner Frau gründete er die Widerstandsgruppe Helfen
 über einen Schwager mit der Verschwörergruppe um Stauffenberg in Verbindung stand.
 
 In diese Konstellation gehört auch eine Tatsache, die die Chronik nicht verschweigt
-(Band&nbsp;1, S.&nbsp;172&nbsp;ff.): Alois Johann Pilz trat der NSDAP bei. Die Chronik
+(Band&nbsp;1, S.&nbsp;172&nbsp;ff.): Alois Johann Pilz trat der NSDAP bei. Der
+Aufnahmeantrag datiert vom 20.&nbsp;Oktober 1939, die Mitgliedschaft wurde zum
+1.&nbsp;April 1940 wirksam (Mitgliedsnummer 7&nbsp;570&nbsp;159). Die Chronik
 ordnet seinen Fall — im Unterschied zu anderen Mitgliedschaften in der Familie — als
 späte, pragmatische Schutzmaßnahme ein: Der erhaltene Pensions- und Aufsichtsvertrag
 zeigt, dass er auch im Ruhestand mit der Beaufsichtigung der Revertera'schen Besitzungen
@@ -141,12 +143,11 @@ Vertrauensverhältnis.
 - Der genaue Dienstherr der Khevenhüller für die Zeit ab ca.&nbsp;1830
 - Dienstvertrag bzw. Pensionsbescheid Alois Johann Pilz (Revertera) — liegt vor, noch
   einzuordnen
-- Beitrittsjahr und Beleg (Mitgliedskartei?) für die NSDAP-Mitgliedschaft des Alois
-  Johann Pilz — die Chronik nennt für ihn, anders als für die übrigen Fälle, kein Datum
 
 ## Quellen
 
 - Pilz-Chronik, Band&nbsp;1, S.&nbsp;172&nbsp;ff. (NSDAP-Mitgliedschaften in der Familie)
+- Bundesarchiv Berlin-Lichterfelde, Auskunft vom 20.&nbsp;Mai 2025 (Zeichen DR&nbsp;3 – 2025/KW13#0271#0001), Karteikarte aus der NSDAP-Mitgliederkartei (Aufnahmeantrag 20.&nbsp;Oktober 1939, Mitglied zum 1.&nbsp;April 1940, Nr. 7&nbsp;570&nbsp;159)
 - Eigene Aufstellung der Förster-Stationen (Matrikeneinträge, Familienüberlieferung)
 - Brief Alois Vjekoslav Pilz zur slawonischen Dienstzeit
 - Todesanzeige Magdalena Lechner, Daruvar 1880
