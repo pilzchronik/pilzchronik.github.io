@@ -111,8 +111,12 @@ Schwarzenberg. Der oberösterreichische Zweig besitzt bis heute Schloss Helfenbe
 Schloss Aigen bei Salzburg kam 1922 eben über diese Schwarzenberg-Verbindung als
 Erbschaft an die Familie.
 
-In ihren Diensten stand Alois Johann Pilz von 1901 bis 1936 — zunächst als Förster, zuletzt
-im Bereich von Helfenberg und Schloss Aigen. Sein Dienstherr in dieser Zeit war Graf
+In ihren Diensten stand Alois Johann Pilz von 1901 bis 1936 — zunächst als Förster,
+zuletzt als Oberförster in Waldhäusern. Zum 1.&nbsp;September 1936 trat er in den
+Ruhestand; die gräfliche Güterdirektion Helfenberg stellte ihm dazu eine Wohnung im
+Schloss Aigen samt Beleuchtung und Brennholz-Deputat unentgeltlich zur Verfügung und
+übertrug ihm zugleich die Beaufsichtigung des Gutes Aigen gegen eine monatliche
+Aufwandsentschädigung. Sein Dienstherr in dieser Zeit war Graf
 Nikolaus Revertera-Salandra (1866–1951), k.&nbsp;u.&nbsp;k. Diplomat und Vertrauter Kaiser
 Karls&nbsp;I., der die Güter der Familie in Oberösterreich, Salzburg und Südböhmen
 verwaltete.
@@ -131,10 +135,12 @@ In diese Konstellation gehört auch eine Tatsache, die die Chronik nicht verschw
 Aufnahmeantrag datiert vom 20.&nbsp;Oktober 1939, die Mitgliedschaft wurde zum
 1.&nbsp;April 1940 wirksam (Mitgliedsnummer 7&nbsp;570&nbsp;159). Die Chronik
 ordnet seinen Fall — im Unterschied zu anderen Mitgliedschaften in der Familie — als
-späte, pragmatische Schutzmaßnahme ein: Der erhaltene Pensions- und Aufsichtsvertrag
-zeigt, dass er auch im Ruhestand mit der Beaufsichtigung der Revertera'schen Besitzungen
-betraut blieb — in einer Zeit, in der seine Dienstherren als ehemalige
-Ständestaat-Funktionäre unter dem Argwohn des Regimes standen. Auch die erhaltene
+späte, pragmatische Schutzmaßnahme ein: Das erhaltene Schreiben der gräflichen
+Güterdirektion vom 22.&nbsp;Mai 1936 — der Diktion nach fast ein Bescheid, der Sache nach
+die Zusage eines privaten Dienstgebers — zeigt, dass ihm mit dem Übertritt in den
+Ruhestand die Beaufsichtigung des Gutes Aigen übertragen wurde. Diese Betrauung reichte
+in die Zeit hinein, in der seine Dienstherren als ehemalige Ständestaat-Funktionäre
+unter dem Argwohn des Regimes standen. Auch die erhaltene
 Postkarte Graf Reverteras an ihn (Chronik, Bild&nbsp;108) bezeugt das fortbestehende
 Vertrauensverhältnis.
 
@@ -145,9 +151,6 @@ Vertrauensverhältnis.
 - Der Übergang Waldstein → Khevenhüller auf Kammerburg (um 1809) und die Dienstdaten
   Josef Bechinies — vorläufig nach interner Herrschaften-Notiz, durch Akten zu verifizieren
 - Der genaue Dienstherr der Khevenhüller für die Zeit ab ca.&nbsp;1830
-- Dienstvertrag bzw. Pensionsbescheid Alois Johann Pilz (Revertera) — liegt vor, noch
-  einzuordnen
-
 ## Quellen
 
 - Pilz-Chronik, Band&nbsp;1, S.&nbsp;172&nbsp;ff. (NSDAP-Mitgliedschaften in der Familie)
@@ -155,6 +158,9 @@ Vertrauensverhältnis.
 - Eigene Aufstellung der Förster-Stationen (Matrikeneinträge, Familienüberlieferung)
 - Brief Alois Vjekoslav Pilz zur slawonischen Dienstzeit
 - Todesanzeige Magdalena Lechner, Daruvar 1880
+- Schreiben der gräfl. Revertera'schen Güterdirektion Helfenberg an Alois Pilz,
+  Oberförster in Waldhäusern, vom 22.&nbsp;Mai 1936 (Ruhestand zum 1.&nbsp;September 1936,
+  Wohnung im Schloss Aigen, Übertragung der Gutsaufsicht; Original im Familienarchiv)
 - de.wikipedia.org: Peter Revertera-Salandra, Revertera-Salandra
 - Systematische Übersicht der Herrschaften und Archive (mit Excel-Tabelle):
   [Herrschaften als Schlüssel zur Familiengeschichte]({{ '/herrschaften-und-archive/' | relative_url }})
