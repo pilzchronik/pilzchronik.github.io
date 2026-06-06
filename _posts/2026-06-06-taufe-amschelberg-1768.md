@@ -52,8 +52,9 @@ in den Quellen die beständigste der adeligen Bezugspersonen — und ihre Patron
 nicht mit der Taufe: Bei der Hochzeit Philipps und Theresias 1769 in Chlum traten ein
 Beamter und eine Kammerfrau ihres Gutes Kňovice als Zeugen auf, und bei der Taufe des
 Sohnes Franz Adam in Krchleby 1770/71 stand ihr Sohn Anton (im Eintrag „v. Lipovský") als
-Zeuge — Pate war dort Graf Franz Adam v. Duhalski-Bozek, der damalige Dienstherr Philipp
-Bechinies. Diese über drei Jahre und mehrere Orte wiederkehrende Begleitung ist
+Zeuge — Pate war dort ein Graf, den das Register als „Franz Adam v. Duhalski-Bozek"
+führt; dahinter dürfte sich eine Schreibvariante des böhmischen Grafengeschlechts
+Bořek-Dohalský z Dohalic verbergen. Diese über drei Jahre und mehrere Orte wiederkehrende Begleitung ist
 bemerkenswert und macht das Umfeld des Gutes Kňovice zum vielversprechendsten Ansatz für
 weitere Archivrecherchen.
 
@@ -119,6 +120,11 @@ eines der berühmtesten Soldaten der Monarchie.
   steht aus.
 - Das genaue Verwandtschaftsverhältnis innerhalb der anwesenden Radetzky-/Hradeczki-Linie
   (Rothradek gegenüber dem Stammsitz Třebnice) ist noch zu klären.
+- Die Identität des Krchleby-Paten „Franz Adam v. Duhalski-Bozek" (Lesart Bořek-Dohalský?)
+  und sein Verhältnis zur Familie Bechinie sind ungeklärt; eine ältere interne Notiz
+  vermutete ein Dienstverhältnis, wofür es keinen Beleg gibt. Auch Philipp Bechinies
+  eigener Rechtsstand (Smitkas Freisassen-Einschätzung ist eine fachliche Lesart, kein
+  Beweis) und die Herrschaftszugehörigkeit von Krchleby um 1770 sind offen.
 
 ## Quellen
 

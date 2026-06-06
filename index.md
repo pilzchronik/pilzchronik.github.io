@@ -40,7 +40,7 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
     <a class="bwm-primary-item" href="{{ '/werkstatt/' | relative_url }}">
       <span class="bwm-primary-item-num">01</span>
       <h2 class="bwm-primary-item-title">Werkstatt</h2>
-      <p class="bwm-primary-item-body">Korrekturen und neue Funde seit Drucklegung &mdash; Errata, Quellenfunde, offene Fragen.</p>
+      <p class="bwm-primary-item-body">Korrekturen und neue Funde seit Drucklegung &mdash; Errata, Quellenfunde, offene Fragen. Jeder Beitrag ist eine Momentaufnahme: Er gibt den Forschungsstand seines Datums wieder, nicht das letzte Wort.</p>
       <span class="bwm-primary-item-cta">Eintr&auml;ge ansehen &rarr;</span>
     </a>
 
