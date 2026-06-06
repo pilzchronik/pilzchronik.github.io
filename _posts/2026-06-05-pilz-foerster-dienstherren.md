@@ -23,7 +23,8 @@ betrifft: Band1, Band2
 
 ## Der Förster — zwischen Bürgertum und Herrschaft
 
-Über vier Generationen waren die Männer der Familie Pilz Forstbeamte. Das war keine
+Über vier Generationen waren die Männer der Familie Pilz Förster in herrschaftlichen
+Diensten. Das war keine
 beliebige Anstellung: Der Revierförster stand in der Verwaltungshierarchie einer
 Herrschaft hoch und angesehen — er trug Verantwortung für Wald, Wild und herrschaftliches
 Eigentum, oft über ganze Reviere. Gesellschaftlich gehörte er jedoch zum Bürgertum, nicht
