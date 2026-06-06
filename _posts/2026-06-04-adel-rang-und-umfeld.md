@@ -56,6 +56,17 @@ Es gibt nicht *eine* Gliederung des Adels, sondern mehrere, die quer zueinander 
 Eine Familie kann zugleich niederadelig, briefadelig und Verdienstadel sein — das ist kein
 Widerspruch.
 
+Eine Einschränkung ist dabei wichtig: Die scharfe Grenze zwischen Hochadel und niederem
+Adel mit ihren Ebenbürtigkeitsregeln war vor allem ein deutsches Rechtskonstrukt für die
+standesherrlichen, ehemals reichsunmittelbaren Häuser. In Österreich war die praktisch
+wirksame Kategorie die Zugehörigkeit zur „ersten Gesellschaft" — Hoffähigkeit per
+Ahnenprobe, alter Stamm, Großgrundbesitz, Hofämter. Alte Grafenhäuser gehörten voll dazu,
+und ihre Heiratskreise überschnitten sich mit denen der Fürstenhäuser: Die Grafen
+Revertera-Salandra etwa, Dienstherren unserer Förster, heirateten eine Aldobrandini und
+eine Prinzessin zu Schwarzenberg. Streng durchgesetzt wurde Ebenbürtigkeit nur in
+regierenden Häusern — das bekannteste Beispiel ist Franz Ferdinand, den das habsburgische
+Hausgesetz 1900 zur morganatischen Ehe mit der „nur" gräflichen Sophie Chotek zwang.
+
 ## Das Rangschema
 
 Die folgende Stufenleiter ist die idealtypische mitteleuropäische Ordnung. In der Praxis

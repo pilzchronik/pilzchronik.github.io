@@ -103,9 +103,12 @@ darauf hindeutet, dass dieser Zusammenhang den Beteiligten je bewusst war.
 ## Die Grafen Revertera-Salandra
 
 Die Familie stammt ursprünglich aus Katalonien und gelangte 1771 aus dem neapolitanischen
-Salandra nach Österreich. Sie war katholisch, konservativ und kaisertreu. Der
-oberösterreichische Zweig besitzt bis heute Schloss Helfenberg; Schloss Aigen bei Salzburg
-kam 1922 durch Erbschaft von den Fürsten Schwarzenberg an die Familie.
+Salandra nach Österreich. Sie war katholisch, konservativ und kaisertreu — und obwohl
+„nur" gräflich, heiratete sie in die höchsten Kreise: Nikolaus Revertera ehelichte Donna
+Olimpia Aldobrandini dei principi di Sarsina, sein Sohn Peter 1917 Prinzessin Ida zu
+Schwarzenberg. Der oberösterreichische Zweig besitzt bis heute Schloss Helfenberg;
+Schloss Aigen bei Salzburg kam 1922 eben über diese Schwarzenberg-Verbindung als
+Erbschaft an die Familie.
 
 In ihren Diensten stand Alois Johann Pilz von 1901 bis 1936 — zunächst als Förster, zuletzt
 im Bereich von Helfenberg und Schloss Aigen. Sein Dienstherr in dieser Zeit war Graf
