@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Im Dienst des Hochadels — die Förster der Familie Pilz und ihre Dienstherren"
+title: "Im Dienst der Grafen und Fürsten — die Förster der Familie Pilz und ihre Dienstherren"
 date: 2026-06-05
 permalink: /pilz-foerster-dienstherren/
 tags: [Adel, Hintergrund, Forstwesen, Buquoy, Khevenhüller, Revertera]

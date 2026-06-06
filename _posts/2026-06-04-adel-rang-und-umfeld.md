@@ -29,7 +29,7 @@ Und doch zieht sich der Adel durch unsere Geschichte — nur eben nicht als Herk
 sondern als Umfeld. Unsere Vorfahren begegneten dem Adel in zwei sehr verschiedenen
 Rollen: als **Dienstherren**, in deren Forsten die Förster der Familie Pilz über vier
 Generationen ihren Dienst versahen, und ein einziges Mal als **Taufpaten** — bei der
-Konversion der jüdischen Vorfahrin Pessel im Jahr 1768, die der örtliche Hochadel
+Konversion der jüdischen Vorfahrin Pessel im Jahr 1768, die der örtliche Adel
 begleitete.
 
 Adel ist für uns also kein Stammbaum-Thema, sondern ein soziales. Wer die Welt verstehen
@@ -85,10 +85,10 @@ im 19.&nbsp;Jahrhundert oft das Vermögen und nicht das Protokoll.
 Drei Punkte sind für die böhmischen Quellen, mit denen wir es zu tun haben, besonders
 wichtig:
 
-**Der böhmische Hochadel war grundbesitzend und mächtig.** Nach der Schlacht am Weißen
+**Der grundbesitzende böhmische Adel war mächtig.** Nach der Schlacht am Weißen
 Berg (1620) wurde ein großer Teil des protestantischen alten Adels enteignet oder
 vertrieben; an seine Stelle traten habsburgtreue, katholische und teils neu zugewanderte
-Familien. Der böhmische Hochadel des 18.&nbsp;Jahrhunderts — also genau jener, dem unsere
+Familien. Der grundbesitzende böhmische Adel des 18.&nbsp;Jahrhunderts — also genau jener, dem unsere
 Förster dienten — ist zu erheblichen Teilen ein Ergebnis dieser Umschichtung.
 
 **Die tschechische Namensform „z".** Bei alten böhmischen Familien begegnet das

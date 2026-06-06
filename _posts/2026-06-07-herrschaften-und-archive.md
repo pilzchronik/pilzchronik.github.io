@@ -28,8 +28,8 @@ zweite, oft übersehene Quellenebene.
 
 Die folgende Übersicht dokumentiert systematisch, welchen Herrschaften unsere Vorfahren
 unterstanden — und macht damit sichtbar, **welche Archive als Nächstes durchsucht werden
-können**. Sie ergänzt zwei Beiträge dieser Serie: [Im Dienst des Hochadels — die Förster
-der Familie Pilz und ihre Dienstherren]({{ '/pilz-foerster-dienstherren/' | relative_url }})
+können**. Sie ergänzt zwei Beiträge dieser Serie: [Im Dienst der Grafen und Fürsten — die
+Förster der Familie Pilz und ihre Dienstherren]({{ '/pilz-foerster-dienstherren/' | relative_url }})
 (wer wann in wessen Diensten stand) und [Adel — warum das Thema]({{ '/adel-rang-und-umfeld/' | relative_url }})
 (das Rangschema dahinter).
 
@@ -107,8 +107,8 @@ Die mittelböhmische Bechinie-Linie zeigt ein anderes Muster: Hier traten zwisch
 und 1771 wiederholt Angehörige des Adels als Taufpaten und Zeugen auf — von der Konversion
 1768 in Amschelberg über die Hochzeit 1769 in Chlum bis zur Taufe des Franz Adam in
 Krchleby 1770/71. Die Personen und die Einordnung dieser Patronage sind an kanonischer
-Stelle dargestellt: [Amschelberg 1768 — als der Hochadel an einem jüdischen Taufbecken
-stand]({{ '/taufe-amschelberg-1768/' | relative_url }}). Die Dienstherren-Folge der
+Stelle dargestellt: [Amschelberg 1768 — als der örtliche Adel an einem jüdischen
+Taufbecken stand]({{ '/taufe-amschelberg-1768/' | relative_url }}). Die Dienstherren-Folge der
 Förster (Waldstein, Khevenhüller, Buquoy, Revertera) steht im
 [Förster-Beitrag]({{ '/pilz-foerster-dienstherren/' | relative_url }}).
 

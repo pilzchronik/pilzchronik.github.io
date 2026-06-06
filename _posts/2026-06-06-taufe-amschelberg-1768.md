@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Amschelberg 1768 — als der Hochadel an einem jüdischen Taufbecken stand"
+title: "Amschelberg 1768 — als der örtliche Adel an einem jüdischen Taufbecken stand"
 date: 2026-06-06
 permalink: /taufe-amschelberg-1768/
 tags: [Adel, Hintergrund, Bechinie, Pessel, Amschelberg, Radetzky]
 excerpt: >
   Bei der Taufe der jüdischen Vorfahrin Pessel 1768 in Amschelberg traten vier
-  hochadelige Personen als Patin und Zeugen auf — darunter die Eltern des späteren
+  adelige Personen als Patin und Zeugen auf — darunter die Eltern des späteren
   Feldmarschalls Radetzky. Wer waren diese Menschen, und was bedeutete ihre Anwesenheit
   wirklich?
 status: vorläufig
@@ -26,7 +26,8 @@ betrifft: Band1, Band2
 Die meisten Taufen in einem böhmischen Landpfarrbuch des 18.&nbsp;Jahrhunderts verzeichnen
 einfache Paten aus der Nachbarschaft. Der Eintrag vom 30.&nbsp;Oktober 1768 in der
 Pfarrkirche St.&nbsp;Bartholomäus zu Amschelberg (Kosova Hora) ist anders: An diesem Tag
-versammelte sich der örtliche Hochadel, um die Taufe einer Jüdin zu bezeugen.
+versammelte sich der örtliche Adel — Grafen, eine Freiin, eine Herrin auf Kňovice —,
+um die Taufe einer Jüdin zu bezeugen.
 
 Getauft wurde Apollonia Jablonsky, die nach vier Ehejahren von ihrem Mann geflohen war und
 um Aufnahme in die katholische Kirche bat; sie erhielt den Namen Teresia mit dem Beinamen
@@ -99,7 +100,7 @@ dem Tod des Vaters.
 
 ## Was die Anwesenheit bedeutet — und was nicht
 
-Es liegt nahe, in dieser Versammlung des Hochadels einen Beweis für besondere Nähe oder gar
+Es liegt nahe, in dieser Versammlung des Adels einen Beweis für besondere Nähe oder gar
 Verwandtschaft zu sehen. Diese Deutung führt in die Irre. Es war im 18.&nbsp;Jahrhundert
 verbreitete Praxis, dass der örtliche Adel bei der Konversion von Juden oder Protestanten
 die Patenschaft übernahm — als sichtbares Zeichen des konfessionellen Triumphs, nicht als
