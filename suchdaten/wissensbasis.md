@@ -7671,7 +7671,7 @@ Die Untergruppe J2b2-L283 ist ein spezifischer Zweig innerhalb der Haplogruppe J
 
 ### Der spezifische Zweig J-FT159612
 
-Der Zweig J-FT159612 ist eine sehr junge und spezifische Unterlinie innerhalb der Haplogruppe J2b2-L283. Diese Linie ist durch den SNP FT159612 definiert und entstand in der Neuzeit (17.-18. Jahrhundert).
+Der Zweig J-FT159612 ist eine junge und eng eingegrenzte Unterlinie innerhalb der Haplogruppe J2b2-L283. Diese Linie ist durch den SNP FT159612 definiert; ihre terminale Verzweigung datiert FamilyTreeDNA auf etwa 200 v. Chr. Der übergeordnete Knoten heißt bei FamilyTreeDNA J-FT161874 (bei YFull J-Y183338) und wird auf etwa 600 v. Chr. datiert. Die Endposition J-FT159612 ist bei FamilyTreeDNA positiv getestet („Confirmed Haplogroup", Kit 330595); auf der Plattform YFull (Probe YF66621) ist mit J-Y183338 der übergeordnete Knoten erreicht, weil die definierende Mutation FT159612 dort nicht positiv abgelesen wurde.
 
 ### Korrektur früherer Annahmen
 

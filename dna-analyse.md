@@ -32,6 +32,12 @@ Diese Linie vererbt sich vom Vater auf den Sohn. Sie definiert den Stammbaum der
 
 Die übergeordnete Haplogruppe J entstand vor ca. 40.000 Jahren im Nahen Osten. Der Zweig J2 bildete sich während der letzten Eiszeit in Anatolien heraus und breitete sich anschließend über den Balkan nach Mitteleuropa aus. Unser spezifischer Unterzweig J-FT159612 ist selten und entstand vermutlich im 1. Jahrtausend v. Chr.
 
+### Stand der Auswertung (Juni 2026)
+
+Eine zweite Auswertung bei YFull (Probe YF66621, eingeordnet als Region Pilsen) hat die väterliche Endposition bestätigt: J-FT159612 ist bei FamilyTreeDNA positiv getestet, nicht bloß vermutet. YFull führt denselben Zweig unter dem Namen J-Y183338 und löst eine Ebene weniger fein auf; FamilyTreeDNA setzt einen Schritt tiefer an. Es sind also nicht zwei Ergebnisse, sondern zwei Auflösungen derselben Linie. Der übergeordnete Knoten verweist bei FamilyTreeDNA auf Tschechien, Polen und England — ein Befund, der die böhmische Verwurzelung der Vaterlinie stützt.
+
+Der nächste verwandte Y-Match (YFull-Kennung YF099964, entferntester Vorfahr József Csuzdi, um 1760, Ungarn) teilt mit uns den letzten gemeinsamen Vater erst vor rund 1.950 Jahren — vor jeder Urkundengenealogie. Eine konkrete Stammbaumbrücke ergibt sich daraus nicht. Warum zwei seriöse Labore dieselbe Linie unterschiedlich tief einordnen, ist eigens beschrieben in [Warum FamilyTreeDNA und YFull mich unterschiedlich einordnen]({{ '/y-dna-ftdna-yfull/' | relative_url }}).
+
 ## Mütterliche Linie (mtDNA)
 
 Diese Linie folgt der reinen Mutterfolge (Mutter der Mutter der Mutter…).

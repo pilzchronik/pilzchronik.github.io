@@ -4,7 +4,7 @@ title: "Theresia Bechinie geb. Pessel — Forschungsgeschichte und derzeitiger S
 date: 2026-05-10
 permalink: /theresia-bechinie-forschungsgeschichte/
 status: vorläufig
-stand_vom: 2026-05-12
+stand_vom: 2026-06-08
 betrifft: Band2, DNA, Ahnenforschung
 ersetzt: /update-bruecken-match-amschelberg/
 tags: [Bechinie, Pessel, Rudolph, Kopidlansky, Jablonsky, Amschelberg, Kosova Hora, Myslkovice, Konversion, Konsistorialakt, DNA, Zeisl]
@@ -139,7 +139,7 @@ Aus den 29 cM ergibt sich kein präziser Generationenabstand, nur ein Wahrschein
 
 Eine methodisch wichtige Klarstellung: Walter Zeisl und ich teilen **keine** Übereinstimmung auf der Y-DNA.
 
-Y-DNA wird vom Vater an den Sohn weitergegeben, ungemischt. Sie folgt der direkten männlichen Linie — bei mir der Pilz-Linie zurück über Alois Anton Pilz und Alois Johann Pilz ins böhmische Erzgebirge (Y-Haplogruppe J-FT159612, weltweit nur drei bekannte Big-Y-Träger); bei Walter Zeisl der Zeisel-Linie mit aschkenasisch-jüdischem Hintergrund. Diese beiden Y-Linien sind nicht miteinander verwandt.
+Y-DNA wird vom Vater an den Sohn weitergegeben, ungemischt. Sie folgt der direkten männlichen Linie — bei mir der Pilz-Linie zurück über Alois Anton Pilz und Alois Johann Pilz ins böhmische Erzgebirge (Y-Haplogruppe J-FT159612; in der Big-Y-Datenbank von FamilyTreeDNA nur drei bekannte Träger, auf der Plattform YFull ein einziger naher Match — siehe [Warum FamilyTreeDNA und YFull mich unterschiedlich einordnen]({{ '/y-dna-ftdna-yfull/' | relative_url }})); bei Walter Zeisl der Zeisel-Linie mit aschkenasisch-jüdischem Hintergrund. Diese beiden Y-Linien sind nicht miteinander verwandt.
 
 Dass wir uns *autosomal* trotzdem auf einem Segment treffen, kann nur eines bedeuten: Der gemeinsame Vorfahre liegt nicht auf der direkten männlichen Linie, sondern muss über mindestens eine Frau in die Pilz-Sippschaft eingeheiratet haben. Das Muster passt zu Theresia: eine Frau aus jüdischer Familie heiratet in eine christliche Linie und gibt ihren autosomalen Anteil an alle Nachkommen weiter — der Y-Strang läuft unbeeindruckt davon weiter.
 
