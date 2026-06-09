@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Amschelberg 1768 — als der örtliche Adel an einem jüdischen Taufbecken stand"
+title: "Amschelberg 1768 — als der örtliche Adel an einem Taufbecken stand?"
 date: 2026-06-06
 permalink: /taufe-amschelberg-1768/
 tags: [Adel, Hintergrund, Bechinie, Pessel, Amschelberg, Radetzky]

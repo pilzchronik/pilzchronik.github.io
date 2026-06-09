@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Warum FamilyTreeDNA und YFull mich unterschiedlich einordnen"
+title: "Warum FamilyTreeDNA und YFull dieselbe Linie unterschiedlich einordnen"
 date: 2026-06-08
 permalink: /y-dna-ftdna-yfull/
 tags: [DNA, Y-DNA, Haplogruppe, Hintergrund]

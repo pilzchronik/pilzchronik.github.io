@@ -4,15 +4,17 @@ title: "Stationen meines Vaters im Krieg 1940–1945"
 date: 2025-12-16
 permalink: /wehrmacht-stationen/
 status: aktuell
-stand_vom: 2026-05-03
+stand_vom: 2026-06-09
 author: Wolfgang Pilz
 categories: [Ahnenforschung, Zweiter Weltkrieg]
 tags: [Detailanalyse, Wehrmacht, Alois Pilz]
-description: "Wo Alois Pilz, der Vater des Verfassers, zwischen 1940 und 1945 als Wehrmachtssoldat eingesetzt war: fünf Einheiten, sechs Stationen, eine Schnittmenge mit dem Verbrechensraum seiner Einheit (Kaukasus 1942/43)."
-excerpt: "Die fünf dokumentierten Einheiten meines Vaters Alois Pilz zwischen 1940 und 1945, geografisch und zeitlich eingeordnet — mit der Phase, in der seine Einheit Kriegsverbrechen beging und er nachweislich vor Ort war."
+description: "Wo Alois Pilz, der Vater des Verfassers, zwischen 1940 und 1945 als Wehrmachtssoldat eingesetzt war: fünf Einheiten, sechs Stationen, geografisch und zeitlich eingeordnet — mit revidiertem Kaukasus-Abschnitt."
+excerpt: "Die fünf dokumentierten Einheiten meines Vaters Alois Pilz zwischen 1940 und 1945, geografisch und zeitlich eingeordnet — mit der einzigen Phase, in der er einem Kampfverband angehörte (Kaukasus 1942/43)."
 ---
 
 **16. Dezember 2025 | Wolfgang Pilz**
+
+> **Hinweis:** Der Kaukasus-Abschnitt dieses Beitrags wurde im Juni 2026 revidiert — zur Begründung siehe → [Wie sich ein Irrtum einschlich]({{ '/revision-kriegsstationen-vater/' | relative_url }}).
 
 ---
 
@@ -52,7 +54,7 @@ Was die Archive belegen, wird im Folgenden als Fakt dargestellt. Was sich nicht 
 - Familienüberlieferung: Medizinische Befunde, Lazarettaufenthalte
 
 **Sekundärquellen:**
-- Ahlfen/Moll: *Blutiges Edelweiß – Die 1. Gebirgs-Division im Zweiten Weltkrieg*
+- Hermann Frank Meyer: *Blutiges Edelweiß. Die 1. Gebirgs-Division im Zweiten Weltkrieg.* Ch. Links Verlag, Berlin 2008
 - Lexikon der Wehrmacht (Online-Datenbank)
 - Yad Vashem: Dokumentation Lemberg-Pogrom
 - Institut für Zeitgeschichte: Wehrmacht und Kriegsverbrechen
@@ -95,7 +97,7 @@ Im Wehrkreis XVIII bestand zur selben Zeit das Stalag XVIII C in Markt Pongau, i
 | Standort | Lienz, Osttirol | Markt Pongau / Lager |
 | Funktion | Ausbildung, Verwaltung | Operative Bewachung |
 
-Auch die zeitliche Zuordnung trägt: Während des Pogroms von Lemberg (30. Juni – 3. Juli 1941), an dem Teile der 1. Gebirgs-Division beteiligt waren, befand sich mein Vater in Lienz beim Ersatzheer. Die Versetzung zum Gebirgsjäger-Regiment 99 erfolgte mehr als ein Jahr später.
+Auch die zeitliche Zuordnung trägt: Während des Pogroms von Lemberg (30. Juni – 3. Juli 1941), in dessen Umfeld der Stadtkommandant der 1. Gebirgs-Division (Wintergerst) eine Rolle spielte — die Morde verübten Einsatzgruppe C und ukrainische Milizen —, befand sich mein Vater in Lienz beim Ersatzheer. Die Versetzung zum Gebirgsjäger-Regiment 99 erfolgte mehr als ein Jahr später.
 
 ---
 
@@ -115,17 +117,17 @@ Eine Zwischenstation, die die Versetzung zum kämpfenden Regiment vorbereitete. 
 **Einheitstyp:** Kampfeinheit der 1. Gebirgs-Division  
 **Einsatzraum:** Kaukasus (Operation „Edelweiß")
 
-Hier ist die Schnittmenge: die Phase, in der die Einheit meines Vaters nachweislich Kriegsverbrechen beging und er nachweislich vor Ort war.
+Dies ist die einzige Phase, in der mein Vater einem Kampfverband angehörte.
 
-Das Gebirgsjäger-Regiment 99 war Teil der Heeresgruppe A und führte die Offensive in den Kaukasus. Dokumentiert sind:
+Das Gebirgsjäger-Regiment 99 gehörte zur Heeresgruppe A und führte die Offensive in den Kaukasus. Sein Einsatz war jedoch ganz überwiegend hochalpiner Gefechtsbetrieb gegen reguläre Verbände der Roten Armee: Einnahme der Hochpässe, Kämpfe im Elbrus-Gebiet, der gescheiterte Durchbruch Richtung Tuapse, schwere eigene Verluste, schließlich der Rückzug in den Kuban-Brückenkopf bis Januar 1943.
 
-- „Bandenbekämpfung": Geiselerschießungen und „Sühnemaßnahmen" gegen die Zivilbevölkerung
-- „Kommissarbefehl": sofortige Erschießung gefangener Politkommissare der Roten Armee
-- „Verbrannte Erde": Niederbrennen von Dörfern, Wegnahme von Vieh und Nahrungsmitteln
-- Holocaust im Kaukasus: Beteiligung an der Aufspürung und Ermordung von Juden, besonders der „Bergjuden" bei Naltschik
-- Rückzugspolitik 1943: systematische Zerstörung der Lebensgrundlagen, Zwangsverschleppung
+Für das GJR 99 — und erst recht für die 2. Kompanie — sind in diesem Raum und Zeitraum keine konkreten Kriegsverbrechen dokumentiert:
 
-Was sich aus den Quellen nicht ablesen lässt, ist die individuelle Beteiligung. Ob mein Vater an Exekutionen teilhatte, wie er sich in konkreten Situationen verhielt — dazu schweigen die Archive, und er selbst hat zeitlebens nicht darüber gesprochen. Was bleibt, ist die nüchterne Feststellung: er war im Verband einer Einheit, die Verbrechen beging.
+- Der „Kommissarbefehl" war zum Zeitpunkt des Kaukasus-Einsatzes nicht mehr in Kraft; er wurde am 6. Mai 1942 — vor dem Don-Übergang im August — außer Kraft gesetzt.
+- Die Morde an der jüdischen Bevölkerung des Nordkaukasus, einschließlich der Bergjuden von Naltschik, gingen auf die Einsatzgruppe D des SD zurück, nicht auf Heereskampftruppen. Naltschik lag im Operationsraum der 1. Panzerarmee und wurde von rumänischen Gebirgsjägern besetzt; das GJR 99 war dort nicht.
+- „Bandenbekämpfung", „Sühnemaßnahmen" und „verbrannte Erde" beschreiben den verbrecherischen Rahmen des Vernichtungskriegs, in den auch dieses Regiment eingebunden war — sie sind aber kein für das GJR 99 belegter Tatbestand. Die dokumentierte Repressalienpraxis der 1. Gebirgs-Division setzt erst 1943 auf dem Balkan und in Griechenland ein, also nach dem Ausscheiden meines Vaters.
+
+Was sich aus den Quellen nicht ablesen lässt, ist sein individuelles Verhalten in diesen Monaten; dazu schweigen die Archive, und er selbst hat zeitlebens nicht darüber gesprochen. Was bleibt, ist eine vorsichtigere Feststellung: Mein Vater diente in einem Kampfregiment, das in den Rahmen eines verbrecherischen Krieges eingebunden war. Konkrete Verbrechen seiner Einheit in diesem Raum und Zeitraum lassen sich nicht nachweisen; die belegten Verbrechen der Division liegen außerhalb seiner Anwesenheit. Die strukturelle Mitverantwortung der Wehrmacht bleibt davon unberührt — sie ist nur etwas anderes als ein Tatnachweis.
 
 Im Winter 1942/43 erkrankte er am Wolhynischen Sumpffieber; die Karteikarte verzeichnet zudem ein Krampfadernleiden. Beides führte zur Einstufung als „nicht mehr frontverwendungsfähig". Diese Einstufung beendete seine Frontzeit beim GJR 99.
 
@@ -157,18 +159,18 @@ Eine Stamm-Kompanie hätte normalerweise Innendienst bedeutet — Ausbildung, Ve
 
 ## Bilanz
 
-Aus den fünf dokumentierten Einheiten ergibt sich eine einzige Schnittmenge zwischen biografischer Präsenz und Verbrechensraum: das Gebirgsjäger-Regiment 99 im Kaukasus 1942/43. Für die anderen Stationen bestehen geografische, institutionelle oder medizinische Trennungen von den dokumentierten Verbrechen der jeweiligen Räume.
+Für vier der fünf Einheiten bestehen klare geografische, institutionelle oder medizinische Trennungen von den dokumentierten Verbrechen der jeweiligen Räume. Beim Gebirgsjäger-Regiment 99 war mein Vater Teil eines Kampfverbandes im Rahmen des Vernichtungskriegs — konkrete Verbrechen dieser Einheit im Kaukasus 1942/43 sind jedoch nicht dokumentiert, und die belegten Verbrechen der Division fallen in die Zeit nach seinem Ausscheiden. Eine eindeutige Schnittmenge zwischen biografischer Präsenz und nachgewiesenem Einheitsverbrechen ergibt sich damit nicht.
 
 | Zeit | Einheit | Raum | Verhältnis zu Verbrechen der Region |
 |------|---------|------|--------------------------------------|
 | 1940 | Bau-Btl. 158 | Lothringen / Saar | Massaker Chasselay >300 km entfernt; andere Heeresgruppe |
 | 1941/42 | Ldsch.Ersatz-Btl. 18 | Lienz | Stalag XVIII C: institutionell und geografisch getrennt |
 | 1942 | Geb.Ers.-Rgt. III/136 | Ausbildung | Übergang zum GJR 99 |
-| 1942/43 | GJR 99 | Kaukasus | im Verbrechensraum |
+| 1942/43 | GJR 99 | Kaukasus | im Rahmen des Vernichtungskriegs; keine Einheitsverbrechen dokumentiert |
 | 1943 | – (frontuntauglich) | Lazarett, Ersatzheer | Griechenland-Massaker: medizinisch verhindert |
 | 1944 | Gren.Ers.-Btl. 107 | Westwall | Kampfgruppe, schwere Verwundung |
 
-Diese Aufstellung zeigt, wo mein Vater war und wo nicht. Was er in dem einzigen Zeitraum tat, in dem er während der Verbrechen seiner Einheit anwesend war, geht aus den Archiven nicht hervor.
+Diese Aufstellung zeigt, wo mein Vater war und wo nicht. Was er während seiner Frontzeit im Einzelnen tat, geht aus den Archiven nicht hervor.
 
 ---
 
