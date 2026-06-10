@@ -11,60 +11,8 @@ description: "Werkstatt der Pilz-Chronik: Errata, neue Funde und Forschungsstand
     <p class="bwm-page-eyebrow">01 Werkstatt</p>
     <h1 class="bwm-page-title">Werkstatt</h1>
     <hr class="bwm-page-line">
-    <p class="bwm-page-lead">Korrekturen und neue Funde seit Drucklegung &mdash; Errata, Quellenfunde, offene Fragen. Oben die laufende &Uuml;bersicht, unten alle Beitr&auml;ge chronologisch.</p>
+    <p class="bwm-page-lead">Korrekturen und neue Funde seit Drucklegung &mdash; Errata, Quellenfunde, offene Fragen. Jeder Beitrag ist eine Momentaufnahme: Er gibt den Forschungsstand seines Datums wieder, nicht das letzte Wort.</p>
   </div>
-
-  <div class="bwm-werkstatt-overview">
-
-    <div>
-      <p class="bwm-werkstatt-eyebrow">Berichtigungen</p>
-      <ul class="bwm-werkstatt-list">
-        {% assign corrections = site.tags.Korrekturen %}
-        {% if corrections.size > 0 %}
-          {% for post in corrections limit:10 %}
-          <li class="bwm-werkstatt-item">
-            {% if post.buch_band %}
-              <span class="bwm-werkstatt-tag">Band {{ post.buch_band }} &middot; S.&nbsp;{{ post.buch_seite }}</span>
-            {% endif %}
-            <a class="bwm-werkstatt-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            {% if post.stand_vom %}
-              <span class="bwm-werkstatt-date">Stand: {{ post.stand_vom }}</span>
-            {% else %}
-              <span class="bwm-werkstatt-date">{{ post.date | date: "%d.%m.%Y" }}</span>
-            {% endif %}
-          </li>
-          {% endfor %}
-        {% else %}
-          <li class="bwm-werkstatt-item bwm-empty">Keine offenen Berichtigungen bekannt.</li>
-        {% endif %}
-      </ul>
-    </div>
-
-    <div>
-      <p class="bwm-werkstatt-eyebrow">Neue Funde</p>
-      <ul class="bwm-werkstatt-list">
-        {% assign additions = site.tags["Neue Funde"] %}
-        {% if additions.size > 0 %}
-          {% for post in additions limit:10 %}
-          <li class="bwm-werkstatt-item">
-            <a class="bwm-werkstatt-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <span class="bwm-werkstatt-date">{{ post.date | date: "%d.%m.%Y" }}</span>
-            {% if post.excerpt %}
-              <p class="bwm-werkstatt-excerpt">{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
-            {% endif %}
-          </li>
-          {% endfor %}
-        {% else %}
-          <li class="bwm-werkstatt-item bwm-empty">Derzeit keine neuen Erg&auml;nzungen.</li>
-        {% endif %}
-      </ul>
-    </div>
-
-  </div>
-
-  <hr class="bwm-section-divider">
-
-  <h2 class="bwm-section-title">Alle Beitr&auml;ge</h2>
 
   {% comment %} Angepinnter Post {% endcomment %}
   {% for post in site.posts %}
@@ -75,6 +23,13 @@ description: "Werkstatt der Pilz-Chronik: Errata, neue Funde und Forschungsstand
     </div>
     {% endif %}
   {% endfor %}
+
+  {% comment %} Filter-Chips nach Art des Eintrags {% endcomment %}
+  <div class="bwm-filter" role="group" aria-label="Beitr&auml;ge filtern">
+    <button type="button" class="bwm-chip on" data-cat="alle" aria-pressed="true">Alle</button>
+    <button type="button" class="bwm-chip" data-cat="korrekturen" aria-pressed="false">Berichtigungen</button>
+    <button type="button" class="bwm-chip" data-cat="neue funde" aria-pressed="false">Neue Funde</button>
+  </div>
 
   <div class="bwm-postsearch">
     <input type="text" id="searchBox" class="bwm-postsearch-input" placeholder="Beitrag suchen &hellip;" autocomplete="off">
@@ -92,11 +47,18 @@ description: "Werkstatt der Pilz-Chronik: Errata, neue Funde und Forschungsstand
   <div class="bwm-month-group" data-month="{{ post_month }}">
     <div class="bwm-month-header">{% include datum.html date=post.date format="monat" %}</div>
     {% endif %}
-    <div class="bwm-post-entry" data-searchable="{{ post.title | downcase | xml_escape }} {{ post.excerpt | strip_html | strip_newlines | downcase | xml_escape }} {{ post.tags | join: ' ' | downcase | xml_escape }}">
+    <div class="bwm-post-entry" data-cats="{{ post.tags | join: '|' | downcase | xml_escape }}" data-searchable="{{ post.title | downcase | xml_escape }} {{ post.excerpt | strip_html | strip_newlines | downcase | xml_escape }} {{ post.tags | join: ' ' | downcase | xml_escape }}">
       <div class="bwm-post-title-row">
-        <span class="bwm-post-date">{{ post.date | date: "%d.%m." }}</span>
+        <span class="bwm-post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
         <a class="bwm-post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </div>
+      {% if post.tags contains "Neue Funde" and post.tags contains "Korrekturen" %}
+        <span class="bwm-post-cat">Berichtigung &amp; Fund</span>
+      {% elsif post.tags contains "Neue Funde" %}
+        <span class="bwm-post-cat">Neuer Fund</span>
+      {% elsif post.tags contains "Korrekturen" %}
+        <span class="bwm-post-cat">Berichtigung</span>
+      {% endif %}
       {% if post.excerpt and post.excerpt != "" %}
       <div class="bwm-post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</div>
       {% endif %}
@@ -111,149 +73,66 @@ description: "Werkstatt der Pilz-Chronik: Errata, neue Funde und Forschungsstand
 </section>
 
 <script>
-  // Beitrags-Schnellsuche im Werkstatt-Listing.
-  // Nutzt die globale Pagefind-Volltextsuche und blendet im bestehenden
-  // Listing alle Eintraege aus, deren URL nicht zu den Pagefind-Treffern passt.
-  // Fallback (z.B. wenn Pagefind nicht laedt): Substring-Suche in
-  // data-searchable (Titel + Auszug + Tags).
+  // Werkstatt-Liste: Filter-Chips (nach Art) + Sofort-Textsuche (Titel/Anriss/Tags).
+  // Bewusst schlicht und ohne Pagefind, damit Chips und Suche sauber zusammenspielen.
+  // Die globale Volltextsuche bleibt auf der Startseite.
   (function () {
-    var PAGEFIND_URL = '{{ "/pagefind/pagefind.js" | relative_url }}';
+    var list = document.getElementById('postList');
+    if (!list) return;
+
+    var entries   = Array.prototype.slice.call(document.querySelectorAll('.bwm-post-entry'));
+    var groups    = Array.prototype.slice.call(document.querySelectorAll('.bwm-month-group'));
+    var chips     = Array.prototype.slice.call(document.querySelectorAll('.bwm-chip'));
+    var pinned    = document.querySelector('.bwm-pinned');
     var searchBox = document.getElementById('searchBox');
-    if (!searchBox) return;
-
-    var entries = Array.prototype.slice.call(document.querySelectorAll('.bwm-post-entry'));
-    var pinnedPost = document.querySelector('.bwm-pinned');
-    var monthGroups = Array.prototype.slice.call(document.querySelectorAll('.bwm-month-group'));
     var noResults = document.getElementById('noResults');
-    var resultInfo = document.getElementById('resultInfo');
+    var info      = document.getElementById('resultInfo');
+    var activeCat = 'alle';
 
-    function normalizeUrl(u) {
-      try {
-        var path = new URL(u, window.location.origin).pathname;
-        return path.replace(/\/index\.html$/, '/').replace(/\/$/, '').toLowerCase();
-      } catch (e) {
-        return String(u || '').toLowerCase();
-      }
+    function matchCat(entry) {
+      if (activeCat === 'alle') return true;
+      return (entry.getAttribute('data-cats') || '').indexOf(activeCat) > -1;
+    }
+    function matchText(el, term) {
+      if (!term) return true;
+      return (el.getAttribute('data-searchable') || '').indexOf(term) > -1;
     }
 
-    // URL → Eintrag-Map (fuer schnelles Matching mit Pagefind-Treffern)
-    var entriesByUrl = new Map();
-    entries.forEach(function (entry) {
-      var link = entry.querySelector('.bwm-post-link');
-      if (link && link.getAttribute('href')) {
-        entriesByUrl.set(normalizeUrl(link.getAttribute('href')), entry);
-      }
-    });
-    var pinnedUrl = null;
-    if (pinnedPost) {
-      var pinnedLink = pinnedPost.querySelector('a');
-      if (pinnedLink && pinnedLink.getAttribute('href')) {
-        pinnedUrl = normalizeUrl(pinnedLink.getAttribute('href'));
-      }
-    }
-
-    // Pagefind lazy laden — beim ersten Tastendruck
-    var pagefindPromise = null;
-    function loadPagefind() {
-      if (!pagefindPromise) {
-        pagefindPromise = import(PAGEFIND_URL).catch(function (err) {
-          console.warn('Pagefind konnte nicht geladen werden, nutze Fallback:', err);
-          return null;
-        });
-      }
-      return pagefindPromise;
-    }
-
-    function showAll() {
-      if (pinnedPost) pinnedPost.classList.remove('hidden');
-      entries.forEach(function (e) { e.classList.remove('hidden'); });
-      monthGroups.forEach(function (g) { g.classList.remove('hidden'); });
-      noResults.style.display = 'none';
-      resultInfo.textContent = '';
-    }
-
-    function applyVisibility(visibleEntries, pinnedVisible) {
+    function apply() {
+      var term = (searchBox ? searchBox.value : '').trim().toLowerCase();
       var visible = 0;
       entries.forEach(function (e) {
-        if (visibleEntries.has(e)) {
-          e.classList.remove('hidden');
-          visible++;
-        } else {
-          e.classList.add('hidden');
-        }
+        var show = matchCat(e) && matchText(e, term);
+        e.classList.toggle('hidden', !show);
+        if (show) visible++;
       });
-      monthGroups.forEach(function (g) {
-        var hasVisible = g.querySelector('.bwm-post-entry:not(.hidden)');
-        g.classList.toggle('hidden', !hasVisible);
+      groups.forEach(function (g) {
+        g.classList.toggle('hidden', !g.querySelector('.bwm-post-entry:not(.hidden)'));
       });
-      if (pinnedPost) {
-        pinnedPost.classList.toggle('hidden', !pinnedVisible);
+      if (pinned) {
+        var pshow = (activeCat === 'alle') && matchText(pinned, term);
+        pinned.classList.toggle('hidden', !pshow);
       }
-      var total = entries.length + (pinnedPost ? 1 : 0);
-      var totalVisible = visible + (pinnedVisible ? 1 : 0);
-      noResults.style.display = totalVisible === 0 ? 'block' : 'none';
-      resultInfo.textContent = totalVisible + ' von ' + total + ' Beiträgen';
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+      info.textContent = visible + ' von ' + entries.length + ' Beiträgen';
     }
 
-    function fallbackFilter(term) {
-      var lower = term.toLowerCase();
-      var visible = new Set();
-      entries.forEach(function (e) {
-        var ds = e.getAttribute('data-searchable') || '';
-        if (ds.indexOf(lower) > -1) visible.add(e);
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('on'); c.setAttribute('aria-pressed', 'false'); });
+        chip.classList.add('on');
+        chip.setAttribute('aria-pressed', 'true');
+        activeCat = chip.getAttribute('data-cat');
+        apply();
       });
-      var pinnedVisible = false;
-      if (pinnedPost) {
-        var ds = pinnedPost.getAttribute('data-searchable') || '';
-        pinnedVisible = ds.indexOf(lower) > -1;
-      }
-      applyVisibility(visible, pinnedVisible);
-    }
+    });
+    if (searchBox) searchBox.addEventListener('input', apply);
 
-    var searchToken = 0;
-    function doSearch(rawTerm) {
-      var term = (rawTerm || '').trim();
-      if (!term) { showAll(); return; }
-
-      var myToken = ++searchToken;
-      loadPagefind().then(function (pf) {
-        if (myToken !== searchToken) return;
-        if (!pf) { fallbackFilter(term); return; }
-
-        return pf.debouncedSearch(term, {}, 150).then(function (result) {
-          if (myToken !== searchToken) return;
-          if (!result) return; // wurde durch eine spaetere Eingabe ersetzt
-
-          var dataPromises = result.results.map(function (r) { return r.data(); });
-          return Promise.all(dataPromises).then(function (datas) {
-            if (myToken !== searchToken) return;
-            var matchedUrls = new Set();
-            datas.forEach(function (d) { matchedUrls.add(normalizeUrl(d.url)); });
-            var visible = new Set();
-            entriesByUrl.forEach(function (entry, url) {
-              if (matchedUrls.has(url)) visible.add(entry);
-            });
-            var pinnedVisible = pinnedUrl ? matchedUrls.has(pinnedUrl) : false;
-            applyVisibility(visible, pinnedVisible);
-          });
-        });
-      }).catch(function (err) {
-        console.warn('Pagefind-Suche fehlgeschlagen, nutze Fallback:', err);
-        fallbackFilter(term);
-      });
-    }
-
-    searchBox.addEventListener('input', function () { doSearch(searchBox.value); });
-
-    // Tag-Klick aus einem Post: ?q=tagname uebernehmen und Filter anwenden
     try {
-      var params = new URLSearchParams(window.location.search);
-      var preset = params.get('q');
-      if (preset) {
-        searchBox.value = preset;
-        doSearch(preset);
-        searchBox.focus();
-      }
-    } catch (e) { /* aelterer Browser: kein Problem, Fallback bleibt */ }
+      var preset = new URLSearchParams(window.location.search).get('q');
+      if (preset && searchBox) { searchBox.value = preset; }
+    } catch (e) { /* aelterer Browser: egal */ }
+
+    apply();
   })();
 </script>
