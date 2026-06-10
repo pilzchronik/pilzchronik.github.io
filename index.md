@@ -18,11 +18,30 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
 
   <figure class="bwm-hero-figure">
     <div class="bwm-photo">
-      <img src="{{ '/assets/images/hilda-und-alois-pilz-um-1966.jpg' | relative_url }}" alt="Hilda und Alois Pilz, um 1966" width="1200" height="863">
-      <figcaption class="bwm-photo-cap">Hilda und Alois Pilz, um 1966</figcaption>
+      <img id="bwm-hero-img" src="{{ '/assets/images/hilda-und-alois-pilz-um-1966.jpg' | relative_url }}" alt="Hilda und Alois Pilz, um 1966">
+      <figcaption id="bwm-hero-cap" class="bwm-photo-cap">Hilda und Alois Pilz, um 1966</figcaption>
     </div>
   </figure>
 </section>
+
+<script>
+  // Wechselndes Titelbild: bei jedem Aufruf zufaellig eines aus der Liste.
+  // Liste pflegen = hier Eintraege ergaenzen/entfernen (Pfad + Bildunterschrift).
+  (function () {
+    var pics = [
+      { src: "{{ '/assets/images/hilda-und-alois-pilz-um-1966.jpg' | relative_url }}", cap: "Hilda und Alois Pilz, um 1966" },
+      { src: "{{ '/assets/images/familie-reider-um-1915.jpg' | relative_url }}", cap: "Familie Reider, um 1915" },
+      { src: "{{ '/assets/images/franz-und-theresia-hofmann.jpg' | relative_url }}", cap: "Franz Hofmann (1853–1927) und Theresia Hofmann, geb. Foh (1853–1946)" },
+      { src: "{{ '/assets/images/jaeger-und-foerster-boehmen.jpg' | relative_url }}", cap: "Jäger und Förster in Böhmen, rechts Alois Johann Pilz" },
+      { src: "{{ '/assets/images/eberstaller-mit-tochter-hilda.jpg' | relative_url }}", cap: "Johann und Katharina Eberstaller, geb. Reider, mit Tochter Hilda" }
+    ];
+    var p = pics[Math.floor(Math.random() * pics.length)];
+    var img = document.getElementById('bwm-hero-img');
+    var cap = document.getElementById('bwm-hero-cap');
+    if (img) { img.src = p.src; img.alt = p.cap; }
+    if (cap) { cap.textContent = p.cap; }
+  })();
+</script>
 
 <section class="bwm-tools" aria-label="Suche und Chat">
   <div class="bwm-tool bwm-tool-search">
