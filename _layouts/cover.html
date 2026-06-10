@@ -64,6 +64,10 @@
         </span>
       </a>
 
+      {%- comment -%} Mobiles Burger-Menue: CSS-Toggle ohne JavaScript {%- endcomment -%}
+      <input type="checkbox" id="bwm-nav-toggle" class="bwm-nav-toggle">
+      <label for="bwm-nav-toggle" class="bwm-burger" aria-label="Menü öffnen"><span></span><span></span><span></span></label>
+
       <nav class="bwm-nav" aria-label="Hauptnavigation">
         {%- assign here = page.url -%}
         <a href="{{ '/' | relative_url }}"             {%- if here == '/' or here == '/index.html' %} class="on"{% endif -%}>Startseite</a>
