@@ -487,11 +487,11 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   max-width: 28rem;
 
   --pagefind-ui-scale: 0.85;
-  --pagefind-ui-primary: var(--pc-altrosa);
+  --pagefind-ui-primary: var(--pc-altrosa-dunkel);
   --pagefind-ui-text: var(--pc-dunkelblau);
-  --pagefind-ui-background: var(--pc-cremeweiss);
-  --pagefind-ui-border: rgba(216,132,158,0.45);
-  --pagefind-ui-tag: var(--pc-cremeweiss);
+  --pagefind-ui-background: var(--pc-reinweiss);
+  --pagefind-ui-border: rgba(19,39,66,0.20);
+  --pagefind-ui-tag: var(--pc-offwhite);
   --pagefind-ui-border-width: 1px;
   --pagefind-ui-border-radius: 4px;
   --pagefind-ui-font: var(--pc-font-body);
@@ -501,12 +501,11 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   font-family: var(--pc-font-body);
 }
 
-/* Suchergebnis-Drawer: cremeweisses Panel auf dem dunklen Cover-Hero,
-   sonst ist der dunkelblaue Pagefind-Text auf Dunkelblau unlesbar.
+/* Suchergebnis-Drawer: weisses Panel auf hellem Grund (Redesign).
    --pagefind-ui-background greift nur auf die UI-Variablen, nicht auf
    die Result-Items selbst — die brauchen explizites Background. */
 .bwm-search .pagefind-ui__drawer {
-  background: var(--pc-cremeweiss);
+  background: var(--pc-reinweiss);
   color: var(--pc-dunkelblau);
   padding: 14px 18px;
   margin-top: 10px;
