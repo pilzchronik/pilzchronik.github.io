@@ -816,8 +816,8 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   .bwm-header { flex-wrap: wrap; padding: 22px 24px 18px; gap: 18px; }
   .bwm-nav { width: 100%; gap: 22px; font-size: 11px; flex-wrap: wrap; margin-left: 0; }
 
-  .bwm-hero { grid-template-columns: 1fr; gap: 36px; padding: 48px 24px 40px; }
-  .bwm-hero-figure { order: -1; }
+  .bwm-hero { grid-template-columns: 1fr; gap: 24px; padding: 36px 24px 32px; }
+  .bwm-photo { max-width: 300px; }
   .bwm-tools { grid-template-columns: 1fr; padding: 0 24px; }
   .bwm-tool-chat { padding-left: 0; border-left: 0; border-top: 1px solid rgba(19,39,66,0.12); }
   .bwm-tool-search { padding-right: 0; }
