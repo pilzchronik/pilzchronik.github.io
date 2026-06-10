@@ -257,6 +257,7 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 .bwm-photo img {
   width: 100%;
+  height: auto;
   display: block;
   filter: grayscale(100%) contrast(1.03);
   border: 1px solid rgba(19,39,66,0.10);
