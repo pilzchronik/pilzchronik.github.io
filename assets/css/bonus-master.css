@@ -269,6 +269,10 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   border: 1px solid rgba(19,39,66,0.10);
 }
 .bwm-photo-cap {
+  /* Breite an das Bild koppeln: lange Unterschrift umbricht, statt den
+     weissen Rahmen in die Breite zu ziehen (v.a. bei schmalen Hochformaten). */
+  width: 0;
+  min-width: 100%;
   font-family: var(--pc-font-serif);
   font-style: italic;
   font-size: 14px;
