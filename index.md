@@ -63,22 +63,18 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
 
     <div class="pc-access-divider" aria-hidden="true"></div>
 
-    {%- comment -%} Chat-Assistent (rechts) — Feld &ouml;ffnet das Chatling-Widget (Stufe 2) {%- endcomment -%}
+    {%- comment -%} Chat-Assistent (rechts) — KLARER BUTTON, kein Eingabefeld.
+       Chatling kann eine getippte Frage nicht uebernehmen (keine Sende-API),
+       darum bewusst ein Button statt eines irrefuehrenden Felds. {%- endcomment -%}
     <div class="pc-access-col">
       <p class="pc-access-label">Chat-Assistent</p>
       <h2 class="pc-access-title">Eine Frage frei formulieren</h2>
-      <p class="pc-access-meta">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026).</p>
-      <form class="pc-access-input" id="bwm-chat-form" autocomplete="off">
-        <input type="text" id="bwm-chat-input" name="frage" placeholder="Frage eingeben &hellip;" aria-label="Frage an den Chat-Assistenten">
-        <button type="submit" aria-label="Chat &ouml;ffnen">
-          <svg class="pc-access-input-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-      </form>
-      <div class="pc-access-examples" aria-label="Beispiel-Fragen">
-        <button type="button" class="pc-access-example" data-chat="Woher stammt der Familienname Pilz?">Woher stammt der Name Pilz?</button>
-        <button type="button" class="pc-access-example" data-chat="Was sagt die DNA &uuml;ber die Herkunft der Familie?">Was sagt die DNA?</button>
-      </div>
-      <p class="pc-access-hint" id="bwm-chat-hint">Das Chat-Fenster &ouml;ffnet sich rechts unten.</p>
+      <p class="pc-access-meta">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026). Frag z.&nbsp;B. nach Personen, Orten oder der DNA.</p>
+      <button type="button" class="pc-access-button" id="bwm-chat-open">
+        <span>Chat-Assistent &ouml;ffnen</span>
+        <svg class="pc-access-button-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="pc-access-hint">&Ouml;ffnet das Chat-Fenster rechts unten.</p>
     </div>
 
   </div>
@@ -142,44 +138,15 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
       });
     });
 
-    // Chat-Assistent: Feld/Chips oeffnen das Chatling-Widget (Stufe 2 — Oeffnen
-    // per JS moeglich, Vorbefuellen nicht). Die getippte Frage wird, falls
-    // moeglich, in die Zwischenablage gelegt, damit sie im Chat eingefuegt
-    // werden kann. Kein totes Feld: es oeffnet in jedem Fall den Chat.
-    function bwmOpenChat(frage) {
-      var hint = document.getElementById('bwm-chat-hint');
-      var opened = false;
-      if (window.Chatling && typeof window.Chatling.open === 'function') {
-        try { window.Chatling.open(); opened = true; } catch (e) { /* ignore */ }
-      }
-      if (frage && navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(frage).then(function() {
-          if (hint) hint.textContent = 'Chat geöffnet — deine Frage liegt in der Zwischenablage, im Chatfeld mit ⌘V bzw. Strg+V einfügen.';
-        }).catch(function() {
-          if (hint) hint.textContent = 'Chat-Fenster geöffnet — bitte stell deine Frage dort.';
-        });
-      } else if (hint) {
-        hint.textContent = opened
-          ? 'Chat-Fenster geöffnet — bitte stell deine Frage dort.'
-          : 'Bitte nutze die Sprechblase rechts unten.';
-      }
-    }
-
-    var chatForm = document.getElementById('bwm-chat-form');
-    if (chatForm) {
-      chatForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var field = document.getElementById('bwm-chat-input');
-        bwmOpenChat(field ? field.value.trim() : '');
+    // Chat-Assistent: Button oeffnet das Chatling-Widget (rechts unten).
+    // Chatling kann eine getippte Frage nicht uebernehmen, darum nur oeffnen.
+    var chatBtn = document.getElementById('bwm-chat-open');
+    if (chatBtn) {
+      chatBtn.addEventListener('click', function() {
+        if (window.Chatling && typeof window.Chatling.open === 'function') {
+          try { window.Chatling.open(); } catch (e) { /* ignore */ }
+        }
       });
     }
-    document.querySelectorAll('.pc-access-example[data-chat]').forEach(function(chip) {
-      chip.addEventListener('click', function() {
-        var q = chip.getAttribute('data-chat');
-        var field = document.getElementById('bwm-chat-input');
-        if (field) field.value = q;
-        bwmOpenChat(q);
-      });
-    });
   });
 </script>
