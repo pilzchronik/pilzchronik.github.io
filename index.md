@@ -76,10 +76,6 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
           <svg class="pc-access-input-icon" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
       </button>
-      <div class="pc-access-examples" aria-label="Beispiel-Fragen">
-        <button type="button" class="pc-access-example" data-chat>Woher stammt der Name Pilz?</button>
-        <button type="button" class="pc-access-example" data-chat>Was sagt die DNA?</button>
-      </div>
       <p class="pc-access-note">&Ouml;ffnet das Chat-Fenster rechts unten.</p>
     </div>
 
@@ -144,16 +140,14 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
       });
     });
 
-    // Chat-Assistent: Button + Beispiel-Chips oeffnen das Chatling-Widget.
-    function bwmOpenChat() {
-      if (window.Chatling && typeof window.Chatling.open === 'function') {
-        try { window.Chatling.open(); } catch (e) { /* ignore */ }
-      }
-    }
+    // Chat-Assistent: Die ganze Box oeffnet das Chatling-Widget.
     var chatBtn = document.getElementById('bwm-chat-open');
-    if (chatBtn) chatBtn.addEventListener('click', bwmOpenChat);
-    document.querySelectorAll('.pc-access-example[data-chat]').forEach(function(chip) {
-      chip.addEventListener('click', bwmOpenChat);
-    });
+    if (chatBtn) {
+      chatBtn.addEventListener('click', function() {
+        if (window.Chatling && typeof window.Chatling.open === 'function') {
+          try { window.Chatling.open(); } catch (e) { /* ignore */ }
+        }
+      });
+    }
   });
 </script>
