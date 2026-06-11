@@ -2199,17 +2199,35 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 .pc-access-input button:hover { background: var(--pc-altrosa-dunkel); }
 .pc-access-input-icon { width: 18px; height: 18px; }
-/* Chat-Feld (readonly): identisch zum Suchfeld, oeffnet beim Klick nur den Chat */
-.pc-access-input input[readonly] { cursor: pointer; }
-/* Gleiche Grundlinie beider Spalten: Titel + Intro-Text auf gleiche
-   Mindesthoehe, damit Such- und Chat-Feld exakt auf einer Linie liegen */
+/* Chat-Box (Handoff v6): dieselbe weisse Box wie das Suchfeld (gleiche Groesse,
+   weiss, duenner Rahmen, rechts dunkelblaues Icon-Quadrat mit Pfeil). Bewusst
+   KEIN schwerer dunkelblauer Vollflaechen-Block (der kippt die Balance). Einziger
+   Unterschied zum Suchfeld: klares Aktions-Label statt blassem Tipp-Platzhalter,
+   damit niemand zum Schreiben verleitet wird. Ganze Box klickbar -> oeffnet Chat. */
+button.pc-access-input { font: inherit; text-align: left; padding: 0; cursor: pointer; }
+.pc-access-cta-label {
+  display: flex; align-items: center;
+  padding: 13px 16px; line-height: 1.45;   /* matcht die Hoehe des Such-Inputs */
+  font-family: var(--pc-font-body); font-size: 16px;
+  color: var(--pc-dunkelblau);   /* normale Textfarbe, NICHT blass wie ein Placeholder */
+}
+.pc-access-cta-icon {
+  background: var(--pc-dunkelblau); color: var(--pc-offwhite);
+  display: grid; place-items: center; padding: 0 16px;
+  transition: background 160ms;
+}
+.pc-access-input--chat .pc-access-input-icon { width: 18px; height: 18px; transition: transform 160ms; }
+button.pc-access-input:hover .pc-access-cta-icon { background: var(--pc-altrosa-dunkel); }
+.pc-access-input--chat:hover .pc-access-input-icon { transform: translateX(2px); }
+/* Gleiche Grundlinie beider Spalten: Titel + Intro-Text auf gleiche Mindesthoehe,
+   damit Suchfeld (links) und Chat-Button (rechts) exakt auf einer Linie liegen */
 .pc-access-title { min-height: 2.3em; }
 .pc-access-meta  { min-height: 4.5em; }
-/* Gemeinsame, gedeckte Notiz UNTER beiden Spalten (nicht nur rechts) */
+/* Erklaerzeile: klein & gedeckt, gehoert zur Chat-Spalte (rechts), nicht zentriert */
 .pc-access-note {
-  max-width: 1180px; margin: 18px auto 0;
+  margin: 8px 0 0;
   font-family: var(--pc-font-body); font-size: 13px;
-  color: var(--pc-label-mute); text-align: center;
+  color: var(--pc-label-mute);
 }
 /* Beispiel-Chips: aufrecht, gedeckt, Hover burgunder */
 .pc-access-examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-top: 6px; }
