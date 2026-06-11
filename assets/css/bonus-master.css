@@ -37,7 +37,7 @@
 :root {
   --pc-dunkelblau:        #132742;
   --pc-cremeweiss:        #ede9dd;  /* warmer Creme — bleibt Textfarbe auf dunklem Grund */
-  --pc-offwhite:          #fafaf8;  /* Redesign 09.06.2026: kuehl-heller Grundton der Inhaltsflaechen */
+  --pc-offwhite:          #faf8f3;  /* Redesign "hell & ruhig" 11.06.2026 (Claude Design): warmer Alabaster statt kuehlem #fafaf8 */
   --pc-altrosa:           #d8849e;  /* helles Akzent-Rosa fuer DUNKLE Hintergruende */
   --pc-altrosa-dunkel:    #9a3f55;  /* dunkles Akzent-Rosa (Burgunder) fuer HELLE Hintergruende */
   --pc-reinweiss:         #ffffff;
@@ -1964,5 +1964,146 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 #chtl-open-chat-icon:hover > div {
   background-color: var(--pc-altrosa) !important;
+}
+
+/* ============================================================
+   REDESIGN "HELL & RUHIG"  ·  Claude Design, Juni 2026
+   Uebergabe-Paket "design_handoff_pilz_redesign". Letzte Schicht,
+   ueberschreibt bewusst die obigen Master-Regeln.
+
+   Kernentscheidungen des Handoffs:
+   1. Dunkelblau bleibt NUR Klammer (Header/Footer) — schon erfuellt,
+      der Koerper liegt bereits auf hellem Grund.
+   2. Heller Grundton = warmer Alabaster #faf8f3 (--pc-offwhite oben).
+   3. Leisere Typografie: laute Burgunder-Versal-Labels werden zu
+      ruhigem, gedaempftem Dunkelblau in normaler Schreibweise;
+      Navigation leichter; Hero-Lead aufrecht (kein Kursiv);
+      Burgunder nur noch sparsam als Akzent.
+
+   Burgunder BLEIBT (bewusst, nicht ueberschrieben): die EINE
+   Akzentlinie pro Seite (bwm-page-line, bwm-hero-accent), Link-/
+   Titel-Hover, linker Rand der Notiz-/Fakten-/Pinned-Boxen,
+   Zeitstrahl-Linie + Punkte, Filter-Chips und die farbigen
+   Daten-Codes (Karten-Marker, DNA-Linien, Kategorie-Tags).
+   ============================================================ */
+
+:root {
+  --pc-label-mute:  rgba(19, 39, 66, 0.62); /* gedaempftes Dunkelblau fuer Labels auf Hell */
+  --pc-hair:        rgba(19, 39, 66, 0.12); /* neutrale Haarlinie */
+  --pc-hair-strong: rgba(19, 39, 66, 0.18); /* etwas kraeftigere Haarlinie */
+}
+
+/* ---- Header: leichtere Navigation, gedeckter Marken-Untertitel,
+   Unterkante als zarte Altrosa-Hairline statt Schatten ---- */
+.bwm-header {
+  border-bottom: 1px solid rgba(216, 132, 158, 0.35);
+  box-shadow: none;
+}
+.bwm-nav {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 15px;
+}
+.bwm-brand-meta {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--pc-cremeweiss);
+  opacity: 0.6;
+}
+
+/* ---- Hero (Startseite): gedecktes Eyebrow, aufrechte Einleitung ---- */
+.bwm-hero-eyebrow {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--pc-label-mute);
+}
+.bwm-hero-lead { font-style: normal; }
+
+/* ---- Grosse Eyebrows / Sektionslabels: ruhig & gedeckt, normale
+   Schreibweise (Quelltext ist bereits sauber gross-/kleingeschrieben) ---- */
+.bwm-page-eyebrow,
+.bwm-primary-eyebrow,
+.bwm-secondary-eyebrow,
+.bwm-orte-section .bwm-section-eyebrow,
+.layout-cover .tl-section-label,
+.bwm-stammbaum-cta-eyebrow {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: var(--pc-label-mute);
+}
+.bwm-page-eyebrow { font-weight: 500; font-size: 14px; }
+/* Struktur-Trenner ueber diesen Labels neutralisieren (waren burgunder) */
+.bwm-orte-section .bwm-section-eyebrow,
+.layout-cover .tl-section-label { border-top-color: var(--pc-hair); }
+
+/* ---- Kleine Meta-Tags: duerfen klein/uppercase bleiben, aber gedeckt
+   statt laut burgunderrot (Datumsangaben, Nummern, Kategorie-Tags) ---- */
+.bwm-primary-item-num,
+.bwm-primary-item-cta,
+.bwm-secondary-item-meta,
+.bwm-pin-label,
+.bwm-post-cat,
+.layout-cover .tl-year {
+  color: var(--pc-label-mute);
+}
+/* Werkzeug-Labels (Suche / Chat) gedeckt, normale Schreibweise */
+.bwm-tool-label {
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: var(--pc-label-mute);
+}
+
+/* ---- Tabellen-Kopfzeilen: gedeckt + neutral unterstrichen ---- */
+.bwm-post-body th,
+.layout-cover .bwm-orte-tabelle th,
+.layout-cover #epoch-table th {
+  color: var(--pc-label-mute);
+}
+.bwm-post-body thead { border-bottom-color: var(--pc-hair-strong); }
+.layout-cover .bwm-orte-tabelle th { border-bottom-color: var(--pc-hair-strong); }
+.layout-cover #epoch-table thead { border-bottom-color: var(--pc-hair-strong); }
+
+/* ---- Fakten-/Hinweis-/Status-Box: linker Burgunder-Rand bleibt,
+   das LABEL wird gedeckt (war laute Burgunder-Versalie) ---- */
+.layout-cover .bwm-dna-body .fact-box .fact-title { color: var(--pc-label-mute) !important; }
+.layout-cover .bwm-post-body .hinweis strong { color: var(--pc-label-mute); }
+.bwm-post-body .status-box span:first-child { color: var(--pc-label-mute) !important; }
+
+/* ---- Hauptbereich-Kacheln: Oberkante neutral, erst bei Hover burgunder
+   (Hover-Regeln fuer border-top + Titel/CTA bleiben aus dem Master aktiv) ---- */
+.bwm-primary-item { border-top-color: var(--pc-hair); }
+
+/* ---- Sekundaerliste: Pfeil ruht, erscheint erst beim Hover ---- */
+.bwm-secondary-item-arrow {
+  opacity: 0;
+  transition: opacity 160ms, color 160ms, transform 160ms;
+}
+.bwm-secondary-item:hover .bwm-secondary-item-arrow {
+  opacity: 1;
+  color: var(--pc-akzent);
+  transform: translateX(3px);
+}
+
+/* ---- Ortsnamen-Beispiel-Chips: aufrecht & gedeckt, Hover burgunder ---- */
+.layout-cover .ortsnamen-beispiel {
+  color: var(--pc-dunkelblau);
+  text-decoration-color: var(--pc-hair-strong);
+}
+.layout-cover .ortsnamen-beispiel:hover {
+  color: var(--pc-akzent) !important;
+  text-decoration-color: var(--pc-akzent);
+}
+
+/* ---- Filter-Chip aktiv: burgunder gefuellt (Handoff) statt dunkelblau ---- */
+.bwm-chip.on {
+  background: var(--pc-akzent);
+  border-color: var(--pc-akzent);
+  color: var(--pc-reinweiss);
 }
 
