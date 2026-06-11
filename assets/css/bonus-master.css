@@ -2107,3 +2107,22 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   color: var(--pc-reinweiss);
 }
 
+/* ---- Hero-Titelbild: schlicht & modern (Claude-Design-Empfehlung "Stufe 2")
+   Kein weisser Passepartout, kein Schlagschatten, gerade statt gekippt — nur
+   das Bild auf Alabaster, mit zarter Haarlinie (Kante statt Schatten).
+   Bildunterschrift bleibt klein/gedeckt, jetzt aber aufrecht statt kursiv. ---- */
+.bwm-photo {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
+}
+.bwm-photo img {
+  border: 1px solid var(--pc-hair-strong);
+}
+.bwm-photo-cap {
+  font-style: normal;
+}
+
