@@ -2199,19 +2199,6 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 .pc-access-input button:hover { background: var(--pc-altrosa-dunkel); }
 .pc-access-input-icon { width: 18px; height: 18px; }
-/* Pagefind-Suchfeld (links) an die Feldoptik angleichen */
-.pc-access-pagefind {
-  margin-top: 4px; max-width: 100%;
-  --pagefind-ui-border-radius: 0;
-  --pagefind-ui-border: var(--pc-hair-strong);
-}
-.pc-access-pagefind .pagefind-ui__search-input {
-  border: 1px solid var(--pc-hair-strong);
-  border-radius: 0;
-  background: var(--pc-reinweiss);
-  font-size: 16px;
-  padding: 13px 16px;
-}
 /* Beispiel-Chips: aufrecht, gedeckt, Hover burgunder */
 .pc-access-examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-top: 6px; }
 .pc-access-example {

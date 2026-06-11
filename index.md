@@ -4,9 +4,6 @@ title: Startseite
 description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit Korrekturen, Quellenfunden und Forschungsstand zur Familie Pilz/Pültz in Sachsen, Böhmen und Tirol."
 ---
 
-<link href="{{ site.baseurl }}/pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="{{ site.baseurl }}/pagefind/pagefind-ui.js"></script>
-
 <section class="bwm-hero" aria-label="Hero">
   <div class="bwm-hero-copy">
     <p class="bwm-hero-eyebrow">Familienchronik &middot; zwei B&auml;nde</p>
@@ -50,8 +47,13 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
     <div class="pc-access-col">
       <p class="pc-access-label">Stichwort-Suche</p>
       <h2 class="pc-access-title">Auf dieser Webseite st&ouml;bern</h2>
-      <p class="pc-access-meta">Personen, Orte und Themen quer durch alle Beitr&auml;ge &mdash; Treffer erscheinen sofort.</p>
-      <div id="search" class="bwm-search pc-access-pagefind"></div>
+      <p class="pc-access-meta">Personen, Orte und Themen quer durch alle Beitr&auml;ge &mdash; Volltextsuche &uuml;ber die ganze Seite.</p>
+      <form class="pc-access-input" id="bwm-search-form" action="{{ '/suche/' | relative_url }}" method="get" autocomplete="off">
+        <input type="search" id="bwm-search-input" name="q" placeholder="Person, Ort oder Thema suchen &hellip;" aria-label="Stichwort-Suche">
+        <button type="submit" aria-label="Suchen">
+          <svg class="pc-access-input-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7" stroke="currentColor" stroke-width="2" fill="none"/><line x1="15.8" y1="15.8" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
       <div class="pc-access-examples" aria-label="Suchbeispiele">
         <button type="button" class="pc-access-example" data-search="D&ouml;rnthal">D&ouml;rnthal</button>
         <button type="button" class="pc-access-example" data-search="Eberstaller">Eberstaller</button>
@@ -131,28 +133,12 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
 
 <script>
   window.addEventListener('DOMContentLoaded', function() {
-    if (typeof PagefindUI !== 'undefined') {
-      new PagefindUI({
-        element: "#search",
-        showSubResults: true,
-        excerptLength: 30,
-        translations: {
-          placeholder: "Person, Ort oder Thema suchen …",
-          zero_results: "Nichts gefunden für „[SEARCH_TERM]“",
-          many_results: "[COUNT] Treffer",
-          one_result: "1 Treffer"
-        }
-      });
-    }
-    // Such-Beispielchips: fuellen das Pagefind-Feld und loesen die Suche aus
+    // Such-Beispielchips: Begriff ins Suchfeld setzen und zur Suche-Seite gehen
     document.querySelectorAll('.pc-access-example[data-search]').forEach(function(chip) {
       chip.addEventListener('click', function() {
-        var input = document.querySelector('#search input.pagefind-ui__search-input');
-        if (input) {
-          input.value = chip.getAttribute('data-search');
-          input.dispatchEvent(new Event('input', { bubbles: true }));
-          input.focus();
-        }
+        var field = document.getElementById('bwm-search-input');
+        var form  = document.getElementById('bwm-search-form');
+        if (field && form) { field.value = chip.getAttribute('data-search'); form.submit(); }
       });
     });
 

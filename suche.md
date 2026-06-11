@@ -34,5 +34,24 @@ description: "Volltext-Stichwortsuche auf der Pilz-Chronik Bonusseite – Person
       showSubResults: true,
       excerptLength: 30
     });
+    // Vorbelegung aus ?q= (z. B. von der Startseiten-Suche): Feld fuellen + Suche ausloesen.
+    // PagefindUI rendert sein Eingabefeld asynchron, daher kurz darauf warten.
+    try {
+      var q = new URLSearchParams(window.location.search).get('q');
+      if (q) {
+        var start = new Date().getTime();
+        var iv = setInterval(function() {
+          var input = document.querySelector('#search input.pagefind-ui__search-input');
+          if (input) {
+            input.value = q;
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+            input.focus();
+            clearInterval(iv);
+          } else if (new Date().getTime() - start > 5000) {
+            clearInterval(iv);
+          }
+        }, 120);
+      }
+    } catch (e) { /* ignore */ }
   });
 </script>
