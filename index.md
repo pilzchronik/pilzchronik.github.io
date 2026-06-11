@@ -43,15 +43,42 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
   })();
 </script>
 
-<section class="bwm-tools" aria-label="Suche und Chat">
-  <div class="bwm-tool bwm-tool-search">
-    <p class="bwm-tool-label">Stichwort-Suche &mdash; auf dieser Webseite st&ouml;bern</p>
-    <div id="search" class="bwm-search"></div>
-  </div>
-  <div class="bwm-tool bwm-tool-chat">
-    <p class="bwm-tool-label">Chat-Assistent &mdash; eine Frage frei formulieren</p>
-    <p class="bwm-tool-text">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026). Antworten in S&auml;tzen, sofort.</p>
-    <button type="button" class="bwm-chat-cue" id="bwm-chat-open">Sprechblase rechts unten <svg class="bwm-chat-cue-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M6 6 L18 18 M18 11 L18 18 L11 18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<section class="pc-access" aria-label="Suche und Chat-Assistent">
+  <div class="pc-access-inner">
+
+    {%- comment -%} Stichwort-Suche (links) — treibt die bestehende Pagefind-Suche {%- endcomment -%}
+    <div class="pc-access-col">
+      <p class="pc-access-label">Stichwort-Suche</p>
+      <h2 class="pc-access-title">Auf dieser Webseite st&ouml;bern</h2>
+      <p class="pc-access-meta">Personen, Orte und Themen quer durch alle Beitr&auml;ge &mdash; Treffer erscheinen sofort.</p>
+      <div id="search" class="bwm-search pc-access-pagefind"></div>
+      <div class="pc-access-examples" aria-label="Suchbeispiele">
+        <button type="button" class="pc-access-example" data-search="D&ouml;rnthal">D&ouml;rnthal</button>
+        <button type="button" class="pc-access-example" data-search="Eberstaller">Eberstaller</button>
+        <button type="button" class="pc-access-example" data-search="DNA">DNA</button>
+      </div>
+    </div>
+
+    <div class="pc-access-divider" aria-hidden="true"></div>
+
+    {%- comment -%} Chat-Assistent (rechts) — Feld &ouml;ffnet das Chatling-Widget (Stufe 2) {%- endcomment -%}
+    <div class="pc-access-col">
+      <p class="pc-access-label">Chat-Assistent</p>
+      <h2 class="pc-access-title">Eine Frage frei formulieren</h2>
+      <p class="pc-access-meta">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026).</p>
+      <form class="pc-access-input" id="bwm-chat-form" autocomplete="off">
+        <input type="text" id="bwm-chat-input" name="frage" placeholder="Frage eingeben &hellip;" aria-label="Frage an den Chat-Assistenten">
+        <button type="submit" aria-label="Chat &ouml;ffnen">
+          <svg class="pc-access-input-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <div class="pc-access-examples" aria-label="Beispiel-Fragen">
+        <button type="button" class="pc-access-example" data-chat="Woher stammt der Familienname Pilz?">Woher stammt der Name Pilz?</button>
+        <button type="button" class="pc-access-example" data-chat="Was sagt die DNA &uuml;ber die Herkunft der Familie?">Was sagt die DNA?</button>
+      </div>
+      <p class="pc-access-hint" id="bwm-chat-hint">Das Chat-Fenster &ouml;ffnet sich rechts unten.</p>
+    </div>
+
   </div>
 </section>
 
@@ -117,13 +144,56 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
         }
       });
     }
-    var chatBtn = document.getElementById('bwm-chat-open');
-    if (chatBtn) {
-      chatBtn.addEventListener('click', function() {
-        if (window.Chatling && typeof window.Chatling.open === 'function') {
-          window.Chatling.open();
+    // Such-Beispielchips: fuellen das Pagefind-Feld und loesen die Suche aus
+    document.querySelectorAll('.pc-access-example[data-search]').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var input = document.querySelector('#search input.pagefind-ui__search-input');
+        if (input) {
+          input.value = chip.getAttribute('data-search');
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.focus();
         }
       });
+    });
+
+    // Chat-Assistent: Feld/Chips oeffnen das Chatling-Widget (Stufe 2 — Oeffnen
+    // per JS moeglich, Vorbefuellen nicht). Die getippte Frage wird, falls
+    // moeglich, in die Zwischenablage gelegt, damit sie im Chat eingefuegt
+    // werden kann. Kein totes Feld: es oeffnet in jedem Fall den Chat.
+    function bwmOpenChat(frage) {
+      var hint = document.getElementById('bwm-chat-hint');
+      var opened = false;
+      if (window.Chatling && typeof window.Chatling.open === 'function') {
+        try { window.Chatling.open(); opened = true; } catch (e) { /* ignore */ }
+      }
+      if (frage && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(frage).then(function() {
+          if (hint) hint.textContent = 'Chat geöffnet — deine Frage liegt in der Zwischenablage, im Chatfeld mit ⌘V bzw. Strg+V einfügen.';
+        }).catch(function() {
+          if (hint) hint.textContent = 'Chat-Fenster geöffnet — bitte stell deine Frage dort.';
+        });
+      } else if (hint) {
+        hint.textContent = opened
+          ? 'Chat-Fenster geöffnet — bitte stell deine Frage dort.'
+          : 'Bitte nutze die Sprechblase rechts unten.';
+      }
     }
+
+    var chatForm = document.getElementById('bwm-chat-form');
+    if (chatForm) {
+      chatForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var field = document.getElementById('bwm-chat-input');
+        bwmOpenChat(field ? field.value.trim() : '');
+      });
+    }
+    document.querySelectorAll('.pc-access-example[data-chat]').forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        var q = chip.getAttribute('data-chat');
+        var field = document.getElementById('bwm-chat-input');
+        if (field) field.value = q;
+        bwmOpenChat(q);
+      });
+    });
   });
 </script>

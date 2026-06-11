@@ -37,7 +37,7 @@
 :root {
   --pc-dunkelblau:        #132742;
   --pc-cremeweiss:        #ede9dd;  /* warmer Creme — bleibt Textfarbe auf dunklem Grund */
-  --pc-offwhite:          #faf8f3;  /* Redesign "hell & ruhig" 11.06.2026 (Claude Design): warmer Alabaster statt kuehlem #fafaf8 */
+  --pc-offwhite:          #f6f1e8;  /* Redesign "hell & ruhig" v3 (Claude Design): Warmweiss-Grundton (vorher Alabaster #faf8f3) */
   --pc-altrosa:           #d8849e;  /* helles Akzent-Rosa fuer DUNKLE Hintergruende */
   --pc-altrosa-dunkel:    #9a3f55;  /* dunkles Akzent-Rosa (Burgunder) fuer HELLE Hintergruende */
   --pc-reinweiss:         #ffffff;
@@ -1988,10 +1988,24 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
    ============================================================ */
 
 :root {
-  --pc-label-mute:  rgba(19, 39, 66, 0.62); /* gedaempftes Dunkelblau fuer Labels auf Hell */
-  --pc-hair:        rgba(19, 39, 66, 0.12); /* neutrale Haarlinie */
-  --pc-hair-strong: rgba(19, 39, 66, 0.18); /* etwas kraeftigere Haarlinie */
+  /* v3: WARME Grautoene statt blaustichig — passend zum Warmweiss-Grund,
+     damit der helle Grund nicht steril/"leichenblass" wirkt. */
+  --pc-label-mute:  #857c6f;                /* warmes Grau fuer Labels/Metadaten */
+  --pc-hair:        rgba(74, 58, 42, 0.14); /* warme Haarlinie (Sepia) dezent */
+  --pc-hair-strong: rgba(74, 58, 42, 0.20); /* warme Haarlinie etwas kraeftiger */
+  --pc-grau-gedaempft: #857c6f;             /* Byline/Bildunterschrift/Datum: warm statt kuehl */
 }
+
+/* Neutrale Strukturlinien in den Buchseiten ebenfalls warm (vorher blaustichig) */
+.bwm-primary,
+.bwm-secondary,
+.bwm-page { --pc-line: rgba(74, 58, 42, 0.18); }
+
+/* Hero/Werkzeugleiste: literale blaue Haarlinien -> warm */
+.bwm-hero { border-bottom-color: rgba(74, 58, 42, 0.14); }
+.bwm-hero::after { background-image: radial-gradient(circle at 1px 1px, rgba(74,58,42,.05) 1px, transparent 0); }
+.bwm-tools { border-bottom-color: rgba(74, 58, 42, 0.14); }
+.bwm-tool-chat { border-left-color: rgba(74, 58, 42, 0.14); }
 
 /* ---- Header: leichtere Navigation, gedeckter Marken-Untertitel,
    Unterkante als zarte Altrosa-Hairline statt Schatten ---- */
@@ -2124,5 +2138,98 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 .bwm-photo-cap {
   font-style: normal;
+}
+
+/* ============================================================
+   ZUGAENGE-BLOCK (Startseite v3) · Such- + Chat-Eingabe gleichwertig
+   Ersetzt die alte .bwm-tools-Loesung samt "Sprechblase rechts unten".
+   Zwei ruhige Spalten auf Warmweiss, je: Label -> Titel -> Meta ->
+   Eingabefeld -> Beispiel-Chips. Das Chat-Feld oeffnet das Chatling-
+   Widget (Stufe 2: Oeffnen per JS, kein Vorbefuellen).
+   ============================================================ */
+.pc-access {
+  background: var(--pc-offwhite);
+  color: var(--pc-dunkelblau);
+  padding: 56px 56px 88px;
+}
+.pc-access-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  column-gap: 56px;
+  align-items: start;
+}
+.pc-access-col { display: flex; flex-direction: column; gap: 14px; }
+.pc-access-divider { background: var(--pc-hair); width: 1px; align-self: stretch; }
+.pc-access-label {
+  font-family: var(--pc-font-display);
+  font-size: 13px; font-weight: 500; letter-spacing: 0;
+  text-transform: none; color: var(--pc-label-mute); margin: 0;
+}
+.pc-access-title {
+  font-family: var(--pc-font-display);
+  font-size: clamp(24px, 2.4vw, 30px); font-weight: 700;
+  line-height: 1.15; letter-spacing: -0.005em;
+  color: var(--pc-dunkelblau); margin: 0; max-width: 22ch;
+}
+.pc-access-meta {
+  font-family: var(--pc-font-body);
+  font-size: 15px; line-height: 1.5;
+  color: var(--pc-blau-weich); margin: 0; max-width: 48ch;
+}
+/* Chat-Eingabefeld */
+.pc-access-input {
+  display: grid; grid-template-columns: 1fr auto; align-items: stretch;
+  background: var(--pc-reinweiss);
+  border: 1px solid var(--pc-hair-strong);
+  margin-top: 4px;
+}
+.pc-access-input input {
+  background: transparent; border: 0; padding: 13px 16px;
+  font-family: var(--pc-font-body); font-size: 16px;
+  color: var(--pc-dunkelblau); outline: none; width: 100%;
+  -webkit-appearance: none; border-radius: 0;
+}
+.pc-access-input input::placeholder { color: var(--pc-dunkelblau); opacity: 0.45; font-style: normal; }
+.pc-access-input button {
+  background: var(--pc-dunkelblau); color: var(--pc-offwhite);
+  border: 0; padding: 0 16px; cursor: pointer;
+  display: grid; place-items: center; transition: background 160ms;
+}
+.pc-access-input button:hover { background: var(--pc-altrosa-dunkel); }
+.pc-access-input-icon { width: 18px; height: 18px; }
+/* Pagefind-Suchfeld (links) an die Feldoptik angleichen */
+.pc-access-pagefind {
+  margin-top: 4px; max-width: 100%;
+  --pagefind-ui-border-radius: 0;
+  --pagefind-ui-border: var(--pc-hair-strong);
+}
+.pc-access-pagefind .pagefind-ui__search-input {
+  border: 1px solid var(--pc-hair-strong);
+  border-radius: 0;
+  background: var(--pc-reinweiss);
+  font-size: 16px;
+  padding: 13px 16px;
+}
+/* Beispiel-Chips: aufrecht, gedeckt, Hover burgunder */
+.pc-access-examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-top: 6px; }
+.pc-access-example {
+  background: transparent; border: 0;
+  border-bottom: 1px solid var(--pc-hair-strong);
+  color: var(--pc-dunkelblau);
+  font-family: var(--pc-font-body); font-size: 14px;
+  padding: 0 0 2px; cursor: pointer; font-style: normal;
+  transition: color 160ms, border-color 160ms;
+}
+.pc-access-example:hover { color: var(--pc-altrosa-dunkel); border-bottom-color: var(--pc-altrosa-dunkel); }
+.pc-access-hint {
+  font-family: var(--pc-font-body); font-size: 13px;
+  color: var(--pc-label-mute); margin: 2px 0 0; font-style: normal;
+}
+@media (max-width: 880px) {
+  .pc-access { padding: 40px 24px 64px; }
+  .pc-access-inner { grid-template-columns: 1fr; row-gap: 36px; }
+  .pc-access-divider { display: none; }
 }
 
