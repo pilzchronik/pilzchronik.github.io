@@ -25,12 +25,11 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
   // Wechselndes Titelbild: bei jedem Aufruf zufaellig eines aus der Liste.
   // Liste pflegen = hier Eintraege ergaenzen/entfernen (Pfad + Bildunterschrift).
   (function () {
+    {%- comment -%} Nur Querformat-Fotos: wirken im Hero breit/ruhig, konstante Hoehe.
+       Hochformate wurden entfernt (waren schmal/hoch -> machten den Hero ungleich). {%- endcomment -%}
     var pics = [
       { src: "{{ '/assets/images/hilda-und-alois-pilz-um-1966.jpg' | relative_url }}", cap: "Hilda und Alois Pilz, um 1966" },
-      { src: "{{ '/assets/images/familie-reider-um-1915.jpg' | relative_url }}", cap: "Familie Reider, um 1915" },
-      { src: "{{ '/assets/images/franz-und-theresia-hofmann.jpg' | relative_url }}", cap: "Franz Hofmann (1853–1927) und Theresia Hofmann, geb. Foh (1853–1946)" },
-      { src: "{{ '/assets/images/jaeger-und-foerster-boehmen.jpg' | relative_url }}", cap: "Jäger und Förster in Böhmen, rechts Alois Johann Pilz" },
-      { src: "{{ '/assets/images/eberstaller-mit-tochter-hilda.jpg' | relative_url }}", cap: "Johann und Katharina Eberstaller, geb. Reider, mit Tochter Hilda" }
+      { src: "{{ '/assets/images/familie-reider-um-1915.jpg' | relative_url }}", cap: "Familie Reider, um 1915" }
     ];
     var p = pics[Math.floor(Math.random() * pics.length)];
     var img = document.getElementById('bwm-hero-img');

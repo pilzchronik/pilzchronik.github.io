@@ -2264,3 +2264,16 @@ button.pc-access-input:hover .pc-access-cta-icon { background: var(--pc-altrosa-
   .bwm-primary { padding-inline: calc((100% - 1180px) / 2); }
 }
 
+/* ============================================================
+   HERO-TITELFOTO · weniger Leerraum zwischen Titel und Foto (Desktop).
+   Nur >=881px (Mobil bleibt 264x380 unveraendert). Foto moderat groesser
+   + geringerer Spaltenabstand. max-width/max-height bleiben gekoppelt,
+   damit Hochformat (hoehenbegrenzt) und Querformat (breitenbegrenzt)
+   ein aehnlich grosses Fenster fuellen.
+   ============================================================ */
+@media (min-width: 881px) {
+  .bwm-hero { gap: 36px; }
+  .bwm-photo { max-width: 500px; }
+  .bwm-photo img { max-width: 460px; max-height: 475px; }
+}
+
