@@ -2199,20 +2199,18 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
 }
 .pc-access-input button:hover { background: var(--pc-altrosa-dunkel); }
 .pc-access-input-icon { width: 18px; height: 18px; }
-/* Chat-Button (rechts): klarer Ausloeser statt irrefuehrendem Eingabefeld */
-.pc-access-button {
-  display: inline-flex; align-items: center; gap: 10px;
-  align-self: flex-start; margin-top: 4px;
-  background: var(--pc-dunkelblau); color: var(--pc-offwhite);
-  border: 0; border-radius: 0;
-  font-family: var(--pc-font-display);
-  font-size: 16px; font-weight: 500; letter-spacing: 0;
-  padding: 14px 22px; cursor: pointer;
-  transition: background 160ms;
+/* Chat-Feld (readonly): identisch zum Suchfeld, oeffnet beim Klick nur den Chat */
+.pc-access-input input[readonly] { cursor: pointer; }
+/* Gleiche Grundlinie beider Spalten: Titel + Intro-Text auf gleiche
+   Mindesthoehe, damit Such- und Chat-Feld exakt auf einer Linie liegen */
+.pc-access-title { min-height: 2.3em; }
+.pc-access-meta  { min-height: 4.5em; }
+/* Gemeinsame, gedeckte Notiz UNTER beiden Spalten (nicht nur rechts) */
+.pc-access-note {
+  max-width: 1180px; margin: 18px auto 0;
+  font-family: var(--pc-font-body); font-size: 13px;
+  color: var(--pc-label-mute); text-align: center;
 }
-.pc-access-button:hover { background: var(--pc-altrosa-dunkel); }
-.pc-access-button-arrow { width: 18px; height: 18px; transition: transform 160ms; }
-.pc-access-button:hover .pc-access-button-arrow { transform: translateX(3px); }
 /* Beispiel-Chips: aufrecht, gedeckt, Hover burgunder */
 .pc-access-examples { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin-top: 6px; }
 .pc-access-example {
@@ -2232,5 +2230,19 @@ body.layout-cover .bwm-pinned a:hover { color: var(--pc-altrosa-dunkel) !importa
   .pc-access { padding: 40px 24px 64px; }
   .pc-access-inner { grid-template-columns: 1fr; row-gap: 36px; }
   .pc-access-divider { display: none; }
+}
+
+/* ============================================================
+   STARTSEITE · einheitliche Inhaltsbreite (Redesign-Vorgabe:
+   max. 1180 px, zentriert). Hero und Kacheln liefen bisher voll
+   breit, der Zugaenge-Block aber auf 1180 zentriert -> wirkte
+   unsymmetrisch. Ab 1292 px (1180 + 2*56) bekommen Hero und Kacheln
+   denselben zentrierten 1180er-Inhalt wie der Zugaenge-Block, damit
+   alle drei Sektionen buendig untereinander sitzen. Darunter laufen
+   alle ohnehin gleich (volle Breite minus Seitenrand).
+   ============================================================ */
+@media (min-width: 1292px) {
+  .bwm-hero,
+  .bwm-primary { padding-inline: calc((100% - 1180px) / 2); }
 }
 

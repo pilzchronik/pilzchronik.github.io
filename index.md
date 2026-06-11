@@ -63,21 +63,29 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
 
     <div class="pc-access-divider" aria-hidden="true"></div>
 
-    {%- comment -%} Chat-Assistent (rechts) — KLARER BUTTON, kein Eingabefeld.
-       Chatling kann eine getippte Frage nicht uebernehmen (keine Sende-API),
-       darum bewusst ein Button statt eines irrefuehrenden Felds. {%- endcomment -%}
+    {%- comment -%} Chat-Assistent (rechts) — exakt parallel zur Suchspalte:
+       als Eingabefeld gestaltet, oeffnet aber nur das Chatling-Widget
+       (Chatling kann keine Frage uebernehmen). Feld ist readonly -> kein
+       Tipp-Cursor; Klick/Enter oeffnet den Chat. {%- endcomment -%}
     <div class="pc-access-col">
       <p class="pc-access-label">Chat-Assistent</p>
-      <h2 class="pc-access-title">Eine Frage frei formulieren</h2>
-      <p class="pc-access-meta">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026). Frag z.&nbsp;B. nach Personen, Orten oder der DNA.</p>
-      <button type="button" class="pc-access-button" id="bwm-chat-open">
-        <span>Chat-Assistent &ouml;ffnen</span>
-        <svg class="pc-access-button-arrow" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <p class="pc-access-hint">&Ouml;ffnet das Chat-Fenster rechts unten.</p>
+      <h2 class="pc-access-title">Das Familienarchiv fragen</h2>
+      <p class="pc-access-meta">Kennt die <em>gesamte</em> Pilz-Familienforschung &mdash; auch das, was nicht auf dieser Webseite steht (Stand M&auml;rz 2026).</p>
+      <form class="pc-access-input" id="bwm-chat-form" autocomplete="off">
+        <input type="text" id="bwm-chat-input" readonly placeholder="Frage frei formulieren &hellip;" aria-label="Chat-Assistent &ouml;ffnen">
+        <button type="submit" aria-label="Chat &ouml;ffnen">
+          <svg class="pc-access-input-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 12 H18 M13 7 L18 12 L13 17" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <div class="pc-access-examples" aria-label="Beispiel-Fragen">
+        <button type="button" class="pc-access-example" data-chat>Woher stammt der Name Pilz?</button>
+        <button type="button" class="pc-access-example" data-chat>Was sagt die DNA?</button>
+      </div>
     </div>
 
   </div>
+
+  <p class="pc-access-note">Der Chat-Assistent &ouml;ffnet sich im Fenster rechts unten &mdash; dort stellst du deine Frage.</p>
 </section>
 
 <section class="bwm-primary" aria-label="Hauptbereiche">
@@ -138,15 +146,22 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
       });
     });
 
-    // Chat-Assistent: Button oeffnet das Chatling-Widget (rechts unten).
-    // Chatling kann eine getippte Frage nicht uebernehmen, darum nur oeffnen.
-    var chatBtn = document.getElementById('bwm-chat-open');
-    if (chatBtn) {
-      chatBtn.addEventListener('click', function() {
-        if (window.Chatling && typeof window.Chatling.open === 'function') {
-          try { window.Chatling.open(); } catch (e) { /* ignore */ }
-        }
-      });
+    // Chat-Assistent: Feld + Beispiel-Chips oeffnen das Chatling-Widget.
+    // Chatling kann eine Frage nicht uebernehmen; das Feld ist readonly und
+    // dient als optisch gleichwertiger Ausloeser (Klick/Enter oeffnet den Chat).
+    function bwmOpenChat() {
+      if (window.Chatling && typeof window.Chatling.open === 'function') {
+        try { window.Chatling.open(); } catch (e) { /* ignore */ }
+      }
     }
+    var chatForm = document.getElementById('bwm-chat-form');
+    if (chatForm) {
+      chatForm.addEventListener('submit', function(e) { e.preventDefault(); bwmOpenChat(); });
+      var chatInput = document.getElementById('bwm-chat-input');
+      if (chatInput) chatInput.addEventListener('click', bwmOpenChat);
+    }
+    document.querySelectorAll('.pc-access-example[data-chat]').forEach(function(chip) {
+      chip.addEventListener('click', bwmOpenChat);
+    });
   });
 </script>
