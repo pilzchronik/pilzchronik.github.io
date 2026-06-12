@@ -2,7 +2,7 @@
 
 **Zweck:** Überblick über die auf der öffentlichen DNA-Matches-Seite verwendeten Initialen/Kurznamen und ihre zugehörigen Klarnamen. Diese Datei liegt bewusst im `_intern`-Verzeichnis der Bonusseite, das Jekyll nicht in die veröffentlichte Seite baut.
 
-**Stand:** 2026-04-19 (Anonymisierungsrunde 2).
+**Stand:** 2026-06-12 (Reider/Köck-Strang ergänzt). Vorher: 2026-04-19 (Anonymisierungsrunde 2).
 **Pflege:** Bei jeder Änderung der DNA-Matches-Seite aktuell halten.
 
 ## Personen, die auf der Seite mit Initialen/Kurznamen erscheinen
@@ -36,6 +36,8 @@
 | Peter C. in Brünn | — im Fachprojekt DNA einsehen (Y-DNA-Match) | — | — |
 | Meredith (M./Robert C.) | — im Fachprojekt DNA einsehen (steht mit Robert C. in Verbindung) | — | — |
 | yaronk | — (GEDmatch-Pseudonym) | — | — |
+| G. K. | Gabriela Köck (*1983, Südtirol) — MyHeritage-Match, mütterliche Reider-Linie (Cousine 4. Grades, 1× entfernt) | — | Köck-Übergabedokument 12.6.2026 |
+| D. W. | Daniela Webhofer — MyHeritage-Match, Reider/Webhofer (2. Cousine, 94,7 cM) | — | Köck-Übergabedokument 12.6.2026 |
 
 ## Personen, die auf der Seite bewusst mit vollem Namen erscheinen
 
@@ -48,6 +50,7 @@
 | Barbara (Zeisl, verh. Schönberg) | Tochter Erich Zeisls, öffentlich über die Schönberg-Familienbiografie identifizierbar; auf der Seite nur mit Vornamen |
 | Wilhelm Zeisl (1907–1972), Siegmund Zeisl, Emanuel Moritz Zeisl, Egon/Walter/Erich Zeisl (Söhne), Kamilla Zeisl geb. Feitler, Malvine Feitler, Hermine Dannhauser geb. Zeisl, Josef Dannhauser, Philipine und Walter Dannhauser | Historische Familienpersonen der Zeisl-Linie, alle verstorben; zentral für die genealogische Darstellung |
 | Philipp Bechinie, Theresia/Pessel, Moshe, Regina Stern, Seligmann Fürth, weitere Ahnen | Historische Vorfahren (18./19. Jh.), verstorben |
+| Andreas Oliver Bechinie von Lazan | Lebender MyHeritage-Match (Vetter 4. Grades, Bechinie-Linie). Auf ausdrücklichen Wunsch Wolfgangs (12.6.2026) mit vollem Namen + Link zum öffentlichen Familienarchiv bechinie-von-lazan.de — abweichend von der sonstigen Anonymisierung lebender Matches |
 
 ## Lücken, die nur das DNA-Fachprojekt füllen kann
 
