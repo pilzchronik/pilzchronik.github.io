@@ -3,7 +3,7 @@ layout: post
 title: "MyHeritage AutoCluster: Wie sich meine DNA-Verwandten von selbst in Gruppen sortieren"
 date: 2026-06-12
 permalink: /myheritage-autocluster-2026/
-tags: [DNA, MyHeritage, AutoCluster]
+tags: [DNA, MyHeritage, AutoCluster, Hintergrund]
 description: "Allgemeinverständliche Erklärung der MyHeritage-AutoCluster-Auswertung (Kit MH-2H3644): Was die automatische Gruppierung der DNA-Matches zeigt, was sie belegt und was nicht — mit vollständiger Tabelle zum Download."
 excerpt: >
   MyHeritage hat meine DNA-Verwandten automatisch in 29 Gruppen sortiert. Dieser
