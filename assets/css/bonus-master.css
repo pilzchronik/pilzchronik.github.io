@@ -35,7 +35,7 @@
 @font-face { font-family: 'Source Sans 3'; src: url('../fonts/source-sans-3-latin-ext-600-italic.woff2') format('woff2'); font-weight: 600; font-style: italic; font-display: swap; unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 
 :root {
-  --pc-dunkelblau:        #132742;
+  --pc-dunkelblau:        #1c3a5c;  /* aufgehellt 11.06.2026: Buchdeckel-Blau wirkt am Monitor (ungedimmt, neben Warmweiss) sonst fast schwarz; vorher #132742 */
   --pc-cremeweiss:        #ede9dd;  /* warmer Creme — bleibt Textfarbe auf dunklem Grund */
   --pc-offwhite:          #f6f1e8;  /* Redesign "hell & ruhig" v3 (Claude Design): Warmweiss-Grundton (vorher Alabaster #faf8f3) */
   --pc-altrosa:           #d8849e;  /* helles Akzent-Rosa fuer DUNKLE Hintergruende */
