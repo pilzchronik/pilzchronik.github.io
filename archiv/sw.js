@@ -1,8 +1,8 @@
 var CACHE_NAME = 'archiv-cache-v3';
 var urlsToCache = [
-  '/bonusseite/archiv/',
-  '/bonusseite/archiv/index.html',
-  '/bonusseite/archiv/manifest.json'
+  './',
+  './index.html',
+  './manifest.json'
 ];
 
 self.addEventListener('install', function(event) {

@@ -2,7 +2,10 @@ title: Pilz-Chronik Bonusseite
 email: "pilz (at) gmx.at"
 description: >-
   Digitale Ergänzung und Werkstatt zur gedruckten Pilz-Chronik (Band 1 & 2).
-baseurl: "/bonusseite"
+# Wurzel-Adresse: Repo heißt pilzchronik.github.io → baseurl leer.
+# (Der GitHub-Actions-Build setzt baseurl ohnehin automatisch aus dem Repo-Namen;
+#  dieser Wert gilt für lokale Builds/Vorschau und Konsistenz.)
+baseurl: ""
 url: "https://pilzchronik.github.io"
 lang: de
 

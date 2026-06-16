@@ -128,7 +128,7 @@ Sie dient als Wissensbasis für einen KI-Assistenten, der Fragen zur Familienges
 
 **Autor:** Wolfgang Pilz, Innsbruck
 **Kontakt:** pilz (at) gmx.at
-**Webseite:** https://pilzchronik.github.io/bonusseite/
+**Webseite:** https://pilzchronik.github.io/
 
 **Hauptfamilien:**
 - Pilz (Böhmen/Sachsen, später Oberösterreich)
@@ -160,7 +160,7 @@ Die Pilz-Chronik dokumentiert die Familiengeschichte der Familie Pilz und verwan
 
 Die Chronik wurde von Wolfgang Pilz (Innsbruck) verfasst.
 Kontakt: pilz (at) gmx.at
-Webseite: https://pilzchronik.github.io/bonusseite/
+Webseite: https://pilzchronik.github.io/
 
 ---
 
@@ -6337,7 +6337,7 @@ Print-on-Demand
 
 ## Hinweise
 
-Für detaillierte Ahnentafeln, vollständige Transkriptionen und Quellenangaben siehe die gedruckten Bände der Pilz-Chronik oder die Bonusseite unter https://pilzchronik.github.io/bonusseite/
+Für detaillierte Ahnentafeln, vollständige Transkriptionen und Quellenangaben siehe die gedruckten Bände der Pilz-Chronik oder die Bonusseite unter https://pilzchronik.github.io/
 
 Bei Fragen zur Familiengeschichte wenden Sie sich an: pilz (at) gmx.at
 
@@ -6350,7 +6350,7 @@ Bei Fragen zur Familiengeschichte wenden Sie sich an: pilz (at) gmx.at
 # Pilz-Chronik Bonusseite – Wissensbasis
 
 Diese Datei enthält die Inhalte der Bonusseite zur Pilz-Chronik.
-Webseite: https://pilzchronik.github.io/bonusseite/
+Webseite: https://pilzchronik.github.io/
 
 Die Bonusseite ist die digitale Ergänzung zur gedruckten Familienchronik (Band 1 & 2).
 Sie enthält Karten, Datensätze, Korrekturen und laufende Aktualisierungen.
@@ -6590,7 +6590,7 @@ Historische Zeitleiste
 Diese Karte visualisiert die Wanderungsbewegungen der Familie über die Jahrhunderte.
     Sie verbindet die drei historischen ">
     Details zur DNA-Analyse finden Sie in Band 2 der Chronik.
-  ← Zurück zur Startseite (/bonusseite/)
+  ← Zurück zur Startseite (/)
 
 ---
 
@@ -6598,7 +6598,7 @@ Diese Karte visualisiert die Wanderungsbewegungen der Familie über die Jahrhund
 
 Hintergrundberichte und Dokumente aus der digitalen Werkstatt.
   
-  ← Zurück zur Startseite (/bonusseite/)
+  ← Zurück zur Startseite (/)
 
 ---
 
@@ -7113,7 +7113,7 @@ Diese Notiz bleibt so lange **vorläufig**, bis ein Archivalnachweis (Scan oder 
 ## Ende der Wissensbasis
 
 Bei Fragen zur Familiengeschichte wenden Sie sich an: pilz (at) gmx.at
-Weitere Informationen: https://pilzchronik.github.io/bonusseite/
+Weitere Informationen: https://pilzchronik.github.io/
 
 
 ================================================================================
@@ -7735,7 +7735,7 @@ Wolfgang Pilz (geboren 1948 in Kartitsch) ist der Autor dieser Chronik.
 - Ehefrau: Bruni
 - Geschwister: Renate (geb. 1942), Erhard (geb. 1944)
 - Kontakt: pilz (at) gmx.at
-- Webseite: https://pilzchronik.github.io/bonusseite/
+- Webseite: https://pilzchronik.github.io/
 
 VERSTORBENE PERSONEN:
 Über verstorbene Personen dürfen vollständige Auskünfte gegeben werden.

@@ -85,7 +85,7 @@ Im Terminal eingeben:
 bundle exec jekyll serve
 ```
 
-Dann im Browser öffnen: http://localhost:4000/bonusseite/werkstatt/
+Dann im Browser öffnen: http://localhost:4000/werkstatt/
 
 Was Sie sehen sollten:
 - Die Filterleiste hat jetzt einen neuen Button: „Logbuch"

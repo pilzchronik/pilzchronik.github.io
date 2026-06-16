@@ -1,8 +1,8 @@
 # Wartungshinweise für die Pilz-Chronik Bonusseite
 
 **Version:** Januar 2025  
-**Repository:** https://github.com/pilzchronik/bonusseite  
-**Live-Website:** https://pilzchronik.github.io/bonusseite/
+**Repository:** https://github.com/pilzchronik/pilzchronik.github.io  
+**Live-Website:** https://pilzchronik.github.io/
 
 ---
 
@@ -84,12 +84,12 @@ Diese Komponenten könnten in Zukunft nicht mehr funktionieren. **Die Website l�
 ### 🌐 **Internet Archive** (Zusatzbackup)
 
 Die Website wird automatisch von archive.org gesichert:
-- **Wayback Machine:** https://web.archive.org/web/*/pilzchronik.github.io/bonusseite/
+- **Wayback Machine:** https://web.archive.org/web/*/pilzchronik.github.io/
 - Snapshots mehrmals pro Jahr
 - Funktioniert automatisch (keine Wartung nötig)
 
 **Manuelle Archivierung:**
-- Besuche: https://web.archive.org/save/https://pilzchronik.github.io/bonusseite/
+- Besuche: https://web.archive.org/save/https://pilzchronik.github.io/
 - Erstellt sofortigen Snapshot
 
 ### 📚 **Gedruckte Bücher** (Primärquelle)
@@ -124,7 +124,7 @@ Die wichtigsten Inhalte existieren als **gedruckte Familienchronik**:
 ### 🚨 **Szenario 2: Zenodo ist nicht erreichbar**
 
 **Lösung: Internet Archive**
-- Besuche: https://web.archive.org/web/*/pilzchronik.github.io/bonusseite/
+- Besuche: https://web.archive.org/web/*/pilzchronik.github.io/
 - Wähle einen Snapshot aus
 - Lade die Seiten einzeln herunter
 
@@ -198,7 +198,7 @@ bonusseite/
 
 2. **Repository klonen**
    ```bash
-   git clone https://github.com/pilzchronik/bonusseite.git
+   git clone https://github.com/pilzchronik/pilzchronik.github.io.git
    cd bonusseite
    ```
 
@@ -211,7 +211,7 @@ bonusseite/
    ```bash
    bundle exec jekyll serve
    ```
-   → Öffne http://localhost:4000/bonusseite/
+   → Öffne http://localhost:4000/
 
 5. **Änderungen hochladen**
    - Mit GitHub Desktop
@@ -266,7 +266,7 @@ Falls du diese Website übernimmst:
 
 ### ☐ **Sofort (innerhalb 1 Monat)**
 - [ ] Prüfe, ob GitHub-Account noch aktiv ist
-- [ ] Teste, ob Website unter https://pilzchronik.github.io/bonusseite/ erreichbar ist
+- [ ] Teste, ob Website unter https://pilzchronik.github.io/ erreichbar ist
 - [ ] Lade Zenodo-Archiv herunter und speichere lokal
 - [ ] Aktualisiere Kontaktdaten in dieser MAINTENANCE.md
 

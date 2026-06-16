@@ -619,7 +619,7 @@ window.addEventListener('load',function(){render();});
 <script>
 if('serviceWorker' in navigator){
   window.addEventListener('load',function(){
-    navigator.serviceWorker.register('/bonusseite/archiv/sw.js')
+    navigator.serviceWorker.register('sw.js')
       .then(function(r){console.log('SW OK:',r.scope);})
       .catch(function(e){console.log('SW Fehler (lokal erwartet):',e.message);});
   });

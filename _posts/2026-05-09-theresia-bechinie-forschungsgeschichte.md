@@ -20,7 +20,7 @@ Geboren wurde sie um November/Dezember 1749 als Tochter des Joseph Rudolph und d
 
 Fünf Etappen bilden die Achse der Forschung: Geburt, jüdische Ehe, Scheidung, Taufe, katholische Heirat. Jede ist anders gut belegt — manche urkundlich, manche nur erschlossen.
 
-> Eine kompakte visuelle Übersicht (DNA, Stammbaum, Brücke Pilz/Zeisl) findet sich in der [DNA-Skizze als Anlage](/bonusseite/assets/dna-skizze.html).
+> Eine kompakte visuelle Übersicht (DNA, Stammbaum, Brücke Pilz/Zeisl) findet sich in der [DNA-Skizze als Anlage]({{ '/assets/dna-skizze.html' | relative_url }}).
 
 ## Was zu Beginn gesichert war
 
@@ -220,8 +220,8 @@ Das ist mehr, als zu Beginn der Spurensuche zu sehen war — und weniger, als n�
 
 **Anlagen und verwandte Stellen:**
 
-- [DNA-Skizze (Stammbäume, Chromosom 9, Brücken-Diagramm)](/bonusseite/assets/dna-skizze.html)
-- [Pessel/Rudolph-Befunde Mai 2026 — Skizze (Wopořan, Migrationsvektoren, Mähren-Anker)](/bonusseite/assets/befunde-rudolph-mai-2026.html)
+- [DNA-Skizze (Stammbäume, Chromosom 9, Brücken-Diagramm)]({{ '/assets/dna-skizze.html' | relative_url }})
+- [Pessel/Rudolph-Befunde Mai 2026 — Skizze (Wopořan, Migrationsvektoren, Mähren-Anker)]({{ '/assets/befunde-rudolph-mai-2026.html' | relative_url }})
 - [Zwei Familien in einem Dorf? Veselíčko, ein DNA-Match aus den USA und Hypothese A′](/veselicko-zwei-familien-ein-dorf/)
 - [DNA Pilz–Zeisl: autosomaler Match](/dna-pilz-zeisl-autosomaler-match/)
 - [DNA-Analyse: Unsere Herkunft vor den Kirchenbüchern](/dna-analyse/)
