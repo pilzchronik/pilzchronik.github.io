@@ -233,6 +233,42 @@ stand_vom: 2026-06-16
   Sammlung (siehe Schritt 11.3), nicht je Datei.
 - **Datenschutz-Gate vor dem Commit** (M-001), siehe §7.
 
+## 14. Plattform-Frage: WordPress, eigene Domain, Internet-Archive
+
+**Geprüfte Alternative:** volle **WordPress-Seite auf pilzchronik.at** statt GitHub, dann
+ins Internet-Archive archivieren. **Ergebnis: nicht empfohlen** — widerspricht dem
+obersten Ziel (Fortbestand ohne Betreuung).
+
+- **WordPress ist das Gegenteil von wartungsarm.** Es braucht bezahltes Hosting (Rechnung
+  läuft aus → Seite tot), eine Datenbank, und **ständige Sicherheitsupdates** (Core, Themes,
+  Plugins). Unbetreut verrottet es nicht nur — es **wird aktiv gehackt/verspammt/defaced**.
+  Eine statische Seite hat keinen Server-Code und **kann nicht gehackt werden**; sie bleibt
+  einfach stehen. (Die derzeitige unbetreute Seite auf pilzchronik.at ist genau dieses Problem.)
+
+- **Domain pilzchronik.at:** Auslaufen lassen ist konsistent mit dem Ziel (eine Domain ist
+  eine ewige Jahreszahlung). Entscheidung über die **dauerhafte Adresse**:
+  - **A (empfohlen):** `pilzchronik.github.io/...` — kostenlos, läuft nie aus, null Pflege.
+  - **B:** nur die Domain behalten und kostenlos auf die GitHub-Seite zeigen lassen (eigene
+    Domain ist bei GitHub Pages gratis) — schönere Adresse, holt aber die Jahreszahlung +
+    Verlängerer + Squatter-Risiko bei Auslaufen zurück.
+  - Hinweis: Künftig nur die **dauerhafte** Adresse drucken/teilen; was auf pilzchronik.at
+    zeigt, führt nach dem Auslaufen irgendwann ins Leere oder zu Fremden.
+
+- **Internet-Archive (Wayback Machine): gute Ergänzung, kein Ersatz.** Friert **sichtbare,
+  verlinkte** Seiten ein → wertvolle Sicherungskopie der **Schauseite**. Aber: **keine
+  funktionierende Pagefind-Suche** im Schnappschuss, und die **nicht verlinkten
+  `_unlisted`-Speicherseiten werden nicht erfasst** (Crawler findet sie nicht). Also kein
+  durchsuchbares Archiv und kein Ersatz für die lebende GitHub-Seite — nur ein Notnagel
+  „falls GitHub mal verschwindet".
+
+- **Falls der Reiz von WordPress das bequeme Bearbeiten ist:** Zwitterweg (in WordPress
+  schreiben → statisch exportieren → auf GitHub hosten) existiert, holt aber die
+  WordPress-Abhängigkeit zurück → nicht empfohlen. Bearbeitungs-Komfort lieber anders lösen
+  (Hilfe beim Einpflegen, GitHub-Web-Editor).
+
+**Entscheidung:** bei der statischen GitHub-Lösung bleiben; pilzchronik.at auslaufen lassen;
+github.io als dauerhafte Adresse; Internet-Archive als zusätzliche Sicherung der Schauseite.
+
 ---
 
 ### Kernsatz zum Zurückgreifen
