@@ -1,6 +1,6 @@
 # Konzept: Zugang zum Gesamtwissen der Pilz-Chronik
 
-**Stand:** 2026-06-16
+**Stand:** 2026-06-16 (rev. 2 — Zweitmeinung Gemini eingearbeitet)
 **Zweck:** Dauerhafte Entscheidungs- und Planungsgrundlage dafür, wie das gesamte
 Forschungswissen langfristig gesammelt, durchsuchbar und zugänglich gemacht wird —
 mit besonderem Augenmerk auf Kostenfreiheit, Einfachheit und Fortbestand auch ohne
@@ -92,6 +92,17 @@ erreichbaren Bestand (Schauseite **und** Wissensspeicher) die Brandmauer absolut
 - Altlasten (u. a. `E_DNA_Cluster_Analyse`) müssen vor jeder Veröffentlichung bereinigt sein;
 - `99_Rohimport` kommt nie auf die Seite.
 
+**Verschärfung (öffentliches Repo):** Da die Seite im GitHub-Free-Tarif liegt, ist das
+**gesamte Repository öffentlich** — der komplette Quelltext inkl. `_unlisted/` ist direkt
+auf github.com einsehbar und herunterladbar. Zwei Konsequenzen:
+
+- Ein **privates Repo würde nicht schützen** — die gebaute Seite (HTML + Pagefind-Index)
+  ist ohnehin öffentlich; privat verstecken würde nur den Quelltext, nicht den Inhalt.
+- **Die git-Historie ist dauerhaft.** Ein einmal committeter Klarname bleibt auch nach
+  dem Löschen in der Versionsgeschichte abrufbar; Entfernen erfordert ein Umschreiben
+  der Historie. → **Die Brandmauer muss vor dem Commit greifen, nicht erst vor der Anzeige.**
+  Die M-001-Codierung ist damit die **einzige** Verteidigungslinie.
+
 ## 8. Der Bot als optionales Extra (nur falls/solange betreut)
 
 - Ein **Claude-betriebener** Bot auf der Seite braucht **zwingend die Anthropic-API**
@@ -150,6 +161,11 @@ Schnappschuss. (Siehe auch das Übergabe-Dokument im Cowork-Projekt.)
    suchen sich besser als ein Riesenblock).
 3. **Schalter 3 umlegen:** `_unlisted`-Seiten in die **Pagefind-Suche aufnehmen**
    (das `data-pagefind-ignore` für diese Seiten entfernen), Menü-Ausschluss bleibt.
+   **Wichtig (Sitemap-Falle):** `jekyll-sitemap` ist aktiv und nimmt standardmäßig alle
+   Seiten mit `output: true` auf. Für die `_unlisted`-Sammlung daher in `_config.yml`
+   einen **`defaults`-Block** setzen, der automatisch `sitemap: false` **und** `noindex`
+   (Schalter 2) für jede Speicher-Seite erzwingt — nicht pro Datei, sondern zentral, damit
+   bei der Massen-Erzeugung keine Seite durchrutscht.
 4. **Q&A-Schreibweise:** häufige Fragen als Klartext-Überschriften, Beziehungen
    ausformulieren (für gute Phrasen-Treffer).
 5. **FAQ-Seite** als „Antwort"-Schicht ergänzen.
@@ -160,11 +176,62 @@ Schnappschuss. (Siehe auch das Übergabe-Dokument im Cowork-Projekt.)
 
 ## 12. Offene Entscheidungen (später zu klären)
 
-- Wissensspeicher für Google sichtbar (Schalter 2) — ja oder nein?
+- ~~Wissensspeicher für Google sichtbar (Schalter 2)?~~ **Entschieden: Nein (noindex).**
+  Begründung: sonst Keyword-Kannibalisierung (Archiv-Treffer drücken die kuratierte
+  Schauseite im Ranking) und schlechte Nutzererfahrung (Google-Besucher landen auf
+  kontextlosen, codierten Einzelseiten ohne Navigation).
 - Bekommt die **dna-matches**-Seite überhaupt einen Speicher/Bot? (Sensibler Bereich —
   wenn, dann streng codifiziert.)
-- Modellwahl für einen etwaigen Bot: **Sonnet** (Empfehlung) oder **Haiku** (sparsamer)?
+- Modellwahl für einen etwaigen Bot: **aktuelles Sonnet** (Empfehlung — bei verschachtelter
+  Stammbaum-Logik deutlich zuverlässiger) statt **Haiku** (sparsamer, aber halluziniert
+  bei komplexer Genealogie eher). Konkretes Modell erst bei Umsetzung festlegen (nicht
+  vorab pinnen — Modelle laufen aus).
 - Soll der Bot den Autor überdauern? Wenn ja: Person + Guthaben festlegen.
+
+## 13. Export-Format & Aufteilung in Einzelseiten
+
+**Format des Cowork-Exports:** ein **strukturierter Markdown-Datensatz pro Wissens-Einheit**
+(eine Einheit = eine Person / eine Synthese / ein Dokument), jeweils mit Jekyll-tauglichem
+Front-Matter und einer **stabilen `id`**. Vorlage je Datensatz:
+
+```
+---
+id: person-alois-johann-pilz      # stabil, niemals ändern (Permalink-Basis)
+titel: "Alois Johann Pilz (Großvater)"
+strang: Pilz                       # Pilz | Bechinie | Eberstaller | Kofler-Cofler | DNA
+typ: Person                        # Person | Synthese | Dokument | Ort
+status: Korb-1                     # Korb-1 | Korb-2 | Korb-3
+stand_vom: 2026-06-16
+---
+## Wer war Alois Johann Pilz?           ← Frage als Klartext-Überschrift (Phrasen-Treffer)
+<ausformulierter Fließtext: Daten, Beziehungen, Befund, bei Korb 2 beide Stände nebeneinander>
+```
+
+**Aufteilung — zwei Wege, Empfehlung B:**
+
+- **B (empfohlen, maximal haltbar): vorab aufgeteilte, „dumme" Dateien.** Der Export besteht
+  aus *vielen einzelnen* `_unlisted/<id>.md`-Dateien (das Cowork-Projekt gibt sie direkt
+  einzeln aus, oder ein **kleines Aufteil-Skript** schneidet eine konkatenierte Export-Datei
+  an den `^---`-Front-Matter-Grenzen und schreibt je Datensatz eine Datei). Die Aufteilung
+  passiert **einmalig zur Export-Zeit**, nicht bei jedem Build. Vorteil: keine Spezial-Logik
+  im Build, reine Markdown-Dateien → so lange lauffähig, wie Jekyll Markdown rendert.
+  Passt auch zur `github-pages`-Gem (keine Custom-Plugins nötig).
+
+- **A (eleganter, aber etwas fragiler): datengetrieben.** Ein einziges `_data/wissensbasis.yml`
+  als Quelle + ein Jekyll-**Generator-Plugin**, das je Datensatz eine Seite erzeugt. Single
+  Source of Truth, aber: Generatoren sind Custom-Code (kleine Langzeit-Fragilität, und die
+  reine `github-pages`-Hosting-Pipeline erlaubt keine Custom-Plugins — funktioniert nur über
+  den eigenen Actions-Build). Für das Haltbarkeitsziel daher **nachrangig**.
+
+**Verbindliche Regeln (für beide Wege):**
+
+- **Permalink aus der stabilen `id`** ableiten (z. B. `permalink: /w/<id>/`), damit
+  Re-Exporte und externe Links **nicht brechen**.
+- **Idempotent/reproduzierbar:** Re-Export erzeugt denselben Satz neu; gleiche `id` →
+  gleicher Permalink. Geänderte Einheiten überschreiben, gelöschte entfernen.
+- **`sitemap: false` + `noindex` zentral** über `_config.yml`-`defaults` der `_unlisted`-
+  Sammlung (siehe Schritt 11.3), nicht je Datei.
+- **Datenschutz-Gate vor dem Commit** (M-001), siehe §7.
 
 ---
 
