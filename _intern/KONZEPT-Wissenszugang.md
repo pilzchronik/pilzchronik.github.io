@@ -269,6 +269,44 @@ obersten Ziel (Fortbestand ohne Betreuung).
 **Entscheidung:** bei der statischen GitHub-Lösung bleiben; pilzchronik.at auslaufen lassen;
 github.io als dauerhafte Adresse; Internet-Archive als zusätzliche Sicherung der Schauseite.
 
+## 15. Dauerhafte Adresse: Verkürzung auf die Wurzel + alte QR-Codes retten
+
+**Entscheidung:** Die Bonusseite bekommt die kurze, beständige Wurzel-Adresse
+**`https://pilzchronik.github.io/`** — als würdiger, dauerhafter Anker für das Familienerbe.
+
+**Mechanik (GitHub-Regel):** Die Adresse leitet sich vom Repo-Namen ab. Wurzel-Adresse =
+Repo muss exakt **`pilzchronik.github.io`** heißen. Daher: Repo **`bonusseite` umbenennen**
+in `pilzchronik.github.io` (GitHub → Settings → Repository name). Die Wurzel ist frei
+(es gibt das Repo `pilzchronik`, aber **nicht** `pilzchronik.github.io`).
+
+**Kein Konflikt mit den anderen Seiten:** Die Repos sind eigenständige Seiten unter
+demselben Benutzernamen, nicht ineinander verschachtelt. Nach dem Umbenennen:
+- `dna-matches` bleibt unverändert unter `…/dna-matches/` (**wichtig, bleibt unberührt**),
+- `gartenwetter`, `Bechinie`, `pilzchronik` bleiben unter ihren Unterpfaden,
+- nur die Bonusseite zieht von `…/bonusseite/` auf die Wurzel `…/`.
+
+**Code-Seite (vor/zum Umbenennen zu erledigen):**
+- `_config.yml`: `baseurl: "/bonusseite"` → **`baseurl: ""`**.
+- Hartkodierte `/bonusseite/…`-Links anpassen (in `assets/befunde-rudolph-mai-2026.html`,
+  `assets/dna-skizze.html`, `assets/js/karte-neu.js`, `_posts/2026-05-09-…`,
+  `_unlisted/2026-05-05-…`, `MAINTENANCE.md`); die meisten Links nutzen schon `relative_url`.
+- **DNA-seitig prüfen:** etwaige Rückverweise der DNA-Seite auf `…/bonusseite/…` auf die
+  kurze Adresse umstellen (Links von Bonusseite auf `…/dna-matches/` bleiben gültig).
+- Reihenfolge: Umbenennen + Config-Umstellung gehören zusammen (kurzer „schiefer" Moment,
+  bei dem Traffic unkritisch).
+
+**Alte gedruckte QR-Codes (1. Auflage, ~8 Exemplare):** lassen sich **gratis und dauerhaft
+retten** — nach dem Umbenennen wird der Name `bonusseite` frei; ein **winziges neues Repo
+`bonusseite`** mit nur einer Weiterleitungs-HTML-Datei leitet `…/bonusseite/` automatisch
+auf die Wurzel `…/` um. Reine statische Datei, kostenlos, wartungsfrei. (Deckt den
+Startseiten-/Cover-QR; tiefe Links bräuchten je eine eigene Weiterleitung.)
+
+**Print/Errata:** Die 1. Auflage wird ohnehin per **Begleitblatt** korrigiert (URL-Hinweis
++ weitere Fehler). Empfohlen: Berichtigungen als **lebende Seite** auf der Webseite führen
+(„Berichtigungen zur 1. Auflage", an die *Korrekturen*-Rubrik angelehnt) und das Begleitblatt
+als datierten Ausdruck-Schnappschuss erzeugen — Pflege an einer Stelle, gedrucktes Blatt für
+die Exemplare. **Künftige Auflagen:** gleich die kurze Adresse `pilzchronik.github.io` drucken.
+
 ---
 
 ### Kernsatz zum Zurückgreifen
