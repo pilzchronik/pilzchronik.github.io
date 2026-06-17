@@ -3,8 +3,8 @@ layout: post
 title: "Archivreise LKA Dresden: Stammlinie Pültz/Pilz Dörnthal über sechs Generationen gesichert"
 date: 2026-03-27
 permalink: /ergebnis-archivreise-lka-dresden/
-status: vorläufig
-stand_vom: 2026-05-15
+status: aktuell
+stand_vom: 2026-06-17
 betrifft: Band1, Band2
 tags: [Neue Funde, Korrekturen, Kirchenbücher, LKA Dresden, Primärquellen, Erzgebirge, Ergebnisse]
 description: 'Kirchenbücher im Landeskirchlichen Archiv Dresden bestätigen die direkte Stammlinie Pültz/Pilz in Dörnthal über sechs Generationen – Korrektur „Joseph statt Jobst“ damit widerlegt.'
@@ -71,7 +71,7 @@ Jobst war mindestens dreimal verheiratet. Seine ersten drei Ehefrauen starben 15
 
 Bei Abrahams Taufe 1591 trat **„die Michael Teuffelin"** als Patin auf — also eine Angehörige der Familie Teuffel. Da Jobst 1589 Margarete Teuffel geheiratet hatte und Abraham 1591 geboren wurde, ist Margarete Teuffel mit hoher Wahrscheinlichkeit Abrahams Mutter.
 
-**Evidenzstufe:** knapp unter GESICHERT. Es fehlt die ausdrückliche Nennung der Eltern im Taufeintrag (wie sie in diesem frühen Kirchenbuch nicht immer erfolgte).
+**Evidenzstufe:** knapp unter GESICHERT. Im Taufeintrag wird der **Vater (Jobst Piltz) ausdrücklich genannt**; die **Mutter** wird nicht genannt (wie in diesem frühen Kirchenbuch nicht immer üblich).
 
 ---
 
