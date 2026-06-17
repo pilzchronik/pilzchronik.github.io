@@ -35,6 +35,29 @@
     </div>
 
   </div>
-<script> window.chtlConfig = { chatbotId: "1593533597" } </script>
-<script async data-id="1593533597" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+<script>
+  // Chatling-Bot: wird nur geladen, wenn der Dienst erreichbar ist.
+  // Bei Fehler (Service eingestellt, Timeout, JS-Fehler) verschwindet das Widget lautlos.
+  (function() {
+    try {
+      window.chtlConfig = { chatbotId: "1593533597" };
+      var s = document.createElement("script");
+      s.async = true;
+      s.setAttribute("data-id", "1593533597");
+      s.id = "chtl-script";
+      s.type = "text/javascript";
+      s.src = "https://chatling.ai/js/embed.js";
+      s.onerror = function() {
+        // Skript nicht erreichbar – Widget still entfernen, Flag setzen
+        window.chtlUnavailable = true;
+        try { s.parentNode && s.parentNode.removeChild(s); } catch(e) {}
+      };
+      document.currentScript
+        ? document.currentScript.parentNode.appendChild(s)
+        : document.body.appendChild(s);
+    } catch(e) {
+      // Kein Absturz der Seite bei unerwarteten Fehlern
+    }
+  })();
+</script>
 </footer>

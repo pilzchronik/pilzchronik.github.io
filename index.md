@@ -141,13 +141,39 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
     });
 
     // Chat-Assistent: Die ganze Box oeffnet das Chatling-Widget.
+    // Ist der Dienst nicht erreichbar, bekommt der Besucher eine Erklaerung.
     var chatBtn = document.getElementById('bwm-chat-open');
+    var chatNote = document.querySelector('.pc-access-note');
+
+    function showChatUnavailable() {
+      if (chatBtn) {
+        chatBtn.disabled = true;
+        chatBtn.style.opacity = '0.45';
+        chatBtn.style.cursor = 'not-allowed';
+        var lbl = chatBtn.querySelector('.pc-access-cta-label');
+        if (lbl) lbl.textContent = 'Chat-Assistent nicht verfügbar';
+      }
+      if (chatNote) {
+        chatNote.innerHTML = 'Der Chat-Dienst steht derzeit nicht zur Verfügung &mdash; m&ouml;glicherweise wurde er eingestellt. F&uuml;r Fragen nutze bitte die <a href="{{ "/suche/" | relative_url }}" style="color:inherit">Stichwort-Suche</a> oder schreib an <a href="mailto:pilz@gmx.at" style="color:inherit">pilz@gmx.at</a>.';
+        chatNote.style.color = '#a05000';
+      }
+    }
+
     if (chatBtn) {
       chatBtn.addEventListener('click', function() {
         if (window.Chatling && typeof window.Chatling.open === 'function') {
           try { window.Chatling.open(); } catch (e) { /* ignore */ }
+        } else {
+          showChatUnavailable();
         }
       });
     }
+
+    // Nach 6 Sekunden pruefen: Hat Chatling geladen? Wenn nicht -> Hinweis anzeigen.
+    setTimeout(function() {
+      if (window.chtlUnavailable || !(window.Chatling && typeof window.Chatling.open === 'function')) {
+        showChatUnavailable();
+      }
+    }, 6000);
   });
 </script>
