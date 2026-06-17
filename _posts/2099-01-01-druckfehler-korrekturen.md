@@ -8,7 +8,7 @@ description: "Sammlung der Korrekturen und Ergänzungen zur gedruckten Pilz-Chro
 excerpt: "Genealogische Forschung ist nie abgeschlossen. Hier halte ich fest, was seit dem Druck korrigiert oder präzisiert werden konnte."
 pinned: true
 status: aktuell
-stand_vom: 2026-05-05
+stand_vom: 2026-06-17
 ---
 
 <style>
@@ -67,7 +67,7 @@ stand_vom: 2026-05-05
   </script>
 </div>
 
-<p class="errata-stand">Stand: 5. Mai 2026</p>
+<p class="errata-stand">Stand: 17. Juni 2026</p>
 
 ## Berichtigungen
 <div class="errata-eintrag">
@@ -102,17 +102,18 @@ stand_vom: 2026-05-05
   <h3>Band 1, S. 74–75 — Vater von Abraham Pilz (Kekulé 4.096): bestätigt</h3>
   <p>Gedruckt: Jobst Pilz sei Abrahams Vater gewesen.</p>
   <p><strong>Bestätigt.</strong> Im Heiratsregister Reg. 36 (Dörnthal) erscheint zwischen 1568 und 1594 unter Piltz ausschließlich der Name <strong>Jobst</strong>. Ein „Joseph" kommt nicht vor. Jobst Pültz ist Abrahams Vater. — Der Gerichtsbucheintrag von 1620, der Abraham als „Sohn des Joseph" nennt, beruht mit hoher Wahrscheinlichkeit auf einer Fehllesung des Namens Jobst durch den Gerichtsschreiber.</p>
+  <p>Direkter Primärbeleg (17.06.2026): Im Taufeintrag KB 23, Nr. 479, Dörnthal, lautet die Eintragung ausdrücklich <em>„Jobst Piltzen einen Sohn Abraham getauff[t]"</em> — der Vater ist damit im Taufeintrag selbst namentlich genannt (P-Beleg, urkundlich gesichert).</p>
 </div>
 
 <div class="errata-eintrag errata-eintrag--erkenntnis">
   <h3>Band 2, S. 59–60 — Kekulé 8.192 und 8.193: Jobst Pilz und Margaretha Teuffel: bestätigt</h3>
-  <p>Jobst Pilz und Margaretha Teuffel <strong>gehören in die direkte Ahnenreihe</strong>. Margaretha Teuffel ist mit hoher Wahrscheinlichkeit Abrahams Mutter (Heirat mit Jobst 1589, Taufe Abrahams 1591, Patenschaft einer Teuffelin bei der Taufe).</p>
+  <p>Jobst Pilz und Margaretha Teuffel <strong>gehören in die direkte Ahnenreihe</strong>. Margaretha Teuffel ist mit hoher Wahrscheinlichkeit Abrahams Mutter (Heirat mit Jobst 1589, Taufe Abrahams 1591, Patenschaft einer Teuffelin bei der Taufe). Hinweis: Im Taufeintrag KB 23, Nr. 479 (17.06.2026) wird die Mutter ausdrücklich <strong>nicht</strong> genannt. Die Patenschaft der „Michael Teuffelin" stützt den Familiennamens-Zusammenhang, beweist die Mutterschaft aber nicht.</p>
 </div>
 
 <div class="errata-eintrag errata-eintrag--erkenntnis">
   <h3>Band 2, S. 59 und S. 64 — Geburtsdaten Abraham Pilz (Kekulé 4.096)</h3>
   <p>Gedruckt: „um 1590 in Olbernhau". Auch die Spitzenahnen-Tabelle (S. 64) nennt diese Angabe.</p>
-  <p><strong>Korrektur:</strong> Abraham Pilz wurde im <strong>August 1591 in Dörnthal</strong> geboren (Taufeintrag Kirchenbuch Dörnthal, KB 23).</p>
+  <p><strong>Korrektur:</strong> Abraham Pilz wurde am <strong>27. August 1591 in Dörnthal</strong> getauft (Tauftag: Dienstag nach Bartholomäi 1591; Kirchenbuch Dörnthal, KB 23, Nr. 479; P-Beleg seit 17.06.2026). Der Vater ist im Taufeintrag selbst als Jobst Pültz namentlich genannt.</p>
 </div>
 
 <div class="errata-eintrag errata-eintrag--erkenntnis">

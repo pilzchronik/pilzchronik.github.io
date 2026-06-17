@@ -12,7 +12,7 @@ excerpt: >
   (1550–1701), die Verbindung nach Freiberg und der aktuelle Forschungsstand nach Auskunft des
   Stadtarchivs Freiberg (24. Februar 2026).
 status: vorläufig
-stand_vom: 2026-02-25
+stand_vom: 2026-06-17
 ---
 
 <div class="status-box" style="background-color: #f9f9f9; border-left: 4px solid #999; padding: 15px; margin-bottom: 30px; color: #444; font-size: 0.95em;">
@@ -69,6 +69,8 @@ Der Eintrag dokumentiert eine Erbschafts- und Abfindungsregelung nach dem Tod ei
 Gesamtsumme der Kindsteile laut Text: 65 Gulden.
 
 ### Quellenkritische Anmerkungen
+
+**Nachtrag nach Volltext-Transkription (17.06.2026):** Der Erbkauff 1558 wurde durch den Volltext (GB Dörnthal Bd. 1, GUID 83fd4fae, Bilder 0016–0019) erneut ausgewertet. Erbe ist **Jacob Pültz** (bestätigt), als Vormund tritt **Cristof Pültz von Freiberg** auf (bestätigt). Die oben stehende Geschwisterliste konnte durch den Volltext **nicht vollständig bestätigt** werden — insbesondere **Caspar** fehlt darin. Der Volltext weist Lücken auf; die Liste bleibt daher **Status E** (eigener Ermittlungsbefund), kein P-Beleg.
 
 Der Name **Pültz** ist im Akt an mindestens fünf Stellen sicher lesbar. Eine frühere KI-Erstlesung (Google Gemini) hatte den Namen als „Puntigen" bzw. „Püntzner" wiedergegeben — eine Verwechslung der Kurrentbuchstaben „ül" mit „un" und „tz" mit „tig". Diese Lesung ist verworfen.
 
