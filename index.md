@@ -154,7 +154,8 @@ description: "Bonusseite zur gedruckten Pilz-Chronik (Band 1 & 2). Werkstatt mit
         if (lbl) lbl.textContent = 'Chat-Assistent nicht verfügbar';
       }
       if (chatNote) {
-        chatNote.innerHTML = 'Der Chat-Dienst steht derzeit nicht zur Verfügung &mdash; m&ouml;glicherweise wurde er eingestellt. F&uuml;r Fragen nutze bitte die <a href="{{ "/suche/" | relative_url }}" style="color:inherit">Stichwort-Suche</a> oder schreib an <a href="mailto:pilz@gmx.at" style="color:inherit">pilz@gmx.at</a>.';
+        var mUser = 'pilz', mDom = 'gmx.at', mAddr = mUser + '@' + mDom;
+        chatNote.innerHTML = 'Der Chat-Dienst steht derzeit nicht zur Verfügung &mdash; m&ouml;glicherweise wurde er eingestellt. F&uuml;r Fragen nutze bitte die <a href="{{ "/suche/" | relative_url }}" style="color:inherit">Stichwort-Suche</a> oder schreib an <a href="mailto:' + mAddr + '" style="color:inherit">' + mAddr + '</a>.';
         chatNote.style.color = '#a05000';
       }
     }
