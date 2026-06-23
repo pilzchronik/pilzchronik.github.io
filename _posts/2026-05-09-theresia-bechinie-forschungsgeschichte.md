@@ -223,7 +223,7 @@ Das ist mehr, als zu Beginn der Spurensuche zu sehen war — und weniger, als n�
 - [DNA-Skizze (Stammbäume, Chromosom 9, Brücken-Diagramm)]({{ '/assets/dna-skizze.html' | relative_url }})
 - [Pessel/Rudolph-Befunde Mai 2026 — Skizze (Wopořan, Migrationsvektoren, Mähren-Anker)]({{ '/assets/befunde-rudolph-mai-2026.html' | relative_url }})
 - [Zwei Familien in einem Dorf? Veselíčko, ein DNA-Match aus den USA und Hypothese A′](/veselicko-zwei-familien-ein-dorf/)
-- [DNA Pilz–Zeisl: autosomaler Match](/dna-pilz-zeisl-autosomaler-match/)
+- [DNA Pilz–Zeisl: eine jüdische Linie ohne Urkunde](/dna-pilz-zeisl/)
 - [DNA-Analyse: Unsere Herkunft vor den Kirchenbüchern](/dna-analyse/)
 - [Korrekturen-/Errata-Sammelseite](/druckfehler-korrekturen/)
 

@@ -114,7 +114,7 @@ bei väterlich gegen mütterlich auch zu erwarten ist.
 ## Weiterführend
 
 - [DNA-Analyse: Unsere Herkunft vor den Kirchenbüchern]({{ '/dna-analyse/' | relative_url }})
-- [Autosomale DNA: Pilz und Zeisl — eine jüdisch-böhmische Verbindung]({{ '/dna-pilz-zeisl-autosomaler-match/' | relative_url }})
+- [DNA Pilz–Zeisl: eine jüdische Linie ohne Urkunde]({{ '/dna-pilz-zeisl/' | relative_url }})
 - [Theresia Bechinie geb. Pessel — Forschungsgeschichte]({{ '/theresia-bechinie-forschungsgeschichte/' | relative_url }})
 
 ## Quellen

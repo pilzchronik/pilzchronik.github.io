@@ -287,7 +287,7 @@ Heiratskonsens-Akt 1771 in Mühlhausen.
 - [Forschungsgeschichte „Theresia Bechinie geb. Pessel"]({{ '/theresia-bechinie-forschungsgeschichte/' | relative_url }})
 - [DNA-Skizze (Stammbäume, Chromosom&nbsp;9, Brücken-Diagramm)]({{ '/assets/dna-skizze.html' | relative_url }})
 - [Pessel/Rudolph-Befunde Mai 2026 — Skizze]({{ '/assets/befunde-rudolph-mai-2026.html' | relative_url }})
-- [DNA Pilz–Zeisl: autosomaler Match]({{ '/dna-pilz-zeisl-autosomaler-match/' | relative_url }})
+- [DNA Pilz–Zeisl: eine jüdische Linie ohne Urkunde]({{ '/dna-pilz-zeisl/' | relative_url }})
 - [DNA-Analyse: Unsere Herkunft vor den Kirchenbüchern]({{ '/dna-analyse/' | relative_url }})
 
 ## Quellen
