@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woher die DNA kommt — väterlich böhmisch, mütterlich alpin</title>
+<style>
+  /* Haus-Stil der dna-matches-Diagramme – eigenständig, erbt NICHT die Site-CSS.
+     väterlich = kühl (Kobalt) · mütterlich = warm (Koralle) · aschkenasisch = Violett.
+     Durchgezogene Karte = dokumentiert · gestrichelte Karte = Hypothese/unbelegt. */
+  :root{
+    --bg:#eef3f2;--card:#ffffff;--ink:#1f3b39;--ink-soft:#4a5c5c;--muted:#8b9a9a;
+    --teal:#0e9f8e;--teal-deep:#0a6c60;
+    --violet:#6d5bd0;--violet-deep:#4a3aa6;
+    --coral:#e0734e;--coral-deep:#b8502e;
+    --cobalt:#2f7fd0;--cobalt-deep:#1f5fa3;
+    --amber:#e0a52a;--amber-deep:#9a6a00;--amber-tint:#fdf6e7;
+    --grey:#9aa6ac;--grey-deep:#6f7a80;--track:#e7edec;--hair:#e3eae9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Inter","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;padding:24px 16px;
+  }
+  .frame{
+    max-width:1140px;margin:0 auto;background:var(--card);
+    border:1px solid var(--hair);border-radius:18px;
+    box-shadow:0 10px 30px rgba(20,60,55,.08);padding:18px 14px 8px;
+  }
+  .chart-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  svg.chart{display:block;width:100%;min-width:900px;max-width:1100px;height:auto;margin:0 auto}
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+  .title{font-size:24px;font-weight:800;fill:var(--ink);letter-spacing:.2px}
+  .subtitle{font-size:13px;font-weight:500;fill:var(--muted)}
+  .colhead{font-size:14px;font-weight:800}
+  .colsub{font-size:11.5px;font-weight:600;fill:var(--muted)}
+  .h{font-size:13px;font-weight:700;fill:var(--ink)}
+  .det{font-size:11px;font-weight:500;fill:var(--ink-soft)}
+  .note{font-size:10.5px;font-style:italic;font-weight:400;fill:var(--muted)}
+  .pill{font-size:10px;font-weight:800;letter-spacing:.3px}
+  .seclbl{font-size:13px;font-weight:800;fill:var(--ink)}
+  .barlbl{font-size:12px;font-weight:700;fill:var(--ink)}
+  .side{font-size:10px;font-style:italic;font-weight:500;fill:var(--muted)}
+  .pct{font-size:12px;font-weight:800;fill:var(--ink)}
+  .scale{font-size:9.5px;font-weight:600;fill:var(--muted);text-anchor:middle}
+  .warnlead{font-size:12.5px;font-weight:800;fill:var(--amber-deep)}
+  .warn{font-size:12px;font-weight:600;fill:var(--ink-soft)}
+  .cap{font-size:11px;font-weight:400;fill:var(--muted)}
+  .leg{font-size:10.5px;font-weight:500;fill:var(--ink-soft)}
+
+  .card{fill:var(--card);stroke:var(--hair);stroke-width:1}
+  .hypo{stroke-dasharray:6 4}
+  .accent{stroke-width:4;stroke-linecap:round}
+  .zone .card{transition:stroke .18s ease, stroke-width .18s ease}
+  .zone:hover .card{stroke-width:1.7}
+  .z-cobalt:hover .card{stroke:var(--cobalt)}
+  .z-coral:hover .card{stroke:var(--coral)}
+  .z-violet:hover .card{stroke:var(--violet)}
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="chart-wrap">
+      <svg class="chart" viewBox="0 0 1100 760" role="img" aria-labelledby="t d">
+        <title id="t">Woher die DNA kommt — väterlich böhmisch, mütterlich alpin</title>
+        <desc id="d">Konsolidierte Herkunftsschätzung in zwei Hälften: väterlich (Pilz/Bechinie, Böhmen
+        und Erzgebirge) und mütterlich (Reider/Eberstaller, Alpenraum). Konsolidierte Anteile als
+        Bandbreiten über MyHeritage, Ancestry und FTDNA. Herkunftsschätzungen sind Modell-Ergebnisse
+        mit großer Unsicherheit, keine Messung.</desc>
+
+        <rect x="0" y="0" width="1100" height="760" fill="#ffffff"/>
+
+        <text class="title" x="40" y="42">Woher die DNA kommt — väterlich böhmisch, mütterlich alpin</text>
+        <text class="subtitle" x="40" y="63">Ein konsolidiertes Gesamtbild (Symbiose über MyHeritage · Ancestry · FTDNA) — Bandbreiten statt Scheinpräzision</text>
+
+        <!-- Trennlinie der zwei Hälften -->
+        <line x1="546" y1="86" x2="546" y2="452" stroke="var(--hair)" stroke-width="1.5"/>
+
+        <!-- ============ VÄTERLICH ============ -->
+        <text class="colhead" x="40" y="100" fill="var(--cobalt-deep)">♂ VÄTERLICH · Pilz / Bechinie</text>
+        <text class="colsub"  x="40" y="116">Böhmen &amp; Erzgebirge</text>
+
+        <g class="zone z-cobalt">
+          <rect class="card" x="40" y="128" width="486" height="66" rx="10"/>
+          <line class="accent" x1="43" y1="138" x2="43" y2="184" stroke="var(--cobalt)"/>
+          <text class="h"   x="56" y="148">Böhmen — bürgerliche Bechinie-Linie</text>
+          <text class="det" x="56" y="166">Josef Bechinie (*1776) ∞ Marianna Handl</text>
+          <text class="det" x="56" y="184">Ein Zweig wanderte nach Ungarn — DNA-Match Andreas Oliver (Bechinie) · 44,9 cM</text>
+        </g>
+
+        <g class="zone z-cobalt">
+          <rect class="card" x="40" y="204" width="486" height="84" rx="10"/>
+          <line class="accent" x1="43" y1="214" x2="43" y2="278" stroke="var(--cobalt)"/>
+          <text class="h"   x="56" y="224">Böhmisches Erzgebirge — Pilz-Linie</text>
+          <text class="det" x="56" y="242">Kovářská (Schmiedeberg) · Vejprty (Weipert) · Kallich · Karlsbad-Raum</text>
+          <text class="det" x="56" y="260">davor Sachsen (Schreibung „Piltz", ursprünglich „Pültz", vor ~1770)</text>
+          <rect x="56" y="270" width="256" height="15" rx="7" fill="#eaf2fb"/>
+          <text class="pill" x="64" y="281" fill="var(--cobalt-deep)">Y-DNA J-FT159612 · sehr seltene Vaterlinie</text>
+        </g>
+
+        <g class="zone z-cobalt">
+          <rect class="card hypo" x="40" y="298" width="486" height="64" rx="10" stroke="var(--cobalt)" stroke-width="1.3"/>
+          <line class="accent" x1="43" y1="308" x2="43" y2="352" stroke="var(--cobalt)" stroke-dasharray="6 4"/>
+          <text class="h"   x="56" y="318">Erzgebirge — Kreissl-Faden (Cluster E)</text>
+          <text class="det" x="56" y="336">Maria Theresia Kreissl (*1793, Krásný Les)</text>
+          <text class="note" x="56" y="353">Arbeitshypothese — gestrichelt = nicht gesichert</text>
+        </g>
+
+        <g class="zone z-violet">
+          <rect class="card hypo" x="40" y="372" width="486" height="76" rx="10" stroke="var(--violet)" stroke-width="1.3"/>
+          <line class="accent" x1="43" y1="382" x2="43" y2="440" stroke="var(--violet)" stroke-dasharray="6 4"/>
+          <text class="h"   x="56" y="392" fill="var(--violet-deep)">Jüdisch-aschkenasisch</text>
+          <text class="det" x="56" y="410">über Theresia → Pessel → Zeisl-Komplex</text>
+          <text class="det" x="56" y="428">vermutet Südböhmen (Myslkovice?) — nicht belegt</text>
+          <text class="note" x="56" y="444">~1,5–4 % · etwa 6 Generationen zurück</text>
+        </g>
+
+        <!-- ============ MÜTTERLICH ============ -->
+        <text class="colhead" x="566" y="100" fill="var(--coral-deep)">♀ MÜTTERLICH · Reider / Eberstaller</text>
+        <text class="colsub"  x="566" y="116">Alpenraum (Osttirol – Südtirol)</text>
+
+        <g class="zone z-coral">
+          <rect class="card" x="566" y="128" width="494" height="142" rx="10"/>
+          <line class="accent" x1="569" y1="138" x2="569" y2="260" stroke="var(--coral)"/>
+          <text class="h"   x="582" y="148">Osttirol – Südtirol — Reider/Webhofer-Linie</text>
+          <text class="det" x="582" y="167">Franz Reider zu Äußerst (*1783, Sexten/Sesto) ∞ Anna Kofler</text>
+          <text class="det" x="582" y="184">→ Leonhard Reider zu Peterer (*1854)</text>
+          <text class="det" x="582" y="201">Hochpustertal: Sexten · Kartitsch · Gsies · Villgraten</text>
+          <text class="det" x="582" y="218">bestätigt: Cousinen Daniela (94,7 cM) &amp; Ursula (123 cM) Webhofer · Gabriela Köck</text>
+          <rect x="582" y="232" width="300" height="15" rx="7" fill="#fdeee7"/>
+          <text class="pill" x="590" y="243" fill="var(--coral-deep)">= Italien-/Alpensüd-Komponente der Schätzungen</text>
+        </g>
+
+        <g class="zone z-coral">
+          <rect class="card" x="566" y="280" width="494" height="72" rx="10"/>
+          <line class="accent" x1="569" y1="290" x2="569" y2="342" stroke="var(--coral)"/>
+          <text class="h"   x="582" y="300">Tiefe Mutterlinie — mtDNA H41a9</text>
+          <text class="det" x="582" y="318">Osttirol · alpenslawisch-karantanisches Substrat</text>
+          <text class="det" x="582" y="336">entfernter Match in Kroatien — genealogisch nicht mehr greifbar</text>
+        </g>
+        <rect x="882" y="291" width="74" height="15" rx="7" fill="#fdeee7"/>
+        <text class="pill" x="890" y="302" fill="var(--coral-deep)">mtDNA</text>
+
+        <!-- ============ KONSOLIDIERTE ANTEILE (Bandbreiten) ============ -->
+        <text class="seclbl" x="40" y="486">Konsolidierte Anteile — Bandbreite über MyHeritage · Ancestry · FTDNA</text>
+
+        <!-- Skala 0–100 % -->
+        <g>
+          <line x1="430" y1="500" x2="960" y2="500" stroke="var(--hair)"/>
+          <g class="scale">
+            <text x="430" y="514">0</text><text x="562" y="514">25</text><text x="695" y="514">50</text>
+            <text x="828" y="514">75</text><text x="960" y="514">100 %</text>
+          </g>
+        </g>
+
+        <!-- Zeile 1: Mitteleuropa 46–72 % -->
+        <g>
+          <text class="barlbl" x="40" y="532">Mitteleuropa (germ. / west-slaw.)</text>
+          <text class="side"   x="40" y="546">väterlich</text>
+          <rect x="430" y="524" width="530" height="16" rx="8" fill="var(--track)"/>
+          <rect x="673.8" y="524" width="137.8" height="16" rx="8" fill="var(--cobalt)"/>
+          <text class="pct" x="970" y="537" fill="var(--cobalt-deep)">46–72 %</text>
+        </g>
+        <!-- Zeile 2: Italien/Alpensüd 10–26 % -->
+        <g>
+          <text class="barlbl" x="40" y="568">Italien / Alpensüdseite (inkl. Slowenien)</text>
+          <text class="side"   x="40" y="582">mütterlich</text>
+          <rect x="430" y="560" width="530" height="16" rx="8" fill="var(--track)"/>
+          <rect x="483" y="560" width="84.8" height="16" rx="8" fill="var(--coral)"/>
+          <text class="pct" x="970" y="573" fill="var(--coral-deep)">10–26 %</text>
+        </g>
+        <!-- Zeile 3: Aschkenasisch 1,5–4 % -->
+        <g>
+          <text class="barlbl" x="40" y="604">Aschkenasisch-jüdisch</text>
+          <text class="side"   x="40" y="618">väterlich · vermutet</text>
+          <rect x="430" y="596" width="530" height="16" rx="8" fill="var(--track)"/>
+          <rect x="437.9" y="596" width="13.3" height="16" rx="6" fill="var(--violet)"/>
+          <text class="pct" x="970" y="609" fill="var(--violet-deep)">1,5–4 %</text>
+        </g>
+        <!-- Zeile 4: Tiefe Reste – Spuren -->
+        <g>
+          <text class="barlbl" x="40" y="640">Tiefe Reste (Balkan, Sardinien, Skandinavien …)</text>
+          <text class="side"   x="40" y="654">modellbedingt · nicht linienscharf</text>
+          <rect x="430" y="632" width="530" height="16" rx="8" fill="var(--track)"/>
+          <rect x="430" y="632" width="16" height="16" rx="8" fill="var(--grey)" opacity="0.7"/>
+          <text class="pct" x="970" y="645" fill="var(--grey-deep)">Spuren</text>
+        </g>
+
+        <!-- ============ PFLICHT-CAPTION (prominent) ============ -->
+        <rect x="30" y="672" width="1040" height="62" rx="10" fill="var(--amber-tint)" stroke="var(--amber)" stroke-width="1.4"/>
+        <text class="warnlead" x="46" y="690">⚠ Wichtig — Herkunftsschätzungen sind Modell-Ergebnisse mit großer Unsicherheit, keine Messung.</text>
+        <text class="warn" x="46" y="707">Die Anbieter beschreiben dasselbe Profil mit verschiedenen Etiketten und Referenzpanels; Werte ändern sich bei Modell-Updates.</text>
+        <text class="warn" x="46" y="724">Beispiel: FTDNA weist ~40 % „britisch" aus — das ist ein Referenzpanel-Artefakt für mitteleuropäische DNA, kein britisches Erbe.</text>
+
+        <!-- Fußzeile -->
+        <text class="cap" x="40" y="750">Forschungsstand 2026 · konsolidiert aus MyHeritage, Ancestry &amp; FTDNA · durchgezogene Karte = dokumentiert, gestrichelte = Hypothese/unbelegt.</text>
+      </svg>
+    </div>
+    <p class="sr">Textalternative: Wolfgangs DNA-Herkunft in zwei Hälften. Väterlich (Pilz/Bechinie, Böhmen
+       und Erzgebirge): bürgerliche Bechinie-Linie (Josef Bechinie *1776 ∞ Marianna Handl; Zweig nach
+       Ungarn, Match Andreas Oliver Bechinie 44,9 cM); Pilz-Linie im böhmischen Erzgebirge (Kovářská,
+       Vejprty, Kallich, Karlsbad; davor Sachsen „Piltz", ursprünglich „Pültz"; Y-DNA J-FT159612);
+       Kreissl-Faden (Arbeitshypothese); jüdisch-aschkenasisch über Theresia/Pessel/Zeisl, ~1,5–4 %,
+       vermutet, nicht belegt. Mütterlich (Reider/Eberstaller, Alpenraum): Reider/Webhofer-Linie aus
+       Osttirol/Südtirol (Franz Reider *1783 Sexten ∞ Anna Kofler → Leonhard Reider *1854; Hochpustertal;
+       bestätigt über Cousinen Daniela Webhofer 94,7 cM, Ursula Webhofer 123 cM und Gabriela Köck) =
+       Italien-/Alpensüd-Komponente; tiefe Mutterlinie mtDNA H41a9.
+       Konsolidierte Bandbreiten: Mitteleuropa ~46–72 % (väterlich), Italien/Alpensüd ~10–26 %
+       (mütterlich), aschkenasisch ~1,5–4 % (väterlich, vermutet), tiefe Reste nur Spuren.
+       Herkunftsschätzungen sind Modell-Ergebnisse mit großer Unsicherheit; FTDNAs ~40 % „britisch" ist
+       ein Referenzpanel-Artefakt für mitteleuropäische DNA, kein britisches Erbe.</p>
+  </div>
+</body>
+</html>

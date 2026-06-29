@@ -128,9 +128,17 @@ H41a9 ist eine sehr seltene Unterlinie mit östlicher Herkunft. Der spezifische 
   (Böhmen – Deutschland – Österreich)
 </div>
 
-Der stärkste autosomale Treffer bei FamilyTreeDNA ist die Wiener Familie Zeisl — eine jüdische Familie mit Wurzeln im selben böhmischen Raum wie Theresia (Kekulé 69), die 1768 in Amschelberg konvertierte. Die systematische Auswertung dieses Fundes ist auf einer eigenen Seite dokumentiert:
+Der stärkste autosomale Treffer bei FamilyTreeDNA ist die Wiener Familie Zeisl — eine jüdische Familie mit Wurzeln im selben böhmischen Raum wie Theresia (Kekulé 69), die 1768 in Amschelberg konvertierte.
 
-→ [DNA-Matches Pilz–Zeisl](https://pilzchronik.github.io/dna-matches/) — Triangulation, Stammbäume, Herkunftsorte und offene Fragen.
+Wie sich die Herkunft auf eine väterlich-böhmische und eine mütterlich-alpine Hälfte verteilt — mit Bandbreiten über die drei Anbieter und einem klaren Hinweis auf die Modell-Unsicherheit solcher Schätzungen —, zeigt dieses Schaubild im Überblick:
+
+<figure markdown="0" style="margin:1.5rem 0;">
+  <iframe src="{{ '/assets/diagramme/herkunft-vaeterlich-muetterlich.html' | relative_url }}" title="Woher die DNA kommt — väterlich böhmisch, mütterlich alpin" loading="lazy" style="width:100%;height:710px;border:0;display:block;"></iframe>
+</figure>
+
+Die systematische Auswertung des Zeisl-Fundes — Triangulation, Stammbäume, Herkunftsorte und die offenen Fragen — ist auf einer eigenen, zweisprachigen Seite dokumentiert. Dort findet sich auch eine **Bildbeilage mit allen fünf Diagrammen** im Überblick:
+
+→ [DNA-Matches Pilz–Zeisl](https://pilzchronik.github.io/dna-matches/) · [Alle Diagramme: Bildbeilage](https://pilzchronik.github.io/dna-matches/diagramme.html)
 
 ## Zusammenfassung
 
