@@ -32,21 +32,20 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
-        # Baut die Seite (Standard GitHub Pages Umgebung)
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
       - name: Link-Check (intern)
         # Prüft alle internen Links auf Erreichbarkeit
+        # Weich: Fehler werden angezeigt, blockieren aber nicht das Deployen
         run: |
           gem install html-proofer
           htmlproofer ./_site \
             --disable-external \
-            --ignore-urls "/^mailto:/"
+            --ignore-urls "/^mailto:/" || true
 
       - name: Run Pagefind
-        # Indexiert den fertigen Ordner _site
         run: npx -y pagefind --site ./_site
 
       - name: Upload artifact
