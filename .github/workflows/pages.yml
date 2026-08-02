@@ -37,6 +37,14 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Link-Check (intern)
+        # Prüft alle internen Links auf Erreichbarkeit
+        run: |
+          gem install html-proofer
+          htmlproofer ./_site \
+            --disable-external \
+            --ignore-urls "/^mailto:/"
+
       - name: Run Pagefind
         # Indexiert den fertigen Ordner _site
         run: npx -y pagefind --site ./_site
