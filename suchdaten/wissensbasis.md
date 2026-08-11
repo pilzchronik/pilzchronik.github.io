@@ -6469,6 +6469,8 @@ Diese Seite versammelt Archive, ausgewählte Quellenfunde sowie Werkzeuge zur r�
 ## Räumliche Verortung historischer Quellen
 *Historische Karten, Ortsnamenzuordnung und Lagevergleich*
 ### Historische Karten mit Zeitvergleich (Böhmen)
+
+Hinweis (Stand August 2026): Das Kartenportal Arcanum Maps (maps.arcanum.com) ist seit Mai 2026 abopflichtig. Die folgenden Links sind nur mit kostenpflichtigem Zugang erreichbar; ohne Abonnement antwortet die Seite mit einer Fehlermeldung. Sie bleiben als Nachweis des jeweils gemeinten Kartenausschnitts stehen.
 - [Rothenhaus](https://maps.arcanum.com/en/map/firstsurvey-bohemia/?layers=141&bbox=1489816.42842852,6534069.065167114,1504043.2703180984,6539257.22846197)
 - [Kallich](https://maps.arcanum.com/de/map/firstsurvey-bohemia/?layers=141&bbox=1468470.5815351685,6543321.173811231,1496924.2653143252,6553697.500400944)
 - [Schmiedeberg](https://maps.arcanum.com/de/map/firstsurvey-bohemia/?layers=osm,141&bbox=1445671.6567497356,6519835.961017222,1459898.498639314,6525024.124312078)
