@@ -26,6 +26,8 @@ betrifft: DNA, Band2
 
 Dieser Beitrag baut auf der [AutoCluster-Einführung vom Juni 2026]({{ '/myheritage-autocluster-2026/' | relative_url }}) auf. Wer noch nicht weiß, was ein AutoCluster ist und wie die Gartenparty-Analogie funktioniert, findet dort die Grundlagen. Hier geht es um das Update: ein neuer Export, schärfere Ergebnisse — und zwei Durchbrüche, die den bisher offenen Strang der Jüdin schließen.
 
+> **Hinweis zum Datenschutz:** Die hier genannten DNA-Matches sind öffentlich bei MyHeritage sichtbar. Zur Rücksicht auf lebende Personen werden Vornamen auf das Initial gekürzt, soweit sie nicht ohnehin durch eigene Publikationen (Stammbäume, Forschungsseiten) öffentlich genannt sind.
+
 ## Was sich gegenüber Juni verändert hat
 
 Der neue Export vom 16. August 2026 arbeitet mit etwas anderen Schwellen (25–400 cM statt der vorherigen Spanne) und liefert ein klareres Bild:
@@ -43,7 +45,7 @@ Die Zahlen sind leicht gesunken — das liegt an den strengeren Schwellen, nicht
 Das große Bild hat sich nicht geändert, aber es ist schärfer geworden. Die 27 Cluster lassen sich in zwei Blöcke teilen — und die Trennlinie läuft genau da, wo die Genealogie sie erwarten lässt:
 
 ### Block A — mütterlicherseits
-Cluster 1, 17, 18, 22. Namen wie Webhofer, Köck, Seidl, Fraccaro, Gasteiger, Goller, Moser, Pfeifhofer, Lanser, Schneider, Müller, Rupprecht, Schramm — alles deutschsprachig, alles Tirol und angrenzende Regionen. Der stärkste Match bleibt **Daniela Webhofer mit 94,7 cM**.
+Cluster 1, 17, 18, 22. Namen wie Webhofer, Köck, Seidl, Fraccaro, Gasteiger, Goller, Moser, Pfeifhofer, Lanser, Schneider, Müller, Rupprecht, Schramm — alles deutschsprachig, alles Tirol und angrenzende Regionen. Der stärkste Match bleibt **D. Webhofer mit 94,7 cM**.
 
 Besonderheit: Cluster 1 und 18 sind durch 18 graue Zellen eng gekoppelt — das sind die Verbindungen, die MyHeritage zwischen den Clustern feststellt. Das bedeutet: Die beiden Cluster gehören sehr wahrscheinlich zur **selben Linie**, der Algorithmus hat sie nur aus Rechengründen getrennt. Cluster 17 ist eine Familie Müller mit einem identischen 367-Personen-Baum — offenbar drei Testpersonen aus einem Haushalt.
 
@@ -58,11 +60,11 @@ Der Unterschied zu Block A ist nicht nur kulturell — er ist methodisch. In Blo
 
 Cluster 27 ist klein (3 Personen, 26–45 cM), aber er ist der wichtigste Cluster des gesamten Bildes. Er verbindet die DNA-Welt mit der Papierwelt der Chronik.
 
-Der stärkste Match hier ist **Oliver Bechinie von Lazan mit 44,9 cM** — ein Vetter 4. Grades, einmal entfernt. Der gemeinsame Vorfahr ist urkundlich belegt: **Josef Bechinie (1776–1865) ∞ Marianna Handl**, geheiratet 1803. Die Linie zu Oliver läuft über Josefs Sohn **Franz (1815–1881)**, der nach Ungarn auswanderte; meine Linie über Josefs Tochter **Marie (1813–1894)**.
+Der stärkste Match hier ist **O. B. v. L. mit 44,9 cM** — ein Vetter 4. Grades, einmal entfernt. Der gemeinsame Vorfahr ist urkundlich belegt: **Josef Bechinie (1776–1865) ∞ Marianna Handl**, geheiratet 1803. Die Linie zu O. B. v. L. läuft über Josefs Sohn **Franz (1815–1881)**, der nach Ungarn auswanderte; meine Linie über Josefs Tochter **Marie (1813–1894)**.
 
-Die cM-Menge von 44,9 trifft den Erwartungswert für diese Verwandtschaftsstufe fast punktgenau (Mittelwert ~35 cM). Das ist ein unabhängiger Beleg dafür, dass Olivers Stammbaum — der nur aus Sekundärquellen besteht — genealogisch stimmt.
+Die cM-Menge von 44,9 trifft den Erwartungswert für diese Verwandtschaftsstufe fast punktgenau (Mittelwert ~35 cM). Das ist ein unabhängiger Beleg dafür, dass der Stammbaum von O. B. v. L. — der nur aus Sekundärquellen besteht — genealogisch stimmt.
 
-Und hier wird es interessant für Block B: Cluster 27 hat graue Zellen zu den Clustern 2, 3, 4, 5 und 15. Das heißt: Oliver teilt Matches mit Menschen aus dem jüdischen Block. Das ist genealogisch erklärbar: Josef Bechinie war der Sohn der getauften Jüdin **Theresia**. Alle Nachfahren Josefs tragen also einen autosomalen Anteil von Theresia — und genau dieser Anteil matcht in die jüdischen Cluster hinein. Cluster 27 ist damit keine Insel, sondern eine **Brücke** zwischen der Chronik und dem jüdischen Block.
+Und hier wird es interessant für Block B: Cluster 27 hat graue Zellen zu den Clustern 2, 3, 4, 5 und 15. Das heißt: O. B. v. L. teilt Matches mit Menschen aus dem jüdischen Block. Das ist genealogisch erklärbar: Josef Bechinie war der Sohn der getauften Jüdin **Theresia**. Alle Nachfahren Josefs tragen also einen autosomalen Anteil von Theresia — und genau dieser Anteil matcht in die jüdischen Cluster hinein. Cluster 27 ist damit keine Insel, sondern eine **Brücke** zwischen der Chronik und dem jüdischen Block.
 
 ## Die große Neuigkeit: Die Jüdin hat einen Namen
 
@@ -70,7 +72,7 @@ In der Juni-Auswertung stand noch: „Die Identität der Jüdin ist ein offener 
 
 Das hat sich geändert. Die Jüdin ist identifiziert: **Theresia „Pessel" Rudolph**, geboren zwischen dem 1. November und dem 24. Dezember 1749. Sie ist die Tochter von **Moshe (Joseph) Rudolph** und **Anna Woporzaná** — das belegt der Prager Konsistorialakt aus dem Jahr 1768 (Signatur APA I Karton 1449). Im jüdischen Get-Vermerk derselben Akten heißt sie *Pesl bat Mosche* — Pessel, Tochter des Mosche. „Rudolph" ist der bürgerliche Familienname; „Pessel" ist ihr jüdischer Rufname.
 
-Theresia heiratete 1769 in Chlum **Philipp Bechinie** — und damit wurde sie zur Mutter von **Josef Bechinie (1776–1865)**, dem gemeinsamen Vorfahren mit Oliver. Das macht sie zur Urgroßmutter meines Vaters, und ihre Mutter Anna zur Ur-Urgroßmutter — konsistent mit der alten Familienerinnerung: „Die Urgroßmutter meines Vaters hatte eine jüdische Großmutter."
+Theresia heiratete 1769 in Chlum **Philipp Bechinie** — und damit wurde sie zur Mutter von **Josef Bechinie (1776–1865)**, dem gemeinsamen Vorfahren mit O. B. v. L. Das macht sie zur Urgroßmutter meines Vaters, und ihre Mutter Anna zur Ur-Urgroßmutter — konsistent mit der alten Familienerinnerung: „Die Urgroßmutter meines Vaters hatte eine jüdische Großmutter."
 
 Diese Identifikation ist kein genealogischer Schluss, sondern ein **Primärquellen-Befund**. Der Konsistorialakt liegt vor, die Eltern sind benannt, die Chronologie stimmt.
 
@@ -82,7 +84,7 @@ Damit wird Block B erklärbar: Die aschkenasischen Matches in den Clustern 2–1
 
 Der Name allein würde Block B nicht beweisen. Der Beweis kommt von einer zweiten, unabhängigen Quelle: der DNA.
 
-Der Match mit **Walter Steven Zeisl** (Los Angeles, geb. 1949) liefert zwei Segmente auf Chromosom 9:
+Der Match mit **Walter S. Zeisl** (Los Angeles, geb. 1949) liefert zwei Segmente auf Chromosom 9:
 
 | Segment | Position | Länge | SNPs | Bewertung |
 |---|---|---|---|---|
@@ -108,7 +110,7 @@ Wichtig ist der **Endogamie-Vorbehalt**: Wegen der jahrhundertelangen Binnenheir
 ## Was man daraus ablesen kann — und was nicht
 
 ### Ablesbar
-- Die große Zweiteilung in eine mütterliche Tiroler Linie (Block A) und einen väterlichen jüdischen Block (Block B) ist stabil und wird durch den Oliver-Match (Cluster 27) an die Chronik angebunden.
+- Die große Zweiteilung in eine mütterliche Tiroler Linie (Block A) und einen väterlichen jüdischen Block (Block B) ist stabil und wird durch den O.-B.-v.-L.-Match (Cluster 27) an die Chronik angebunden.
 - Theresia „Pessel" Rudolph ist als Tochter von Joseph/Moshe Rudolph und Anna Woporzaná **urkundlich identifiziert**.
 - Die Zeisl-Verbindung ist durch Segment D auf Chromosom 9 **genetisch trianguliert**.
 - Die jüdischen Bezüge unserer Linie sind damit auf zwei unabhängigen Beinen belegt: dem Archiv (Konsistorialakt 1768) und der DNA (GEDmatch, Triangulation).
@@ -122,37 +124,37 @@ Wichtig ist der **Endogamie-Vorbehalt**: Wegen der jahrhundertelangen Binnenheir
 
 | Cluster | Pers. | cM-Spanne | Stärkster Match (cM, Baumgröße) | Block | Bemerkung |
 |----|-------|-----------|-------------------------------|-------|-----------|
-| 1 | 14 | 25–95 | Daniela Webhofer (94,7; 5) | A | Größter Cluster; anna schneider: 2.999-Pers.-Baum |
+| 1 | 14 | 25–95 | D. Webhofer (94,7; 5) | A | Größter Cluster; A. Schneider: 2.999-Pers.-Baum |
 | 2 | 10 | 25–49 | Sandra Damari (49,0; Baum <10 Pers.) | B | Höchster cM-Wert in Block B; stark vernetzt |
-| 3 | 9 | 25–32 | Peter M. Vietze (32,2; 638) | B | Vietze 3× (versch. Kits); Jack Puterman: 2.738 Pers. |
-| 4 | 7 | 26–35 | Laurent Jakobowicz (34,8; 3) | B | David Sichel: 3.420-Pers.-Baum |
-| 5 | 6 | 25–30 | Tamás Friss (30,0; 199) | B | Ungarn: Friss, Beck, Szilagyi-Nähe |
-| 6 | 6 | 25–35 | Arlene R. Goodstein (35,2; 147) | B | Lizette Eijsbouts: 15.793-Pers.-Baum |
-| 7 | 5 | 25–29 | Jack A. Silberston (29,0; 548) | B | Florence B. Goldstein: 938 Pers. |
-| 8 | 5 | 26–33 | Vojtěch Reich (33,0; 251) | B | Böhmisch/tschechisch: Reich |
-| 9 | 5 | 26–30 | Yoel Broderick (29,8; 892) | B | Perl-Geschwisterpaar |
-| 10 | 5 | 26–32 | David Spivack (31,6; 95) | B | Philip M. Lurie: 1.387 Pers. |
-| 11 | 4 | 27–34 | Judith Widder (33,9; 92) | B | Radim Vaněk (tschechisch), Szentgyörgyi (ungarisch) |
-| 12 | 4 | 26–36 | Alex Wender (36,2; 11) | B | |
-| 13 | 4 | 26–29 | Giorgio Marconi (28,7; 376) | B | Kenneth C. Geld: 15.343-Pers.-Baum |
-| 14 | 4 | 25–29 | Helene Liabötrö (29,1; 1) | B | |
-| 15 | 4 | 26–39 | Samuel Schreiber (38,5; 2) | B | |
-| 16 | 4 | 27–44 | Charlotte Richardson (44,4; –) | B | Susanne Fleischer: 561, Katysek: 369 |
-| 17 | 4 | 30–31 | Ina/Angelika/Heiko Müller (je ~31; 367) | A | Eine Familie, identischer Baum |
-| 18 | 3 | 26–46 | Florian Seidl (46,2; 2) | A | Eng an Cluster 1 (18 graue Zellen) |
-| 19 | 3 | 25–29 | Joseph D. Goldstrich (28,8; 476) | B | |
-| 20 | 3 | 25–27 | Lenore Harris (27,1; 4) | B | |
-| 21 | 3 | 27–32 | Serge Letessier (31,8; 18) | B | |
-| 22 | 3 | 26–34 | Ralf Schramm (33,8; –) | A | Rupprecht: 44-Pers.-Baum |
-| 23 | 3 | 25–30 | Edgar Frank (30,0; 1) | B | Shunit Marmelstein: 12.703-Pers.-Baum |
-| 24 | 3 | 27–35 | Alan Verbit (35,5; 250) | B | |
-| 25 | 3 | 25–32 | Pamela S. Chickering (31,9; 37.312) | B | Größter Baum im Datensatz |
-| 26 | 3 | 26–30 | Paul Tanner (30,2; 7) | B | Brücke zu 3 und 9 |
-| **27** | **3** | **26–45** | **Oliver Bechinie von Lazan (44,9; 49)** | **Brücke B↔Chronik** | **MRCA = Josef Bechinie, Sohn der Jüdin** |
+| 3 | 9 | 25–32 | P. M. Vietze (32,2; 638) | B | Vietze 3× (versch. Kits); J. Puterman: 2.738 Pers. |
+| 4 | 7 | 26–35 | L. Jakobowicz (34,8; 3) | B | D. Sichel: 3.420-Pers.-Baum |
+| 5 | 6 | 25–30 | T. Friss (30,0; 199) | B | Ungarn: Friss, Beck, Szilagyi-Nähe |
+| 6 | 6 | 25–35 | A. R. Goodstein (35,2; 147) | B | L. Eijsbouts: 15.793-Pers.-Baum |
+| 7 | 5 | 25–29 | J. A. Silberston (29,0; 548) | B | F. B. Goldstein: 938 Pers. |
+| 8 | 5 | 26–33 | V. Reich (33,0; 251) | B | Böhmisch/tschechisch: Reich |
+| 9 | 5 | 26–30 | Y. Broderick (29,8; 892) | B | Perl-Geschwisterpaar |
+| 10 | 5 | 26–32 | D. Spivack (31,6; 95) | B | P. M. Lurie: 1.387 Pers. |
+| 11 | 4 | 27–34 | J. Widder (33,9; 92) | B | R. Vaněk (tschechisch), Szentgyörgyi (ungarisch) |
+| 12 | 4 | 26–36 | A. Wender (36,2; 11) | B | |
+| 13 | 4 | 26–29 | G. Marconi (28,7; 376) | B | K. C. Geld: 15.343-Pers.-Baum |
+| 14 | 4 | 25–29 | H. Liabötrö (29,1; 1) | B | |
+| 15 | 4 | 26–39 | S. Schreiber (38,5; 2) | B | |
+| 16 | 4 | 27–44 | C. Richardson (44,4; –) | B | S. Fleischer: 561, Katysek: 369 |
+| 17 | 4 | 30–31 | I./A./H. Müller (je ~31; 367) | A | Eine Familie, identischer Baum |
+| 18 | 3 | 26–46 | F. Seidl (46,2; 2) | A | Eng an Cluster 1 (18 graue Zellen) |
+| 19 | 3 | 25–29 | J. D. Goldstrich (28,8; 476) | B | |
+| 20 | 3 | 25–27 | L. Harris (27,1; 4) | B | |
+| 21 | 3 | 27–32 | S. Letessier (31,8; 18) | B | |
+| 22 | 3 | 26–34 | R. Schramm (33,8; –) | A | Rupprecht: 44-Pers.-Baum |
+| 23 | 3 | 25–30 | E. Frank (30,0; 1) | B | S. Marmelstein: 12.703-Pers.-Baum |
+| 24 | 3 | 27–35 | A. Verbit (35,5; 250) | B | |
+| 25 | 3 | 25–32 | P. S. Chickering (31,9; 37.312) | B | Größter Baum im Datensatz |
+| 26 | 3 | 26–30 | P. Tanner (30,2; 7) | B | Brücke zu 3 und 9 |
+| **27** | **3** | **26–45** | **O. B. v. L. (44,9; 49)** | **Brücke B↔Chronik** | **MRCA = Josef Bechinie, Sohn der Jüdin** |
 
 ## Offene Punkte
 
-1. **Oliver-Ast papierseitig absichern:** Die Verbindung Lajos → Peter Ludwig in Olivers Stammbaum ist de facto gesichert, aber nicht durch Primärquellen belegt.
+1. **Oliver-Ast papierseitig absichern:** Die Verbindung Lajos → Peter Ludwig im Stammbaum von O. B. v. L. ist de facto gesichert, aber nicht durch Primärquellen belegt.
 2. **Zeisl-/Fisher-Spur in Block B:** Die Bäume der B-Cluster-Matches nach Zeisl, Fisher, Rudolph, Woporzaná und den Karten-Orten (Jungbunzlau, Tabor, Myslkovice, Lomnitz) durchsuchen.
 3. **Sandra Damari** (Cluster 2, 49 cM): Höchster cM-Wert in Block B — nächste Kandidatin für eine genauere Prüfung. Der MyHeritage-Stammbaum umfasst dort weniger als 10 Personen; die Quellenlage ist dünn.
 4. **Große Bäume anzapfen:** Chickering 37.312 (Cluster 25), Eijsbouts 15.793 (Cluster 6), Geld 15.343 (Cluster 13), Marmelstein 12.703 (Cluster 23) — diese könnten Schlüssel zu weiteren Verbindungen enthalten.
@@ -171,26 +173,6 @@ Sandra Damari (geb. Ditkoff, 1935–2022, USA) ist mit 49,0 cM der stärkste Mat
 
 **Angaben zum Eintrag:**
 Sandra Damari (geb. Ditkoff), Geburt 1935 in den USA, Tod 2022. Eltern: Harry Ditkoff, Rose Ditkoff (geb. Singer). Ehemann: Rachamim Damari. Ein Kind (privat).
-
-1. **Oliver-Ast papierseitig absichern:** Die Verbindung Lajos → Peter Ludwig in Olivers Stammbaum ist de facto gesichert, aber nicht durch Primärquellen belegt.
-2. **Zeisl-/Fisher-Spur in Block B:** Die Bäume der B-Cluster-Matches nach Zeisl, Fisher, Rudolph, Woporzaná und den Karten-Orten (Jungbunzlau, Tabor, Myslkovice, Lomnitz) durchsuchen.
-3. **Sandra Damari** (Cluster 2, 49 cM): Höchster cM-Wert in Block B — nächste Kandidatin für eine genauere Prüfung. Der MyHeritage-Stammbaum umfasst dort weniger als 10 Personen; die Quellenlage ist dünn.
-
-## Anmerkung zu Sandra Damari (Cluster 2)
-
-Sandra Damari (geb. Ditkoff, 1935–2022, USA) ist mit 49,0 cM der stärkste Match in Block B. Der zugehörige MyHeritage-Stammbaum (*Damari Web Site*, verwaltet von Tamir Damari) umfasst weniger als 10 Personen — die Aussagekraft für eine genealogische Zuordnung ist daher begrenzt.
-
-**Quelle MyHeritage:**
-- Datenbank: *MyHeritage Stammbäume* [online], MyHeritage Ltd.
-- Stammbaum: *Damari Web Site*, verwaltet von Tamir Damari  
-  `https://www.myheritage.at/family-sites/damari/OYYV77HTFUYRSNWPFQTJRS7LWZKRHZI`
-- Aufzeichnung:  
-  `https://www.myheritage.at/research/collection-1/myheritage-stammbaume?itemId=OYYV77HTFUYRSNWPFQTJRS7LWZKRHZI-1-500002&action=showRecord`
-
-**Angaben zum Eintrag:**
-Sandra Damari (geb. Ditkoff), Geburt 1935 in den USA, Tod 2022. Eltern: Harry Ditkoff, Rose Ditkoff (geb. Singer). Ehemann: Rachamim Damari. Ein Kind (privat).
-4. **Große Bäume anzapfen:** Chickering 37.312 (Cluster 25), Eijsbouts 15.793 (Cluster 6), Geld 15.343 (Cluster 13), Marmelstein 12.703 (Cluster 23) — diese könnten Schlüssel zu weiteren Verbindungen enthalten.
-5. **Cluster 1** (mütterlich) mit der bekannten Tiroler Linie abgleichen: Webhofer/Köck/Seidl.
 
 ## Verworfenes
 
@@ -213,4 +195,4 @@ Sandra Damari (geb. Ditkoff), Geburt 1935 in den USA, Tod 2022. Eltern: Harry Di
 - **Personenbericht Moshe (Joseph) Rudolph**
 - **Zeisl_Vorfahrenkarte_komplett.pdf** — Karte Böhmen/Mähren mit Beleggüte-Füllung
 - **Chromosom9_Zeisl-Segmente_light_sw.pdf** — GEDmatch-Auswertung 2026, GRCh37
-- GEDmatch One-to-One-Vergleich Wolfgang Pilz ↔ Walter Steven Zeisl, Stand 2026
+- GEDmatch One-to-One-Vergleich Wolfgang Pilz ↔ Walter S. Zeisl, Stand 2026
