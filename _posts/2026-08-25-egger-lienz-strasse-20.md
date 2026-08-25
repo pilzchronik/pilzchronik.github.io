@@ -1,14 +1,14 @@
-- 
+
 
 - <div class="status-box" style="background-color: #f9f9f9; border-left: 4px solid #999; padding: 15px; margin-bottom: 30px; color: #444; font-size: 0.95em;">
-    <span style="display: block; font-weight: bold; text-transform: uppercase; font-size: 0.8em; color: #666; margin-bottom: 6px; letter-spacing: 0.5px;">Status: Arbeitsdokument / KI-unterstützt</span>
-    Dieser Beitrag fasst den Recherchestand zur Egger-Lienz-Straße&nbsp;20 und ihrem Umfeld per
-    August&nbsp;2026 zusammen. Die Angaben stammen aus veröffentlichten Adressbüchern, aus Beiträgen
-    des Stadtarchivs/Stadtmuseums Innsbruck (innsbruck-erinnert.at) und aus persönlichen
-    Erinnerungen. Die Recherche wurde KI-gestützt zusammengetragen (Claude, Anthropic).
-    Die historischen Aufnahmen werden hier nicht wiedergegeben, sondern jeweils zu den
-    Originalbeiträgen des Stadtarchivs verlinkt. Drei Punkte sind ausdrücklich <em>nicht</em>
-    geklärt und unten als offene Fragen gekennzeichnet.
+  <span style="display: block; font-weight: bold; text-transform: uppercase; font-size: 0.8em; color: #666; margin-bottom: 6px; letter-spacing: 0.5px;">Status: Arbeitsdokument / KI-unterstützt</span>
+  Dieser Beitrag fasst den Recherchestand zur Egger-Lienz-Straße&nbsp;20 und ihrem Umfeld per
+  August&nbsp;2026 zusammen. Die Angaben stammen aus veröffentlichten Adressbüchern, aus Beiträgen
+  des Stadtarchivs/Stadtmuseums Innsbruck (innsbruck-erinnert.at) und aus persönlichen
+  Erinnerungen. Die Recherche wurde KI-gestützt zusammengetragen (Claude, Anthropic).
+  Die historischen Aufnahmen werden hier nicht wiedergegeben, sondern jeweils zu den
+  Originalbeiträgen des Stadtarchivs verlinkt. Drei Punkte sind ausdrücklich <em>nicht</em>
+  geklärt und unten als offene Fragen gekennzeichnet.
   </div>
 
 
@@ -138,7 +138,9 @@
   Zum Ende des Viadukts gibt es abweichende Angaben. Die Fachliteratur zur Innsbrucker
   Straßenbahn nennt den 25.&nbsp;Jänner&nbsp;1956 als letzten Betriebstag über das Viadukt; der
   Beitrag „Hoch hinaus" des Stadtarchivs schreibt dagegen, die Konstruktion sei bereits 1953
-  abgebaut worden. Beides zusammen ergibt keinen widerspruchsfreien Ablauf. Die Frage ist offen.
+  abgebaut worden. Beides zusammen ergibt keinen widerspruchsfreien Ablauf. Die Frage ist offen. 
+
+Aus meiner Erinnerung schließe  ich, dass 1956 eher stimmen könnte.
 
   ## Das Kastell Veldidena
 
@@ -231,12 +233,12 @@
 
   #### Einschränkung
 
-  Es handelt sich um einen Leserkommentar, nicht um ein redaktionell geprüftes Dokument. Die
+  Es handelt sich um einen Leserkommentar, nicht um ein geprüftes Dokument. Die
   Egger-Lienz-Straße&nbsp;20 wird dort nicht genannt.
 
   ## Almabtrieb über die Egger-Lienz-Straße
 
-  Vieh in der Stadt war in den fünfziger Jahren Alltag. Almabtriebe von Ost nach West durch das
+  Vieh in der Stadt war in den fünfziger Jahren nichts Ungewöhnliches. Almabtriebe von Ost nach West durch das
   Stadtgebiet sind fotografisch belegt: 1954 beim Gasthof Bierstindl am Bergisel (Sammlung
   Ebenbichler), 1958 und 1967 auf der Universitätsbrücke (1967: Erich Birbaumer). Das Stadtarchiv
   vermutet als Route Viggaralm → Harterhof in Kranebitten.
@@ -263,12 +265,12 @@
   tatsächlich ein aktiver Bauernhof in unmittelbarer Nähe. Der ebenfalls erwogene Tollingerhof
   liegt dagegen östlich der Egger-Lienz-Straße; ein Trieb dorthin hätte das Haus von West nach Ost
   passiert, während die erinnerte Richtung Ost→West eher zu westlichen Zielen wie dem Harterhof
-  in Kranebitten passt. Beide Richtungen sind historisch plausibel, geklärt ist keine.
+  in Kranebitten passt. Beide Richtungen sind historisch plausibel, geklärt ist keine. Das Foto des Viehtriebes beim Bierstindl ostwärts könnte auf Herkunft vom Tollingerhof oder auf das Ziel Ferrarihof hindeuten.
 
   ## Der Husslhof
 
   In unserem Stadtteil stand auch der Husslhof am Wiltenberg, von 1906 bis um 1970 ein
-  Ausflugslokal mit Gastgarten. Wegen des Autobahnbaus wurde er um 1972/73 abgebrochen; heute
+  Ausflugslokal mit Gastgarten. Für uns war es ein Spielgelönde. Wegen des Autobahnbaus wurde er um 1972/73 abgebrochen; heute
   erinnert nichts mehr an ihn.
 
   → [„Ein vergessenes Gasthaus"](https://innsbruck-erinnert.at/ein-vergessenes-gasthaus/),
