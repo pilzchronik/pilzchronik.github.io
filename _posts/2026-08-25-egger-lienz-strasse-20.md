@@ -43,38 +43,14 @@ Stöckelgebäude im Hof hat heute das Freie Radio FREIRAD sein Studio.
 
 ## Das Haus Nr. 20 nach den Adressbüchern
 
-Die Innsbrucker Adressbücher (digitalisiert auf innsbruckerinnen.at) geben für die Nr.&nbsp;20
-folgendes Bild:
+In unserer Kindheit lebten folgende Familien in dem Haus: Manges, Reinisch, Hamerl, Gstrein, Ruhland, Feldkirchner, Pilz, Schnepf, Gassner, Süßer, Lechner, Pahle, Mair, Lamprecht, Kurz. 
 
-| Jahr | Bewohner | Beruf laut Adressbuch |
-|---|---|---|
-| 1936–1941 | Emil Lehmann | Leiter des Freilagers der österr. Spiritusstelle |
-| 1953 | Friedrich Feldkirchner | Lagerarbeiter |
-| 1953 | Rudolf Gassner | Angestellter / Inspektor |
-| 1957 | Friedrich Feldkirchner | Lagerleiter |
-| 1957 | Rudolf Gassner | Beamter der Nationalbank |
-| 1964 | Friedrich Feldkirchner | Lagerleiter / Wettertechniker |
-| 1964 | Rudolf Gassner | Oberinspektor / Referent der Nationalbank |
-| 1970 | Edgar Feldkirchner | Monteur |
-| 1976 | Edgar Feldkirchner | Techniker |
 
-Zwei Beobachtungen dazu:
-
-Erstens sind Feldkirchner und Gassner durchgehend von 1953 bis in die 1970er-Jahre
-nachweisbar — es war ein Haus mit stabiler Bewohnerschaft, und die Berufsangaben
-(Nationalbank, später Finanzverwaltung) decken sich mit der Erinnerung, dass im Haus vor allem
-Beamte wohnten.
-
-Zweitens gibt es für 1944 und 1947 keine Personeneinträge. Das legt nahe, dass das Gebäude in
-den Kriegs- und ersten Nachkriegsjahren überwiegend als Lager genutzt wurde. Dazu passt der
-Eintrag von 1936–1941: Das „Freilager der österreichischen Spiritusstelle" erklärt die
-Hofanlage mit dem Stöckelgebäude.
 
 #### Offener Punkt
 
 Im Buchtext ist von der „Branntweinmonopolverwaltung" die Rede. Die Adressbücher nennen für
-1936–1941 die „österreichische Spiritusstelle". Ob es sich um dieselbe Einrichtung unter
-wechselnder Bezeichnung handelt oder um zwei aufeinanderfolgende Nutzungen, ist nicht geklärt.
+1936–1941 die „österreichische Spiritusstelle". 
 
 ## Das Hotel Veldidena
 
@@ -214,7 +190,7 @@ eigenen Haus begann und dass sich am Montagmorgen beim Nahen des Postautos ein r
 Es handelt sich um einen Leserkommentar, nicht um ein redaktionell geprüftes Dokument. Die
 Egger-Lienz-Straße&nbsp;20 wird dort nicht genannt.
 
-## Almabtrieb über die Egger-Lienz-Straße?
+## Almabtrieb über die Egger-Lienz-Straße
 
 Vieh in der Stadt war in den fünfziger Jahren Alltag. Almabtriebe von Ost nach West durch das
 Stadtgebiet sind fotografisch belegt: 1954 beim Gasthof Bierstindl am Bergisel (Sammlung
