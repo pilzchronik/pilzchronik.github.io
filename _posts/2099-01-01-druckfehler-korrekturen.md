@@ -8,7 +8,7 @@ description: "Sammlung der Korrekturen und Ergänzungen zur gedruckten Pilz-Chro
 excerpt: "Genealogische Forschung ist nie abgeschlossen. Hier halte ich fest, was seit dem Druck korrigiert oder präzisiert werden konnte."
 pinned: true
 status: aktuell
-stand_vom: 2026-06-17
+stand_vom: 2026-08-27
 ---
 
 <style>
@@ -67,7 +67,7 @@ stand_vom: 2026-06-17
   </script>
 </div>
 
-<p class="errata-stand">Stand: 17. Juni 2026</p>
+<p class="errata-stand">Stand: 27. August 2026</p>
 
 ## Berichtigungen
 <div class="errata-eintrag">
@@ -143,6 +143,14 @@ stand_vom: 2026-06-17
 <div class="errata-eintrag errata-eintrag--erkenntnis">
   <h3>Neu — Ältester belegter Vorfahre: Michael PILTZ der Ältere (†&nbsp;26.7.1565)</h3>
   <p>Im Kirchenbuch Dörnthal (KB 23) ist der Sterbeeintrag eines <em>„alten Michael Piltz"</em> verzeichnet. Er ist der älteste urkundlich belegte Vorfahre. Die Verbindung zu Jobst ist plausibel, aber noch nicht durch eine Primärquelle geschlossen.</p>
+</div>
+
+<div class="errata-eintrag errata-eintrag--erkenntnis">
+  <h3>Nachlesung am Original-Ausdruck, 27. August 2026 — drei Präzisierungen zur sächsischen Stammreihe</h3>
+  <p><strong>1. Taufdatum Samuel Pilz sen. bestätigt:</strong> Die Datumsformel im Taufeintrag (KB 438, Olbernhau, DS 257) lautet „post Oculi" — der 1. März fiel 1654 drei Tage nach dem Sonntag Oculi. Das Taufdatum <strong>2. März 1654</strong> ist damit kalendrisch gesichert; das zeitweise kursierende Jahr 1664 ist ausgeschlossen (Oculi 1664 fiel auf den 13. März). Die Jahresüberschrift am Blatt selbst wird noch geprüft.</p>
+  <p><strong>2. Beruf des Michael Piltz (*&nbsp;13.7.1617):</strong> Er war <strong>Schneider</strong> in Olbernhau. Die ältere Lesung „Schmied und Leinweber" ist verworfen — die Gegenprobe am selben Blatt zeigt, dass der Schreiber „schmidts" anders (kürzer, mit m-Arkade) schreibt.</p>
+  <p><strong>3. Bandzuordnung Samuel Pilz jun. (*&nbsp;13.1.1683) offen:</strong> Die auf dieser Seite bisher genannte Quelle „Taufbuch KB 429 (Oberneuschönberg)" war nicht durch eigene Archiveinsicht gedeckt. Als Prüfkandidat gilt <strong>KB 440 (Olbernhau), DS 153</strong>; offen bleiben die Bandfrage 440/429, die Pfarrzugehörigkeit Niederneuschönbergs 1683 und die Registerprobe KB 459, S. 82–84. An der Kette selbst ändert das nichts — nur am Quellenstatus dieses einen Eintrags.</p>
+  <p>Ausführlich: <a href="{{ '/ergebnis-archivreise-lka-dresden/' | relative_url }}">Archivreise LKA Dresden, Nachtrag 27.08.2026</a> und <a href="{{ '/doernthal-generationentabelle/' | relative_url }}">Generationentabelle</a>.</p>
 </div>
 
 ## Redaktionelles

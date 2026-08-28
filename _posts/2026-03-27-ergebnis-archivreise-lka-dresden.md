@@ -4,7 +4,7 @@ title: "Archivreise LKA Dresden: Stammlinie Pültz/Pilz Dörnthal über sechs Ge
 date: 2026-03-27
 permalink: /ergebnis-archivreise-lka-dresden/
 status: aktuell
-stand_vom: 2026-06-17
+stand_vom: 2026-08-27
 betrifft: Band1, Band2
 tags: [Neue Funde, Korrekturen, Kirchenbücher, LKA Dresden, Primärquellen, Erzgebirge, Ergebnisse]
 description: 'Kirchenbücher im Landeskirchlichen Archiv Dresden bestätigen die direkte Stammlinie Pültz/Pilz in Dörnthal über sechs Generationen – Korrektur „Joseph statt Jobst“ damit widerlegt.'
@@ -30,7 +30,7 @@ Die direkte väterliche Linie ist nun über sechs Generationen lückenlos durch 
 | 2 | **Abraham PILZ** (\*&nbsp;Aug. 1591) | Taufbuch KB 23 (Dörnthal) |
 | 3 | **Michael PILTZ** (\*&nbsp;13.7.1617) | Taufbuch KB 437 (Olbernhau) |
 | 4 | **Samuel PILZ** (\*&nbsp;2.3.1654) | Taufbuch KB 438 (Olbernhau), DS 257 |
-| 5 | **Samuel PILZ** (\*&nbsp;13.1.1683) | Taufbuch KB 429 (Oberneuschönberg) |
+| 5 | **Samuel PILZ** (\*&nbsp;13.1.1683) | Taufe belegt; **Bandzuordnung offen** — P-Kandidat KB 440 (Olbernhau), DS 153. Die frühere Angabe „KB 429 (Oberneuschönberg)" war nicht durch eigene Archiveinsicht gedeckt und ist entfallen (Korrektur 27.08.2026) |
 | 6 | **Christian Gottlob PILZ** (ca. 24.3.1712) | Taufbuch KB 430 (Oberneuschönberg) |
 
 Alle Verbindungen beruhen auf Primärquellen. Damit ist die Kette, die bisher nur bis Christian Gottlob Pilz (1712) urkundlich gesichert war, um vier Generationen nach hinten verlängert.
@@ -134,6 +134,8 @@ Nicht alle Ziele der Archivreise konnten erreicht werden:
 **Freiberger Linie: Christoph PÜLTZ d.J. (†&nbsp;27.7.1621)** — Das Sterbebuch von St. Jacobi Freiberg vor 1673 liegt nur im Stadtarchiv Freiberg vor, nicht im LKA.
 
 **Abzugsbriefe Freiberg (Aa/Ia/XVII/2)** — Der urkundliche Beweis für die Übersiedlung Christoph Pültz d.Ä. von Dörnthal nach Freiberg ist im Stadtarchiv Freiberg zu suchen.
+
+**Nachtrag 27. August 2026 — Bandzuordnung Samuel Pilz jun. (*&nbsp;13.1.1683):** Die ursprüngliche Angabe „Taufbuch KB 429 (Oberneuschönberg)" in der Tabelle oben war ein Statusfehler: Sie beruhte nicht auf eigener Archiveinsicht. Als P-Kandidat gilt **KB 440 (Olbernhau), DS 153**; offen bleiben die Bandfrage 440/429, die Pfarrzugehörigkeit Niederneuschönbergs 1683 und die Registerprobe KB 459, S. 82–84. Die Jahresüberschrift zu DS 153 am Blatt macht den Eintrag vollständig zum Primärbeleg. In derselben Nachlesung bestätigt: Die Datumsformel bei Samuel sen. lautet „post Oculi" — das Taufdatum **2.3.1654** ist damit kalendrisch gesichert (das zwischendurch kursierende Jahr 1664 ist ausgeschlossen); der Beruf des Vaters Michael lautet „Schneider" (nicht „Schmied und Leinweber").
 
 ---
 
