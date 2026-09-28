@@ -67,18 +67,7 @@ Zu Mittag erreichten sie St.&nbsp;Jakob in Defereggen, am nächsten Tag Lienz. D
 
 Der Verfasser war am 27.&nbsp;März abends daheim in Vorarlberg. Welchen Übergang die Gruppe nahm, sagt der Text nicht. Er spricht nur von der „Paßhöhe". Der Weg von Antholz ins Defereggental legt den **Staller Sattel** (2.052&nbsp;m) nahe. Das ist meine Deutung, keine Angabe der Quelle.
 
-## Tagebuch und Zeitung im Vergleich
 
-| Punkt | Chronik (nach dem Tagebuch) | Zeitungsbericht 1919 | Befund |
-|---|---|---|---|
-| Gefangennahme 4.&nbsp;November 1918 | Entwaffnung am Mendelpass, nach dem Marsch von Pellizzano nach Malè | Verfasser gefangen in Malè; ein langer Gefangenenzug kommt „von der Mentel her" | Zwei Personen, zwei Blickwinkel, dasselbe Frontgebiet. Kein Widerspruch. |
-| 20.&nbsp;November 1918 | Ankunft in Rodengo-Saiano bei Brescia | Marsch von Marone nach „Rovenge" (Rodengo) | Gleiches Datum, gleicher Ort |
-| Winter 1918/19 | „Internierung schließlich im Raum Verona" | Lager Medole; Verona nur Durchgangslager (19.–21.&nbsp;Jänner 1919), danach Colfosco am Piave | Ob Eberstaller bis März in derselben Kompanie war, sagt der Bericht nicht |
-| Freikommen | als Südtiroler ausgegeben | Personalangaben auf „südlich vom Brenner" geändert | Übereinstimmung |
-| Flucht | „am 29. März in Bruneck entkommen" | Ankunft Bruneck 20.&nbsp;März; Grenze in der Nacht auf den 22.&nbsp;März | **Datum der Chronik berichtigt** (siehe unten) |
-| Weg | Schmuggler, über das Defereggental | Schmuggler ab Oberantholz, St.&nbsp;Jakob, Lienz | Übereinstimmung, jetzt mit Einzelheiten |
-
-Die Übereinstimmung am 20.&nbsp;November in Rodengo spricht dafür, dass beide schon im November 1918 in derselben Marschkolonne waren. Belegt ist das nicht. Ausdrücklich gemeinsam unterwegs sind sie erst ab dem 20.&nbsp;März 1919.
 
 ## Berichtigung: das Fluchtdatum
 
