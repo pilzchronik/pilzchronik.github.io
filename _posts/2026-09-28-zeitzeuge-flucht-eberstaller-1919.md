@@ -88,6 +88,6 @@ Weitere Begriffe: *Waffenstillstandslinie* = Demarkationslinie nach dem Waffenst
 ## Quellen
 
 - **Vorarlberger Wacht** (Dornbirn), „Fünf Monate in italienischer Gefangenschaft. Aus den Erinnerungen eines Heimkehrers", 15.&nbsp;6., 26.&nbsp;6., 28.&nbsp;6., 2.&nbsp;7. und 3.&nbsp;7.&nbsp;1919. Digitalisat: ANNO, Österreichische Nationalbibliothek. Anonymes Werk, gemeinfrei.
-- Zitate nach der Transkription aus der Fraktur, [ERGÄNZEN: wer hat gelesen, wer gegengelesen], September 2026; Schreibung wie im Druck.
+- Zitate nach der Transkription aus der Fraktur, KI-gestützte Lesung (Claude), September 2026; Schreibung wie im Druck.
 - **Pilz-Chronik, Band&nbsp;1**, Kapitel Johann Eberstaller (Tagebuch aus italienischer Kriegsgefangenschaft).
 - **Tagebuch Johann Eberstaller** 1918/19, Original im Tiroler Landesarchiv.
