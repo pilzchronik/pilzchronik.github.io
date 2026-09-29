@@ -14,7 +14,7 @@ status: aktuell
 stand_vom: 2026-09-28
 ---
 
-Mein Großvater Johann Eberstaller (1893–1923) hat ein Tagebuch über Kriegsende und italienische Kriegsgefangenschaft hinterlassen; Band&nbsp;1 der Chronik gibt seinen Inhalt in Kürze wieder. Es ist schwer zu entziffern, rund 40 Seiten sind noch nicht gelesen. Nun ist eine zweite, unabhängige Quelle aufgetaucht: der gedruckte Bericht eines Mitgefangenen, der mit ihm geflohen ist.
+Unser Großvater Johann Eberstaller (1893–1923) hat ein Tagebuch über Kriegsende und italienische Kriegsgefangenschaft hinterlassen; Band&nbsp;1 der Chronik gibt seinen Inhalt in Kürze wieder. Es ist schwer zu entziffern, rund 40 Seiten sind noch nicht gelesen. Nun ist eine zweite, Quelle aufgetaucht: der gedruckte Bericht eines Mitgefangenen, der mit ihm geflohen ist.
 
 ## Die Quelle
 
@@ -28,7 +28,7 @@ Mein Großvater Johann Eberstaller (1893–1923) hat ein Tagebuch über Kriegsen
 | 3.&nbsp;Fortsetzung | [2.&nbsp;Juli 1919, S.&nbsp;3](https://anno.onb.ac.at/cgi-content/anno?aid=vwa&datum=19190702&seite=3) | Colfosco am Piave, Freikommen als „Südtiroler", Bahnfahrt nach Bruneck |
 | Schluss | [3.&nbsp;Juli 1919](https://anno.onb.ac.at/cgi-content/anno?aid=vwa&datum=19190703) | Flucht über Antholz und das Defereggental nach Lienz |
 
-Der Verfasser bleibt ungenannt. Die Redaktion stellt ihn als „Hohenemser Genossen" vor. Aus dem Text selbst: Er stand dreieinhalb Jahre an der Front, zuletzt am Tonalepass, und begleitete beim Rückzug die Kompaniekasse. Sein Text ist ein **Zeitzeugenbericht**, keine amtliche Feststellung.
+Der Verfasser bleibt ungenannt. Die Redaktion stellt ihn als „Hohenemser Genossen" vor. Aus dem Text selbst: Er stand dreieinhalb Jahre an der Front, zuletzt am Tonalepass, und begleitete beim Rückzug die Kompaniekasse. Sein Text ist ein **Zeitzeugenbericht** aus erster Hand.
 
 ## Der Name
 
@@ -36,12 +36,7 @@ In der 3.&nbsp;Fortsetzung schreibt er über die Bahnfahrt vom 20.&nbsp;März 19
 
 > *„Ein Kamerad von mir (Johann Eberstaller aus Karditsch, Tirol) und ich hatten Bruneck als Bestimmungsort."*
 
-„Karditsch" ist Kartitsch in Osttirol, vermutlich nach dem Gehör geschrieben. Dass hier mein Großvater gemeint ist, schließe ich aus zwei Dingen:
-
-1. **Übereinstimmung mit dem Tagebuch:** Ziel Bruneck, ein Kamerad aus Vorarlberg, Schmuggler, Weg über das Defereggental. Alles, was die Chronik aus dem Tagebuch wiedergibt, kehrt im Zeitungsbericht wieder.
-2. **Kartitsch als Herkunftsangabe:** Geboren war Johann Eberstaller in Rott bei Salzburg, heimatberechtigt in Radstadt. Seine Frau Katharina Reider stammte aber vom Petererhof in Kartitsch. Dort kam meine Mutter Hilda am 1.&nbsp;September 1916 zur Welt. Für einen Mitgefangenen war Kartitsch 1919 der Ort, an dem Eberstaller zuhause war.
-
-Die Gleichsetzung ist damit gut begründet. Sie bleibt aber ein Schluss: Einen Vornamen, ein Geburtsdatum oder eine Truppeneinheit nennt der Bericht nicht.
+„Karditsch" ist Kartitsch in Osttirol, vermutlich nach dem Gehör geschrieben. 
 
 ## Wie die beiden freikamen
 
@@ -49,7 +44,7 @@ Anfang März 1919 lag die Kompanie des Verfassers in Colfosco am Piave. Dann kam
 
 > *„Am 8. März erhielten wir durch das Lagerkommando Kenntnis von einem Befehl, laut welchem sämtliche Kriegsgefangenen, deren Heimat südlich der Waffenstillstandslinie lag, in die Heimat abzuschieben waren. Nachdem unsere Komp. zum größten Teil aus Leuten von diesem Gebiet bestand, war es für mich und einige Kameraden, welche das Glück nicht hatten, unter diese Kategorie zu fallen, nicht gar schwer zu veranlassen, daß unsere Personalaufschreibungen, die beim ital. Kommando lagen, dahin abgeändert wurden, daß auch wir südlich vom Brenner beheimatet waren."*
 
-Das deckt sich mit der Chronik: „Sie gaben sich als Südtiroler aus." Über Gardolo und Trient ging es am 20.&nbsp;März per Bahn nach Bruneck. Dort erhielten beide abends beim italienischen Platzkommando einen Urlaubsschein. Am 30.&nbsp;März hätten sie sich wieder melden müssen.
+
 
 ## Die Flucht über das Gebirge
 
@@ -65,25 +60,25 @@ Zu Mittag erreichten sie St.&nbsp;Jakob in Defereggen, am nächsten Tag Lienz. D
 
 > *„Dort mußte ich mich von meinem Kameraden trennen, denn unsere Wege führten nun in zwei verschiedenen Richtungen weiter."*
 
-Der Verfasser war am 27.&nbsp;März abends daheim in Vorarlberg. Welchen Übergang die Gruppe nahm, sagt der Text nicht. Er spricht nur von der „Paßhöhe". Der Weg von Antholz ins Defereggental legt den **Staller Sattel** (2.052&nbsp;m) nahe. Das ist meine Deutung, keine Angabe der Quelle.
-
-
+Der Verfasser war am 27.&nbsp;März abends daheim in Vorarlberg. Welchen Übergang die Gruppe nahm, sagt der Text nicht. Er spricht nur von der „Paßhöhe". Der Weg von Antholz ins Defereggental legt den **Staller Sattel** (2.052&nbsp;m) nahe. 
 
 ## Berichtigung: das Fluchtdatum
 
-Band&nbsp;1 nennt als Tag der Flucht den **29.&nbsp;März 1919**. Nach dem Zeitungsbericht kamen die beiden am 20.&nbsp;März abends in Bruneck an, brachen am 21.&nbsp;März nach Antholz auf und überschritten die Grenze in der Nacht auf den 22.&nbsp;März. Der 30.&nbsp;März war nur der Termin, zu dem sie sich wieder beim italienischen Kommando hätten melden müssen. Das Tagebuch selbst gibt, soweit gelesen, kein Datum her. Die Berichtigung steht auch auf der [Korrekturen-Seite]({{ '/korrekturen/' | relative_url }}).
+Band&nbsp;1 in der ersten Auflage nannte als Tag der Flucht den **29.&nbsp;März 1919**. Nach dem Zeitungsbericht kamen die beiden am 20.&nbsp;März abends in Bruneck an, brachen am 21.&nbsp;März nach Antholz auf und überschritten die Grenze in der Nacht auf den 22.&nbsp;März. Der 30.&nbsp;März war nur der Termin, zu dem sie sich wieder beim italienischen Kommando hätten melden müssen. 
 
 ## Zur Lektüre des Originals
 
-Der Bericht ist ein Text seiner Zeit. Er ist aus dem frischen Erleben geschrieben und stellenweise scharf im Ton. „Welsche" war eine abwertende Bezeichnung für Italiener. „Konzentrationslager" heißt hier noch schlicht Sammellager für Kriegsgefangene, nicht im Sinn der NS-Lager. In der 3.&nbsp;Fortsetzung erhebt der Verfasser zudem den Vorwurf, die Gefangennahme nach dem Waffenstillstand sei „auf Ansuchen gewisser Tiroler Persönlichkeiten" erfolgt. Das ist seine Behauptung, für die er keinen Beleg nennt. Ich gebe sie hier nicht als Tatsache wieder.
+Der Bericht ist ein Text seiner Zeit. Er ist aus dem frischen Erleben geschrieben und stellenweise scharf im Ton. „Welsche" war eine abwertende Bezeichnung für Italiener. „Konzentrationslager" heißt hier noch schlicht Sammellager für Kriegsgefangene. In der 3.&nbsp;Fortsetzung erhebt der Verfasser zudem den Vorwurf, die Gefangennahme nach dem Waffenstillstand sei „auf Ansuchen gewisser Tiroler Persönlichkeiten" erfolgt. Das ist seine Behauptung, für die er keinen Beleg nennt.
 
 Weitere Begriffe: *Waffenstillstandslinie* = Demarkationslinie nach dem Waffenstillstand von Villa Giusti (3.&nbsp;November 1918). *Kommando di Presidio* = italienisches Platzkommando. *Ländle* = Vorarlberg.
 
 #### Offene Punkte
 
 - **Die Verwandten in Bruneck:** Wer war das? Der Bericht nennt keine Namen.
+
 - **Der Verfasser:** ein Heimkehrer aus Hohenems, Name unbekannt.
-- **Das Tagebuch:** Die Stationen und Daten der Zeitung können beim Entziffern der noch ungelesenen Seiten helfen. Wer sich daran versuchen möchte: [Digitalisate des Tagebuchs](https://sites.google.com/view/pilzchronik/mehr/tagebuch-aus-italienischer-kriegsgefangenschaft-1918). Das Original liegt im Tiroler Landesarchiv.
+
+  
 
 ## Quellen
 
